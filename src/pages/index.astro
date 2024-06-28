@@ -4,9 +4,6 @@ import Layout from "../layouts/Layout.astro";
 import { homePageContent, identity } from "../config";
 import SocialLink from "../components/SocialLink.astro";
 import Link from "../components/Link.astro";
-import { getCollection } from "astro:content";
-
-const posts = await getCollection("posts");
 ---
 
 <Layout seo={homePageContent.seo}>
@@ -35,10 +32,14 @@ const posts = await getCollection("posts");
       </div>
     </div>
     <p class="max-w-md mb-8">
-      {homePageContent.description}
+      Software Engineer specializing in building scalable, secure, and performant microservices using <strong>Node.js</strong> and <strong>Go</strong>.
+      <br/><br/>
+      Honored to be recognized as a <span class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">GitHub Star</span> twice from India and to have maintained open-source projects for Google Summer of Code (<strong>GSoC</strong>).
+      <br/><br/>
+      With a knack for building event-driven architectures, I balance coding with badminton and find peace in a sip of tea and poetry.
       <br/><br/>
       In a nutshell,
-      🏸 + 🍵 + 👨‍💻 = <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://www.netlify.com" target="_blank">@vinitshahdeo</a>
+      🏸 + 🍵 + 👨‍💻 = <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff] glowing-animation" href="/about">@vinitshahdeo</a> 
           </p>
     <div class="flex items-center gap-4 group w-fit">
     

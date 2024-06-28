@@ -10,7 +10,7 @@ import type {
 
 export const identity: Identity = {
   name: "Vinit Shahdeo",
-  logo: "/vinitshahdeo.png",
+  logo: "/img/vinitshahdeo.png",
   email: "vinishahdeo@gmail.com",
 };
 
@@ -129,11 +129,11 @@ export const aboutPageContent: AboutPageContent = {
       Senior Software Engineer at Novo | Previously at Postman | GitHub Star from India | Node.js, Go, Microservices, Kafka, GraphQL, REST, AWS
     `, // Markdown is supported
     image_l: {
-      url: "/vinit_shahdeo.jpg",
+      url: "/img/vinit_shahdeo.jpg",
       alt: "Vinit Shahdeo Profile Photo",
     },
     image_r: {
-      url: "/vinit-shahdeo-square-1.jpg",
+      url: "/img/vinit-shahdeo-square-1.jpg",
       alt: "Vinit Shahdeo Profile Photo",
     },
   },
@@ -144,7 +144,7 @@ export const aboutPageContent: AboutPageContent = {
         title: "Senior Software Engineer",
         company: {
           name: "Novo",
-          image: "/novo.jpg",
+          image: "/logo/novo.jpg",
           url: "https://novo.co/",
         },
         date: "Aug 2023 - Present",
@@ -153,7 +153,7 @@ export const aboutPageContent: AboutPageContent = {
         title: "Software Engineer  II",
         company: {
           name: "Postman",
-          image: "/postman.webp",
+          image: "/logo/postman.webp",
           url: "https://www.postman.com/",
         },
         date: "Jun 2021 - Sept 2023",
@@ -162,7 +162,7 @@ export const aboutPageContent: AboutPageContent = {
         title: "Software Engineer",
         company: {
           name: "Postman",
-          image: "/postman.webp",
+          image: "/logo/postman.webp",
           url: "https://postman.com/",
         },
         date: "Jun 2019 - May 2021",
@@ -309,6 +309,14 @@ export const musicPlaylist: MusicPlaylist[] = [
     url: "/music/kana_yaari.mp3",
   },
   {
+    title: "O Re Piya",
+    url: "/music/o_re_piya.mp3",
+  },
+  {
+    title: "Kali Kali Zulfon Ke Phande Na Dalo",
+    url: "/music/kali_kali_zulfon_ke.mp3",
+  },
+  {
     title: "Laree Choote",
     url: "/music/laare_choote.mp3",
   },
@@ -327,5 +335,9 @@ export const musicPlaylist: MusicPlaylist[] = [
   {
     title: "Neele Neele Ambar Par",
     url: "/music/neele_neele.mp3",
+  },
+  {
+    title: "Kali Kali Zulfon Ke Phande Na Dalo",
+    url: "/music/kali_kali.mp3",
   }
 ];

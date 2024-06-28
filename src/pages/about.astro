@@ -53,9 +53,9 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
         And, when I'm not in front of my screen, you'll likely spot me on the badminton court, rallying shuttlecocks.
       </p>
       <p class="mb-5 sm:text-left">
-        I prefer FM Radio over Spotify—call me old school, but there's something magical about tuning into RJs and their spontaneous charm, like playing 
-        
-        Picture this: I'm deep into debugging production issues while the soothing melody of <a href="#" id="playSong" class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">"{randomSong.title}"</a> 
+        I prefer FM Radio over Spotify—call me old school, but there's something magical about tuning into RJs and their spontaneous charm. 
+        <br/><br/>
+        <strong>Picture this:</strong> I'm deep into debugging production issues while the soothing melody of <a href="#" id="playSong" class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">"{randomSong.title}"</a> 
         plays in the background. 
 
         <br/><br/>
@@ -71,18 +71,27 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
         document.getElementById('playSong')?.addEventListener('click', function(event) {
           event.preventDefault(); // Prevent the default anchor action
           const song = document.getElementById('song');
+          const icon = document.querySelector('.icon-inline'); 
+          const clickSongElement = document.getElementById('clickSong');
+          const enjoySongElement = document.getElementById('enjoySong');
           if (song instanceof HTMLAudioElement) { // Ensure the element is an HTMLAudioElement
             song.volume = 0.3;
             if (song.paused) {
               song.play();
+              icon &&icon.classList.add('icon-spin'); // Add the spinning class when the song plays
+              if (enjoySongElement) enjoySongElement.textContent = 'Enjoy the song, If you\'re not liking it, ';
+              if (clickSongElement)    clickSongElement.textContent = 'click here to stop';
             } else {
               song.pause();
               song.currentTime = 0; // Optionally, reset the song to the start if clicked again
+              icon && icon.classList.remove('icon-spin'); // Remove the spinning class when the song is paused
+              if (enjoySongElement) enjoySongElement.textContent = '';
+              if (clickSongElement)  clickSongElement.textContent = 'click here to play';
             }
           }
         });
 
-        document.getElementById('refreshSong').addEventListener('click', function(event) {
+        document.getElementById('refreshSong')?.addEventListener('click', function(event) {
           event.preventDefault(); // Prevent the default action
           window.location.reload(); // Refresh the page
         });
@@ -91,15 +100,21 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
           event.preventDefault(); // Prevent the default anchor action
           const song = document.getElementById('song');
           const icon = document.querySelector('.icon-inline'); // Assuming your icon has the class 'icon-inline'
+          const clickSongElement = document.getElementById('clickSong');
+          const enjoySongElement = document.getElementById('enjoySong');
           if (song instanceof HTMLAudioElement) { // Ensure the element is an HTMLAudioElement
             song.volume = 0.3;
             if (song.paused) {
               song.play();
-              icon.classList.add('icon-spin'); // Add the spinning class when the song plays
+              icon &&icon.classList.add('icon-spin'); // Add the spinning class when the song plays
+              if (enjoySongElement) enjoySongElement.textContent = 'Enjoy the song, If you\'re not liking it, ';
+              if (clickSongElement)    clickSongElement.textContent = 'click here to stop';
             } else {
               song.pause();
               song.currentTime = 0; // Optionally, reset the song to the start if clicked again
-              icon.classList.remove('icon-spin'); // Remove the spinning class when the song is paused
+              icon && icon.classList.remove('icon-spin'); // Remove the spinning class when the song is paused
+              if (enjoySongElement) enjoySongElement.textContent = '';
+              if (clickSongElement)  clickSongElement.textContent = 'click here to play';
             }
           }
         });
@@ -131,12 +146,12 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
 
           if (clickSongElement) {
             clickSongElement.addEventListener('click', function() {
-              if (audioElement) {
+              if (audioElement instanceof HTMLAudioElement) {
                 if (audioElement.paused) {
-                  enjoySongElement.textContent = '';
+                  if (enjoySongElement) enjoySongElement.textContent = '';
                   clickSongElement.textContent = 'click here to play';
                 } else {
-                  enjoySongElement.textContent = 'Enjoy the song, if you are not liking, ';
+                  if (enjoySongElement) enjoySongElement.textContent = 'Enjoy the song, If you\'re not liking it, ';
                   clickSongElement.textContent = 'click here to stop';
                 }
               }
@@ -145,10 +160,10 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
         });
       </script>
       <p class="mb-5 sm:text-left">
-        <img src="https://camo.githubusercontent.com/f4b2777899c034be15d3ffbdaa3c2ee08663ce3fdc542b418500787fd7d766e5/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f76696e69747368616864656f2e7376673f6c6162656c3d466f6c6c6f772532304076696e69747368616864656f267374796c653d736f6369616c" alt="A meaningful alt text" />
+        <img src="https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social" alt="GitHub Followers | @vinitshahdeo" />
       </p>
       <p class="mb-5 sm:text-left">
-        Open source? It's a world I'm deeply involved in. I've had the privilege of mentoring in <a href="https://blog.postman.com/author/vinit-shahdeo/" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">GSoC</a> at AsyncAPI and Postman. I'm truly honored to have been recognized as a 
+        <strong>Open source?</strong> It's a world I'm deeply involved in. I've had the privilege of mentoring in <a href="https://blog.postman.com/author/vinit-shahdeo/" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">GSoC</a> at AsyncAPI and Postman. I'm truly honored to have been recognized as a 
         <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://stars.github.com/profiles/vinitshahdeo/" target="_blank">GitHub Star</a> twice, representing India. 
         I'm always available for a 1:1 chat on <a href="https://topmate.io/vinitshahdeo" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Topmate</a>.   
       </p>

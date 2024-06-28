@@ -1,0 +1,111 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { aboutPageContent, musicPlaylist } from "../config";
+import ResumeItem from "../components/ResumeItem.astro";
+import SocialLinkBox from "../components/SocialLinkBox.astro";
+
+const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length)];
+---
+
+<Layout seo={aboutPageContent.seo}>
+  <section class="mt-10 max-w-2xl mx-auto px-6">
+    <h1 class="font-bold text-3xl mb-1">About</h1>
+    <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
+    <div class="mb-14">
+      <p class="mb-5 sm:text-left">
+        Hello 👋,
+        I'm a Software Engineer who adores <span class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff]">JavaScript</span> and is passionate about open-source.
+        With a knack for building event-driven architecture, I balance code with badminton and find peace in a sip of tea and poetry.
+      </p>
+      <p class="mb-5 sm:text-left">
+        My journey began fueled by curiosity about how Facebook worked, and it's led me here. 
+        I've worked as a Software Engineer II at <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://www.postman.com/" target="_blank">Postman</a>, graduated from <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://vit.ac.in/" target="_blank">VIT Vellore</a>, and now I'm building & scaling neo-banking solutions at <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://novo.co/" target="_blank">Novo</a>.
+        My notable contributions at Postman include building <a href="https://www.postman.com/product/postman-interceptor" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Interceptor</a> and <a href="https://www.postman.com/product/integrations" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Integrations</a>. 
+        Discover more about my Postman <a href="https://vinitshahdeo.dev/saying-goodbye-to-postman" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">journey</a> and valuable <a href="https://vinitshahdeo.dev/10-lessons-learned-as-software-engineer-at-postman" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">lessons</a>.
+      </p>
+    </div>
+    <div class="flex flex-col sm:flex-row">
+  <Image
+    src={aboutPageContent.about.image_l.url}
+    alt={aboutPageContent.about.image_l.alt}
+    width={350}
+    height={250}
+    class="w-[350px] h-[250px] object-cover rounded-xl sm:-rotate-6 sm:block"
+  />
+  <Image
+    src={aboutPageContent.about.image_r.url}
+    alt={aboutPageContent.about.image_r.alt}
+    width={150}
+    height={250}
+    class="hidden w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto sm:block"
+  />
+</div>
+  </section>
+
+  <section class="mt-10 max-w-2xl mx-auto px-6">
+    <div class="mb-14">
+      <p class="mb-5 sm:text-left">
+        <strong>Family</strong>, <strong>friends</strong>, and <strong>shared laughs</strong>? That's where my heart is. 
+        Whether it's sharing a cup of tea, listening to poetry, or simply enjoying their company, those moments mean a lot to me.
+        And, when I'm not in front of my screen, you'll likely spot me on the badminton court, rallying shuttlecocks.
+      </p>
+      <p class="mb-5 sm:text-left">
+        I prefer FM Radio over Spotify—call me old school, but there's something magical about tuning into RJs and their spontaneous charm, like playing 
+        <a href="#" id="playSong" class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">"{randomSong.title}"</a> 
+        while I'm debugging production issues. Offline moments are my luxury, and I treasure them deeply. I find peace in late-night strolls and enjoy the simple joys of life.
+      </p>
+      <audio id="song" src={randomSong.url}></audio>
+
+      <script>
+        document.getElementById('playSong')?.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default anchor action
+          const song = document.getElementById('song');
+          if (song instanceof HTMLAudioElement) { // Ensure the element is an HTMLAudioElement
+            song.volume = 0.4;
+            if (song.paused) {
+              song.play();
+            } else {
+              song.pause();
+              song.currentTime = 0; // Optionally, reset the song to the start if clicked again
+            }
+          }
+        });
+      </script>
+      <p class="mb-5 sm:text-left">
+        <img src="https://camo.githubusercontent.com/f4b2777899c034be15d3ffbdaa3c2ee08663ce3fdc542b418500787fd7d766e5/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f76696e69747368616864656f2e7376673f6c6162656c3d466f6c6c6f772532304076696e69747368616864656f267374796c653d736f6369616c" alt="A meaningful alt text" />
+      </p>
+      <p class="mb-5 sm:text-left">
+        Open source? It's a world I'm deeply involved in. I've had the privilege of mentoring in <a href="https://blog.postman.com/author/vinit-shahdeo/" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">GSoC</a> at AsyncAPI and Postman. I'm truly honored to have been recognized as a 
+        <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://stars.github.com/profiles/vinitshahdeo/" target="_blank">GitHub Star</a> twice, representing India. 
+        I'm always available for a 1:1 chat on <a href="https://topmate.io/vinitshahdeo" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Topmate</a>.   
+      </p>
+    </div>
+  </section>
+
+  <section class="my-20 mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
+    <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
+    <div>
+      <div class="mb-6">
+        My tech toolbox includes <strong>Node.js</strong>, <strong>Go</strong>, <strong>Kafka</strong>, <strong>GraphQL</strong>, <strong>REST</strong>, <strong>AWS</strong>, and much more – but my true love? APIs, of course!
+      </div>
+      <div class="grid grid-cols-1 group">
+        {aboutPageContent.work.items.map((item) => <ResumeItem {...item} />)}
+      </div>
+    </div>
+  </section>
+  <section class="mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
+    <h2 class="mb-8 sm:mb-0 opacity-60">Connect</h2>
+    <div>
+      <div class="mb-6">
+        Come find me on <a href="https://twitter.com/Vinit_Shahdeo" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Twitter</a> and <a href="https://www.linkedin.com/in/vinitshahdeo" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">LinkedIn</a> – I'm excited to connect!
+        You can explore my professional side on <a href="https://peerlist.io/vinitshahdeo" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Peerlist</a>.
+        And if you're curious about my thoughts, swing by my blog 
+        <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://www.netlify.com" target="_blank">vinitshahdeo.dev</a>. 
+      </div>
+      <div class="grid grid-cols-2 gap-2 group">
+        {aboutPageContent.connect.links.map((item) => <SocialLinkBox {...item} />)}
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -202,12 +202,16 @@ export const musicPlaylist: MusicPlaylist[] = [
     url: "/music/naadaan-parindey.mp3",
   },
   {
+    title: "Naadan Parindey",
+    url: "/music/nadaan_parinde_atif.mp3",
+  },
+  {
     title: "Kehne Ko Jashne Bahara Hai",
     url: "/music/kehne_ko.mp3",
   },
   {
     title: "Keh Doon Tumhe",
-    url: "/music/keh_doon_tumhe.mp3",
+    url: "/music/keh_dun_tumhe.mp3",
   },
   {
     title: "Tum Ho",
@@ -216,5 +220,73 @@ export const musicPlaylist: MusicPlaylist[] = [
   {
     title: "Lut Gaye",
     url: "/music/lut_gaye.mp3",
+  },
+  {
+    title: "Rataan Lambiyan",
+    url: "/music/raatan_lambiyan_lofi.mp3",
+  },
+  {
+    title: "Madari",
+    url: "/music/madari.mp3",
+  },
+  {
+    title: "Allah Ke Bande",
+    url: "/music/allah_ke_bande.mp3",
+  },
+  {
+    title: "Man Mera",
+    url: "/music/man_mera.mp3",
+  },
+  {
+    title: "Mere Sapno Ki Rani",
+    url: "/music/mere_sapno_ki_rani.mp3",
+  },
+  {
+    title: "Dekha Tenu Pehli Pehli Baar Ve",
+    url: "/music/dekha-tenu.mp3",
+  },
+  {
+    title: "Yeh Shaam Mastani",
+    url: "/music/yeh-shaam.mp3",
+  },
+  {
+    title: "Chand Sifarish",
+    url: "/music/chand_sifarish.mp3",
+  },
+  {
+    title: "Chahun Main Ya Naa",
+    url: "/music/chahun_main_ya_naa.mp3",
+  },
+  {
+    title: "Jiya Dhadak Dhadak Jaye",
+    url: "/music/jiya_dhadak.mp3",
+  },
+  {
+    title: "Lag Ja Gale",
+    url: "/music/lag_ja_gale.mp3",
+  },
+  {
+    title: "Teri Deewani",
+    url: "/music/teri_deewani.mp3",
+  },
+  {
+    title: "Teri Jhuki Nazar",
+    url: "/music/teri_jhuki_nazer.mp3",
+  },
+  {
+    title: "Tujh Mein Rab Dikhta Hai",
+    url: "/music/tujhme_rab.mp3",
+  },
+  {
+    title: "Afreen Afreen",
+    url: "/music/afreen.mp3",
+  },
+  {
+    title: "Pasoori",
+    url: "/music/pasoori.mp3",
+  },
+  {
+    title: "Saiyaara",
+    url: "/music/saiyara.mp3",
   }
 ];

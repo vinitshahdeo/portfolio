@@ -71,6 +71,25 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
             }
           }
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const audioElement = document.getElementById('song');
+          const songTitleElement = document.getElementById('playSong');
+
+          if (audioElement && songTitleElement) { // Check if both elements are not null
+            audioElement.addEventListener('play', function() {
+              songTitleElement.classList.add('glowing-animation');
+            });
+
+            audioElement.addEventListener('pause', function() {
+              songTitleElement.classList.remove('glowing-animation');
+            });
+
+            audioElement.addEventListener('ended', function() {
+              songTitleElement.classList.remove('glowing-animation');
+            });
+          }
+        });
       </script>
       <p class="mb-5 sm:text-left">
         <img src="https://camo.githubusercontent.com/f4b2777899c034be15d3ffbdaa3c2ee08663ce3fdc542b418500787fd7d766e5/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f76696e69747368616864656f2e7376673f6c6162656c3d466f6c6c6f772532304076696e69747368616864656f267374796c653d736f6369616c" alt="A meaningful alt text" />

@@ -170,4 +170,14 @@ const { seo } = Astro.props;
   .post:hover .hover-underline {
     text-decoration-color: rgba(255, 255, 255, 1);
   }
+
+  @keyframes glowingText {
+    0% { filter: brightness(100%); }
+    50% { filter: brightness(150%); }
+    100% { filter: brightness(100%); }
+  }
+
+  .glowing-animation {
+    animation: glowingText 2s infinite;
+  }
 </style>

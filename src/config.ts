@@ -3,7 +3,6 @@ import type {
   SocialLink,
   Identity,
   AboutPageContent,
-  ProjectPageContent,
   BlogPageContent,
   HomePageContent,
   MusicPlaylist,
@@ -288,5 +287,45 @@ export const musicPlaylist: MusicPlaylist[] = [
   {
     title: "Saiyaara",
     url: "/music/saiyara.mp3",
+  },
+  {
+    title: "Chura Liya Hai Tumne",
+    url: "/music/churaliya.mp3",
+  },
+  {
+    title: "Tere Mast Mast Do Nain",
+    url: "/music/tere_mast_mast.mp3",
+  },
+  {
+    title: "Mere Rang Mein",
+    url: "/music/mere_rang_mein.mp3",
+  },
+  {
+    title: "Zarooori Tha",
+    url: "/music/zaroori_tha.mp3",
+  },
+  {
+    title: "Kana Yaari",
+    url: "/music/kana_yaari.mp3",
+  },
+  {
+    title: "Laree Choote",
+    url: "/music/laree_choote.mp3",
+  },
+  {
+    title: "Emptiness",
+    url: "/music/emptiness.mp3",
+  },
+  {
+    title: "Kun Faya Kun",
+    url: "/music/kun_faya_kun.mp3",
+  },
+  {
+    title: "Tere Bin Nahi Lagda",
+    url: "/music/atif_unplugged.mp3",
+  },
+  {
+    title: "Neele Neele Ambar Par",
+    url: "/music/neele_neele.mp3",
   }
 ];

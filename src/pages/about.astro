@@ -4,7 +4,9 @@ import Layout from "../layouts/Layout.astro";
 import { aboutPageContent, musicPlaylist } from "../config";
 import ResumeItem from "../components/ResumeItem.astro";
 import SocialLinkBox from "../components/SocialLinkBox.astro";
+import { Icon } from "astro-icon/components";
 
+const songs = musicPlaylist;
 const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length)];
 ---
 
@@ -52,8 +54,16 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
       </p>
       <p class="mb-5 sm:text-left">
         I prefer FM Radio over Spotify—call me old school, but there's something magical about tuning into RJs and their spontaneous charm, like playing 
-        <a href="#" id="playSong" class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">"{randomSong.title}"</a> 
-        while I'm debugging production issues. Offline moments are my luxury, and I treasure them deeply. I find peace in late-night strolls and enjoy the simple joys of life.
+        
+        Picture this: I'm deep into debugging production issues while the soothing melody of <a href="#" id="playSong" class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">"{randomSong.title}"</a> 
+        plays in the background. 
+
+        <br/><br/>
+        <strong><Icon name="mdi:music-circle-outline" width={25} height={25} class="icon-inline" />Here's a surprise for you</strong>—<span id="enjoySong"></span><span class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity" id="clickSong">click here to play </span> the highlighted song,
+        and <span class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity" id="refreshSong">refresh</span> the page to change tracks.
+        <br/><br/>
+        
+        Offline moments are my luxury, and I treasure them deeply. I find peace in late-night strolls and enjoy the simple joys of life.
       </p>
       <audio id="song" src={randomSong.url}></audio>
 
@@ -62,7 +72,7 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
           event.preventDefault(); // Prevent the default anchor action
           const song = document.getElementById('song');
           if (song instanceof HTMLAudioElement) { // Ensure the element is an HTMLAudioElement
-            song.volume = 0.4;
+            song.volume = 0.3;
             if (song.paused) {
               song.play();
             } else {
@@ -71,6 +81,29 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
             }
           }
         });
+
+        document.getElementById('refreshSong').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default action
+          window.location.reload(); // Refresh the page
+        });
+
+        document.getElementById('clickSong')?.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default anchor action
+          const song = document.getElementById('song');
+          const icon = document.querySelector('.icon-inline'); // Assuming your icon has the class 'icon-inline'
+          if (song instanceof HTMLAudioElement) { // Ensure the element is an HTMLAudioElement
+            song.volume = 0.3;
+            if (song.paused) {
+              song.play();
+              icon.classList.add('icon-spin'); // Add the spinning class when the song plays
+            } else {
+              song.pause();
+              song.currentTime = 0; // Optionally, reset the song to the start if clicked again
+              icon.classList.remove('icon-spin'); // Remove the spinning class when the song is paused
+            }
+          }
+        });
+
 
         document.addEventListener('DOMContentLoaded', function() {
           const audioElement = document.getElementById('song');
@@ -87,6 +120,26 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
 
             audioElement.addEventListener('ended', function() {
               songTitleElement.classList.remove('glowing-animation');
+            });
+          }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const audioElement = document.getElementById('song');
+          const clickSongElement = document.getElementById('clickSong');
+          const enjoySongElement = document.getElementById('enjoySong');
+
+          if (clickSongElement) {
+            clickSongElement.addEventListener('click', function() {
+              if (audioElement) {
+                if (audioElement.paused) {
+                  enjoySongElement.textContent = '';
+                  clickSongElement.textContent = 'click here to play';
+                } else {
+                  enjoySongElement.textContent = 'Enjoy the song, if you are not liking, ';
+                  clickSongElement.textContent = 'click here to stop';
+                }
+              }
             });
           }
         });

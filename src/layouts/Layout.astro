@@ -180,4 +180,19 @@ const { seo } = Astro.props;
   .glowing-animation {
     animation: glowingText 2s infinite;
   }
+
+  .icon-inline {
+    display: inline-block; /* Ensures the icon is inline */
+    vertical-align: middle; /* Centers the icon vertically with adjacent text */
+    margin-right: 4px; /* Optional: adds some space between the icon and the text */
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .icon-spin {
+    animation: spin 2s linear infinite;
+  }
 </style>

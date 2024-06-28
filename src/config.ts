@@ -310,7 +310,7 @@ export const musicPlaylist: MusicPlaylist[] = [
   },
   {
     title: "Laree Choote",
-    url: "/music/laree_choote.mp3",
+    url: "/music/laare_choote.mp3",
   },
   {
     title: "Emptiness",

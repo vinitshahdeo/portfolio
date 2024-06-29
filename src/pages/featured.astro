@@ -33,6 +33,8 @@ function formatDate(dateString: string): string {
               alt={post.image.url}
               width={100}
               height={100}
+              loading="lazy"
+              decoding="async"
               class={"rounded-lg w-[100px] h-[100px] object-cover"}
             />
             <div class="mt-4 sm:my-auto">

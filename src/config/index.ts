@@ -129,7 +129,8 @@ export const aboutPageContent: AboutPageContent = {
 export const featuredPageContent: FeaturedPageContent = {
   seo: {
     title: "Vinit Shahdeo - Featured Articles, Stories & Interviews",
-    description: "Explore a curated collection of articles, insightful stories, and exclusive interviews with Vinit Shahdeo, a Software Engineer and a GitHub Star from Bengaluru, India.",
+    description:
+      "Explore a curated collection of articles, insightful stories, and exclusive interviews with Vinit Shahdeo, a Software Engineer and a GitHub Star from Bengaluru, India.",
     image: "/img/vinitshahdeo-og-image.png",
   },
   subtitle: "Thoughts, stories, and interviews.",

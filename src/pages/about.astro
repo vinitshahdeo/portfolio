@@ -64,6 +64,8 @@ const randomSong =
         alt={aboutPageContent.about.image_l.alt}
         width={350}
         height={250}
+        loading="lazy"
+        decoding="async"
         class="w-[350px] h-[250px] object-cover rounded-xl sm:-rotate-6 sm:block"
       />
       <Image
@@ -71,6 +73,8 @@ const randomSong =
         alt={aboutPageContent.about.image_r.alt}
         width={150}
         height={250}
+        loading="lazy"
+        decoding="async"
         class="hidden w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto sm:block"
       />
     </div>

@@ -174,7 +174,6 @@ export const aboutPageContent: AboutPageContent = {
   },
 };
 
-
 // Blog (/blog)
 export const blogPageContent: BlogPageContent = {
   seo: {

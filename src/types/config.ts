@@ -49,7 +49,7 @@ export type ResumeItem = {
 export type MusicPlaylist = {
   title: string;
   url: string;
-}
+};
 
 export type AboutPageContent = {
   seo: SEOInfo;

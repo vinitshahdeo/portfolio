@@ -32,22 +32,31 @@ import Link from "../components/Link.astro";
       </div>
     </div>
     <p class="max-w-md mb-8">
-      Software Engineer specializing in building scalable, secure, and performant microservices using <strong>Node.js</strong> and <strong>Go</strong>.
-      <br/><br/>
-      Honored to be recognized as a <span class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">GitHub Star</span> twice from India and to have maintained open-source projects for Google Summer of Code (<strong>GSoC</strong>).
-      <br/><br/>
-      With a knack for building event-driven architectures, I balance coding with badminton and find peace in a sip of tea and poetry.
-      <br/><br/>
-      In a nutshell,
-      🏸 + 🍵 + 👨‍💻 = <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff] glowing-animation" href="/about">@vinitshahdeo</a> 
-          </p>
+      Software Engineer specializing in building scalable, secure, and
+      performant microservices using <strong>Node.js</strong> and <strong
+        >Go</strong
+      >.
+      <br /><br />
+      Honored to be recognized as a <span
+        class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+        >GitHub Star</span
+      > twice from India and to have maintained open-source projects for Google Summer
+      of Code (<strong>GSoC</strong>).
+      <br /><br />
+      With a knack for building event-driven architectures, I balance coding with
+      badminton and find peace in a sip of tea and poetry.
+      <br /><br />
+      In a nutshell, 🏸 + 🍵 + 👨‍💻 = <a
+        class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff] glowing-animation"
+        href="/about">@vinitshahdeo</a
+      >
+    </p>
     <div class="flex items-center gap-4 group w-fit">
-    
       {
         homePageContent.links.map((link) => (
           <Link text={link.title} href={link.url} external={link.external} />
         ))
-      }      
+      }
     </div>
   </section>
 </Layout>

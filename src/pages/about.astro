@@ -7,7 +7,8 @@ import SocialLinkBox from "../components/SocialLinkBox.astro";
 import { Icon } from "astro-icon/components";
 
 const songs = musicPlaylist;
-const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length)];
+const randomSong =
+  musicPlaylist[Math.floor(Math.random() * musicPlaylist.length)];
 ---
 
 <Layout seo={aboutPageContent.seo}>
@@ -16,143 +17,216 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
     <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
     <div class="mb-14">
       <p class="mb-5 sm:text-left">
-        Hello 👋,
-        I'm a Software Engineer who adores <span class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff]">JavaScript</span> and is passionate about open-source.
-        With a knack for building event-driven architecture, I balance code with badminton and find peace in a sip of tea and poetry.
+        Hello 👋, I'm a Software Engineer who adores <span
+          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff]"
+          >JavaScript</span
+        > and is passionate about open-source. With a knack for building event-driven
+        architecture, I balance code with badminton and find peace in a sip of tea
+        and poetry.
       </p>
       <p class="mb-5 sm:text-left">
-        My journey began fueled by curiosity about how Facebook worked, and it's led me here. 
-        I've worked as a Software Engineer II at <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://www.postman.com/" target="_blank">Postman</a>, graduated from <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://vit.ac.in/" target="_blank">VIT Vellore</a>, and now I'm building & scaling neo-banking solutions at <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://novo.co/" target="_blank">Novo</a>.
-        My notable contributions at Postman include building <a href="https://www.postman.com/product/postman-interceptor" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Interceptor</a> and <a href="https://www.postman.com/product/integrations" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Integrations</a>. 
-        Discover more about my Postman <a href="https://vinitshahdeo.dev/saying-goodbye-to-postman" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">journey</a> and valuable <a href="https://vinitshahdeo.dev/10-lessons-learned-as-software-engineer-at-postman" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">lessons</a>.
+        My journey began fueled by curiosity about how Facebook worked, and it's
+        led me here. I've worked as a Software Engineer II at <a
+          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          href="https://www.postman.com/"
+          target="_blank">Postman</a
+        >, graduated from <a
+          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          href="https://vit.ac.in/"
+          target="_blank">VIT Vellore</a
+        >, and now I'm building & scaling neo-banking solutions at <a
+          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          href="https://novo.co/"
+          target="_blank">Novo</a
+        >. My notable contributions at Postman include building <a
+          href="https://www.postman.com/product/postman-interceptor"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >Interceptor</a
+        > and <a
+          href="https://www.postman.com/product/integrations"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >Integrations</a
+        >. Discover more about my Postman <a
+          href="https://vinitshahdeo.dev/saying-goodbye-to-postman"
+          target="_blank"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >journey</a
+        > and valuable <a
+          href="https://vinitshahdeo.dev/10-lessons-learned-as-software-engineer-at-postman"
+          target="_blank"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >lessons</a
+        >.
       </p>
     </div>
     <div class="flex flex-col sm:flex-row">
-  <Image
-    src={aboutPageContent.about.image_l.url}
-    alt={aboutPageContent.about.image_l.alt}
-    width={350}
-    height={250}
-    class="w-[350px] h-[250px] object-cover rounded-xl sm:-rotate-6 sm:block"
-  />
-  <Image
-    src={aboutPageContent.about.image_r.url}
-    alt={aboutPageContent.about.image_r.alt}
-    width={150}
-    height={250}
-    class="hidden w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto sm:block"
-  />
-</div>
+      <Image
+        src={aboutPageContent.about.image_l.url}
+        alt={aboutPageContent.about.image_l.alt}
+        width={350}
+        height={250}
+        class="w-[350px] h-[250px] object-cover rounded-xl sm:-rotate-6 sm:block"
+      />
+      <Image
+        src={aboutPageContent.about.image_r.url}
+        alt={aboutPageContent.about.image_r.alt}
+        width={150}
+        height={250}
+        class="hidden w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto sm:block"
+      />
+    </div>
   </section>
 
   <section class="mt-10 max-w-2xl mx-auto px-6">
     <div class="mb-14">
       <p class="mb-5 sm:text-left">
-        <strong>Family</strong>, <strong>friends</strong>, and <strong>shared laughs</strong>? That's where my heart is. 
-        Whether it's sharing a cup of tea, listening to poetry, or simply enjoying their company, those moments mean a lot to me.
-        And, when I'm not in front of my screen, you'll likely spot me on the badminton court, rallying shuttlecocks.
+        <strong>Family</strong>, <strong>friends</strong>, and <strong
+          >shared laughs</strong
+        >? That's where my heart is. Whether it's sharing a cup of tea,
+        listening to poetry, or simply enjoying their company, those moments
+        mean a lot to me. And, when I'm not in front of my screen, you'll likely
+        spot me on the badminton court, rallying shuttlecocks.
       </p>
       <p class="mb-5 sm:text-left">
-        I prefer FM Radio over Spotify—call me old school, but there's something magical about tuning into RJs and their spontaneous charm. 
-        <br/><br/>
-        <strong>Picture this:</strong> I'm deep into debugging production issues while the soothing melody of <a href="#" id="playSong" class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]">"{randomSong.title}"</a> 
-        plays in the background. 
+        I prefer FM Radio over Spotify—call me old school, but there's something
+        magical about tuning into RJs and their spontaneous charm.
+        <br /><br />
+        <strong>Picture this:</strong> I'm deep into debugging production issues
+        while the soothing melody of <a
+          href="#"
+          id="playSong"
+          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          >"{randomSong.title}"</a
+        >
+        plays in the background.
 
-        <br/><br/>
-        <strong><Icon name="mdi:music-circle-outline" width={25} height={25} class="icon-inline" />Here's a surprise for you</strong>—<span id="enjoySong"></span><span class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity" id="clickSong">click here to play </span> the highlighted song,
-        and <span class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity" id="refreshSong">refresh</span> the page to change tracks.
-        <br/><br/>
-        
-        Offline moments are my luxury, and I treasure them deeply. I find peace in late-night strolls and enjoy the simple joys of life.
+        <br /><br />
+        <strong
+          ><Icon
+            name="mdi:music-circle-outline"
+            width={25}
+            height={25}
+            class="icon-inline"
+          />Here's a surprise for you</strong
+        >—<span id="enjoySong"></span><span
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          id="clickSong"
+          >click here to play
+        </span> the highlighted song, and <span
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          id="refreshSong">refresh</span
+        > the page to change tracks.
+        <br /><br />
+
+        Offline moments are my luxury, and I treasure them deeply. I find peace
+        in late-night strolls and enjoy the simple joys of life.
       </p>
       <audio id="song" src={randomSong.url}></audio>
 
       <script>
-        document.getElementById('playSong')?.addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent the default anchor action
-          const song = document.getElementById('song');
-          const icon = document.querySelector('.icon-inline'); 
-          const clickSongElement = document.getElementById('clickSong');
-          const enjoySongElement = document.getElementById('enjoySong');
-          if (song instanceof HTMLAudioElement) { // Ensure the element is an HTMLAudioElement
-            song.volume = 0.3;
-            if (song.paused) {
-              song.play();
-              icon &&icon.classList.add('icon-spin'); // Add the spinning class when the song plays
-              if (enjoySongElement) enjoySongElement.textContent = 'Enjoy the song, If you\'re not liking it, ';
-              if (clickSongElement)    clickSongElement.textContent = 'click here to stop';
-            } else {
-              song.pause();
-              song.currentTime = 0; // Optionally, reset the song to the start if clicked again
-              icon && icon.classList.remove('icon-spin'); // Remove the spinning class when the song is paused
-              if (enjoySongElement) enjoySongElement.textContent = '';
-              if (clickSongElement)  clickSongElement.textContent = 'click here to play';
+        document
+          .getElementById("playSong")
+          ?.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default anchor action
+            const song = document.getElementById("song");
+            const icon = document.querySelector(".icon-inline");
+            const clickSongElement = document.getElementById("clickSong");
+            const enjoySongElement = document.getElementById("enjoySong");
+            if (song instanceof HTMLAudioElement) {
+              // Ensure the element is an HTMLAudioElement
+              song.volume = 0.3;
+              if (song.paused) {
+                song.play();
+                icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
+                if (enjoySongElement)
+                  enjoySongElement.textContent =
+                    "Enjoy the song, If you're not liking it, ";
+                if (clickSongElement)
+                  clickSongElement.textContent = "click here to stop";
+              } else {
+                song.pause();
+                song.currentTime = 0; // Optionally, reset the song to the start if clicked again
+                icon && icon.classList.remove("icon-spin"); // Remove the spinning class when the song is paused
+                if (enjoySongElement) enjoySongElement.textContent = "";
+                if (clickSongElement)
+                  clickSongElement.textContent = "click here to play";
+              }
             }
-          }
-        });
+          });
 
-        document.getElementById('refreshSong')?.addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent the default action
-          window.location.reload(); // Refresh the page
-        });
+        document
+          .getElementById("refreshSong")
+          ?.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default action
+            window.location.reload(); // Refresh the page
+          });
 
-        document.getElementById('clickSong')?.addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent the default anchor action
-          const song = document.getElementById('song');
-          const icon = document.querySelector('.icon-inline'); // Assuming your icon has the class 'icon-inline'
-          const clickSongElement = document.getElementById('clickSong');
-          const enjoySongElement = document.getElementById('enjoySong');
-          if (song instanceof HTMLAudioElement) { // Ensure the element is an HTMLAudioElement
-            song.volume = 0.3;
-            if (song.paused) {
-              song.play();
-              icon &&icon.classList.add('icon-spin'); // Add the spinning class when the song plays
-              if (enjoySongElement) enjoySongElement.textContent = 'Enjoy the song, If you\'re not liking it, ';
-              if (clickSongElement)    clickSongElement.textContent = 'click here to stop';
-            } else {
-              song.pause();
-              song.currentTime = 0; // Optionally, reset the song to the start if clicked again
-              icon && icon.classList.remove('icon-spin'); // Remove the spinning class when the song is paused
-              if (enjoySongElement) enjoySongElement.textContent = '';
-              if (clickSongElement)  clickSongElement.textContent = 'click here to play';
+        document
+          .getElementById("clickSong")
+          ?.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default anchor action
+            const song = document.getElementById("song");
+            const icon = document.querySelector(".icon-inline"); // Assuming your icon has the class 'icon-inline'
+            const clickSongElement = document.getElementById("clickSong");
+            const enjoySongElement = document.getElementById("enjoySong");
+            if (song instanceof HTMLAudioElement) {
+              // Ensure the element is an HTMLAudioElement
+              song.volume = 0.3;
+              if (song.paused) {
+                song.play();
+                icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
+                if (enjoySongElement)
+                  enjoySongElement.textContent =
+                    "Enjoy the song, If you're not liking it, ";
+                if (clickSongElement)
+                  clickSongElement.textContent = "click here to stop";
+              } else {
+                song.pause();
+                song.currentTime = 0; // Optionally, reset the song to the start if clicked again
+                icon && icon.classList.remove("icon-spin"); // Remove the spinning class when the song is paused
+                if (enjoySongElement) enjoySongElement.textContent = "";
+                if (clickSongElement)
+                  clickSongElement.textContent = "click here to play";
+              }
             }
+          });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const audioElement = document.getElementById("song");
+          const songTitleElement = document.getElementById("playSong");
+
+          if (audioElement && songTitleElement) {
+            // Check if both elements are not null
+            audioElement.addEventListener("play", function () {
+              songTitleElement.classList.add("glowing-animation");
+            });
+
+            audioElement.addEventListener("pause", function () {
+              songTitleElement.classList.remove("glowing-animation");
+            });
+
+            audioElement.addEventListener("ended", function () {
+              songTitleElement.classList.remove("glowing-animation");
+            });
           }
         });
 
-
-        document.addEventListener('DOMContentLoaded', function() {
-          const audioElement = document.getElementById('song');
-          const songTitleElement = document.getElementById('playSong');
-
-          if (audioElement && songTitleElement) { // Check if both elements are not null
-            audioElement.addEventListener('play', function() {
-              songTitleElement.classList.add('glowing-animation');
-            });
-
-            audioElement.addEventListener('pause', function() {
-              songTitleElement.classList.remove('glowing-animation');
-            });
-
-            audioElement.addEventListener('ended', function() {
-              songTitleElement.classList.remove('glowing-animation');
-            });
-          }
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-          const audioElement = document.getElementById('song');
-          const clickSongElement = document.getElementById('clickSong');
-          const enjoySongElement = document.getElementById('enjoySong');
+        document.addEventListener("DOMContentLoaded", function () {
+          const audioElement = document.getElementById("song");
+          const clickSongElement = document.getElementById("clickSong");
+          const enjoySongElement = document.getElementById("enjoySong");
 
           if (clickSongElement) {
-            clickSongElement.addEventListener('click', function() {
+            clickSongElement.addEventListener("click", function () {
               if (audioElement instanceof HTMLAudioElement) {
                 if (audioElement.paused) {
-                  if (enjoySongElement) enjoySongElement.textContent = '';
-                  clickSongElement.textContent = 'click here to play';
+                  if (enjoySongElement) enjoySongElement.textContent = "";
+                  clickSongElement.textContent = "click here to play";
                 } else {
-                  if (enjoySongElement) enjoySongElement.textContent = 'Enjoy the song, If you\'re not liking it, ';
-                  clickSongElement.textContent = 'click here to stop';
+                  if (enjoySongElement)
+                    enjoySongElement.textContent =
+                      "Enjoy the song, If you're not liking it, ";
+                  clickSongElement.textContent = "click here to stop";
                 }
               }
             });
@@ -160,12 +234,27 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
         });
       </script>
       <p class="mb-5 sm:text-left">
-        <img src="https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social" alt="GitHub Followers | @vinitshahdeo" />
+        <img
+          src="https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social"
+          alt="GitHub Followers | @vinitshahdeo"
+        />
       </p>
       <p class="mb-5 sm:text-left">
-        <strong>Open source?</strong> It's a world I'm deeply involved in. I've had the privilege of mentoring in <a href="https://blog.postman.com/author/vinit-shahdeo/" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">GSoC</a> at AsyncAPI and Postman. I'm truly honored to have been recognized as a 
-        <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://stars.github.com/profiles/vinitshahdeo/" target="_blank">GitHub Star</a> twice, representing India. 
-        I'm always available for a 1:1 chat on <a href="https://topmate.io/vinitshahdeo" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Topmate</a>.   
+        <strong>Open source?</strong> It's a world I'm deeply involved in. I've had
+        the privilege of mentoring in <a
+          href="https://blog.postman.com/author/vinit-shahdeo/"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >GSoC</a
+        > at AsyncAPI and Postman. I'm truly honored to have been recognized as a
+        <a
+          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          href="https://stars.github.com/profiles/vinitshahdeo/"
+          target="_blank">GitHub Star</a
+        > twice, representing India. I'm always available for a 1:1 chat on <a
+          href="https://topmate.io/vinitshahdeo"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >Topmate</a
+        >.
       </p>
     </div>
   </section>
@@ -174,7 +263,10 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
     <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
     <div>
       <div class="mb-6">
-        My tech toolbox includes <strong>Node.js</strong>, <strong>Go</strong>, <strong>Kafka</strong>, <strong>GraphQL</strong>, <strong>REST</strong>, <strong>AWS</strong>, and much more – but my true love? APIs, of course!
+        My tech toolbox includes <strong>Node.js</strong>, <strong>Go</strong>, <strong
+          >Kafka</strong
+        >, <strong>GraphQL</strong>, <strong>REST</strong>, <strong>AWS</strong
+        >, and much more – but my true love? APIs, of course!
       </div>
       <div class="grid grid-cols-1 group">
         {aboutPageContent.work.items.map((item) => <ResumeItem {...item} />)}
@@ -185,13 +277,34 @@ const randomSong = musicPlaylist[Math.floor(Math.random() * musicPlaylist.length
     <h2 class="mb-8 sm:mb-0 opacity-60">Connect</h2>
     <div>
       <div class="mb-6">
-        Come find me on <a href="https://twitter.com/Vinit_Shahdeo" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Twitter</a> and <a href="https://www.linkedin.com/in/vinitshahdeo" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">LinkedIn</a> – I'm excited to connect!
-        You can explore my professional side on <a href="https://peerlist.io/vinitshahdeo" target="_blank" class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity">Peerlist</a>.
-        And if you're curious about my thoughts, swing by my blog 
-        <a class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]" href="https://www.netlify.com" target="_blank">vinitshahdeo.dev</a>. 
+        Come find me on <a
+          href="https://twitter.com/Vinit_Shahdeo"
+          target="_blank"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >Twitter</a
+        > and <a
+          href="https://www.linkedin.com/in/vinitshahdeo"
+          target="_blank"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >LinkedIn</a
+        > – I'm excited to connect! You can explore my professional side on <a
+          href="https://peerlist.io/vinitshahdeo"
+          target="_blank"
+          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          >Peerlist</a
+        >. And if you're curious about my thoughts, swing by my blog
+        <a
+          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          href="https://www.netlify.com"
+          target="_blank">vinitshahdeo.dev</a
+        >.
       </div>
       <div class="grid grid-cols-2 gap-2 group">
-        {aboutPageContent.connect.links.map((item) => <SocialLinkBox {...item} />)}
+        {
+          aboutPageContent.connect.links.map((item) => (
+            <SocialLinkBox {...item} />
+          ))
+        }
       </div>
     </div>
   </section>

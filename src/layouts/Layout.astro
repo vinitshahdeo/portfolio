@@ -13,11 +13,11 @@ const { seo } = Astro.props;
 
 <script>
   const linkMenuButton = document.getElementById(
-    "link-menu-button"
+    "link-menu-button",
   ) as HTMLButtonElement;
   const linkMenu = document.getElementById("link-menu") as HTMLDivElement;
   const openIndicator = document.getElementById(
-    "open-indicator"
+    "open-indicator",
   ) as HTMLSpanElement;
 
   linkMenuButton.addEventListener("click", () => {
@@ -136,7 +136,8 @@ const { seo } = Astro.props;
 </html>
 
 <style is:global>
-  @import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Roboto+Slab:wght@100..900&family=Stint+Ultra+Expanded&family=Wellfleet&display=swap');  html {
+  @import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Roboto+Slab:wght@100..900&family=Stint+Ultra+Expanded&family=Wellfleet&display=swap");
+  html {
     font-family: "Wellfleet", serif;
     background: #000000;
   }
@@ -172,9 +173,15 @@ const { seo } = Astro.props;
   }
 
   @keyframes glowingText {
-    0% { filter: brightness(100%); }
-    50% { filter: brightness(150%); }
-    100% { filter: brightness(100%); }
+    0% {
+      filter: brightness(100%);
+    }
+    50% {
+      filter: brightness(150%);
+    }
+    100% {
+      filter: brightness(100%);
+    }
   }
 
   .glowing-animation {
@@ -188,15 +195,20 @@ const { seo } = Astro.props;
   }
 
   @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .icon-spin {
     animation: spin 2s linear infinite;
   }
 
-  #clickSong, #refreshSong {
+  #clickSong,
+  #refreshSong {
     cursor: pointer;
   }
 </style>

@@ -1,6 +1,4 @@
-import type {
-  MusicPlaylist,
-} from "../types/config";
+import type { MusicPlaylist } from "../types/config";
 
 export const musicPlaylist: MusicPlaylist[] = [
   {
@@ -154,5 +152,5 @@ export const musicPlaylist: MusicPlaylist[] = [
   {
     title: "Kali Kali Zulfon Ke Phande Na Dalo",
     url: "/music/kali_kali.mp3",
-  }
+  },
 ];

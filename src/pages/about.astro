@@ -117,9 +117,9 @@ import { Icon } from "astro-icon/components";
           class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
           id="clickSong"
           >click here to play
-        </span> the highlighted song, and <span
+        </span> the current song, and <span
           class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          id="refreshSong">click here</span
+          id="refreshSong">hit shuffle</span
         > to change tracks.
         <br /><br />
 
@@ -327,7 +327,7 @@ import { Icon } from "astro-icon/components";
                 icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
                 if (enjoySongElement)
                   enjoySongElement.textContent =
-                    "Welcome to my radio station. Scroll further, relax, and enjoy the music! If you're not liking it, ";
+                    "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ";
                 if (clickSongElement)
                   clickSongElement.textContent = "click here to stop";
               } else {

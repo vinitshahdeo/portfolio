@@ -37,14 +37,14 @@ export const navBarLinks: NavBarLink[] = [
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Vinit Shahdeo | Business Card",
+    title: "Vinit Shahdeo | Portfolio",
     description:
-      "Senior Software Engineer specializing in building scalable, secure and performant backend microservices in Node.js and Go.",
+      "Explore the portfolio of Vinit Shahdeo, a Senior Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
     image: identity.logo,
   },
   role: "Senior Backend Engineer",
   description:
-    "Software Engineer specializing in building scalable, secure and performant backend microservices in Node.js and Go. Honoured to be recognized as a GitHub Star twice from India.  With a knack for building event-driven architecture, I balance code with badminton and find peace in a sip of tea and poetry.",
+    "Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go. Honored to be recognized as a GitHub Star twice from India. With a knack for building event-driven architecture, I balance code with badminton and find peace in a sip of tea and poetry.",
   socialLinks: socialLinks,
   homeSocialLinks: homeSocialLinks,
   links: [
@@ -68,16 +68,16 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Vinit Shahdeo",
+    title: "About Vinit Shahdeo | Senior Software Engineer & GitHub Star",
     description:
-      "Senior Software Engineer at Novo | Previously at Postman | GitHub Star from India | Node.js, Go, Microservices, Kafka, GraphQL, REST, AWS",
+      "Discover Vinit Shahdeo, a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
     image: identity.logo,
   },
   subtitle: "Thanks for stopping by! Here's a bit about me.",
   about: {
     description: `
       Senior Software Engineer at Novo | Previously at Postman | GitHub Star from India | Node.js, Go, Microservices, Kafka, GraphQL, REST, AWS
-    `, // Markdown is supported
+    `,
     image_l: {
       url: "/img/vinit_shahdeo.jpg",
       alt: "Vinit Shahdeo Profile Photo",
@@ -88,7 +88,7 @@ export const aboutPageContent: AboutPageContent = {
     },
   },
   work: {
-    description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
+    description: `I'm a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. I'm a GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.`,
     items: [
       {
         title: "Senior Software Engineer",
@@ -100,7 +100,7 @@ export const aboutPageContent: AboutPageContent = {
         date: "Aug 2023 - Present",
       },
       {
-        title: "Software Engineer  II",
+        title: "Software Engineer II",
         company: {
           name: "Postman",
           image: "/logo/postman.webp",
@@ -120,19 +120,19 @@ export const aboutPageContent: AboutPageContent = {
     ],
   },
   connect: {
-    description: `I'm always interested in meeting new people and learning new things. Feel free to connect with me on any of the following platforms.`, // Markdown is supported
+    description: `I'm always interested in meeting new people and learning new things. Feel free to connect with me on any of the following platforms.`,
     links: socialLinks,
   },
 };
 
-// Blog (/blog)
+// Featured (/featured)
 export const featuredPageContent: FeaturedPageContent = {
   seo: {
-    title: "Featured | Vinit Shahdeo",
-    description: "Featured articles and stories from Vinit Shahdeo.",
+    title: "Vinit Shahdeo - Featured Articles, Stories & Interviews",
+    description: "Explore a curated collection of articles, insightful stories, and exclusive interviews with Vinit Shahdeo, a Software Engineer and a GitHub Star from Bengaluru, India.",
     image: "/img/vinitshahdeo-og-image.png",
   },
-  subtitle: "Thoughts, stories and interviews.",
+  subtitle: "Thoughts, stories, and interviews.",
 };
 
 export * from "./music";

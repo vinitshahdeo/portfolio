@@ -6,7 +6,11 @@ import { featuredPosts } from "../config";
 
 // Function to format date
 function formatDate(dateString: string): string {
-  const options: Intl.DateTimeFormatOptions = { day: "numeric", month: "short", year: "numeric" };
+  const options: Intl.DateTimeFormatOptions = {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  };
   return new Date(dateString).toLocaleDateString("en-US", options);
 }
 ---

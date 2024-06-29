@@ -121,8 +121,8 @@ const randomSong =
           >click here to play
         </span> the highlighted song, and <span
           class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          id="refreshSong">refresh</span
-        > the page to change tracks.
+          id="refreshSong">click here</span
+        > to change tracks.
         <br /><br />
 
         Offline moments are my luxury, and I treasure them deeply. I find peace
@@ -131,7 +131,7 @@ const randomSong =
       <audio id="song" src={musicPlaylist[0].url}></audio>
 
       <script>
-        document.addEventListener("DOMContentLoaded", () => {
+        function randomSong() {
           const musicPlaylist = [
             {
               title: "O Mere Dil Ke Chain",
@@ -307,6 +307,10 @@ const randomSong =
           if (playSongElement) {
             playSongElement.textContent = `"${randomSong.title}"`;
           }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+          randomSong();
         });
 
         document
@@ -343,7 +347,7 @@ const randomSong =
           .getElementById("refreshSong")
           ?.addEventListener("click", function (event) {
             event.preventDefault(); // Prevent the default action
-            window.location.reload(); // Refresh the page
+            randomSong();
           });
 
         document

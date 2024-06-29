@@ -1,4 +1,4 @@
-# Portfolio — Vinit Shahdeo
+# Portfolio — Vinit Shahdeo [![Built with Astro](https://astro.badg.es/v2/built-with-astro/small.svg)](https://astro.build)
 
 ![Portfolio — Vinit Shahdeo](./.assets/vinitshahdeo-portfolio-cover.png)
 

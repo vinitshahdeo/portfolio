@@ -80,11 +80,11 @@ export const aboutPageContent: AboutPageContent = {
     `,
     image_l: {
       url: "/img/vinit_shahdeo.jpg",
-      alt: "Vinit Shahdeo Profile Photo",
+      alt: "Vinit Shahdeo",
     },
     image_r: {
       url: "/img/vinit-shahdeo-square-1.jpg",
-      alt: "Vinit Shahdeo Profile Photo",
+      alt: "Vinit Shahdeo",
     },
   },
   work: {

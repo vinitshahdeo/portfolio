@@ -7,10 +7,8 @@ import netlify from "@astrojs/netlify";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), icon()],
-  output: "server",
-  adapter: netlify({
-    edgeMiddleware: true,
-  }),
+  output: "hybrid",
+  adapter: netlify(),
   vite: {
     resolve: {
       alias: {

@@ -131,7 +131,7 @@ const randomSong =
       <audio id="song" src={musicPlaylist[0].url}></audio>
 
       <script>
-        document.addEventListener("DOMContentLoaded", (event) => {
+        document.addEventListener("DOMContentLoaded", () => {
           const musicPlaylist = [
             {
               title: "O Mere Dil Ke Chain",
@@ -298,9 +298,15 @@ const randomSong =
           const randomIndex = Math.floor(Math.random() * musicPlaylist.length);
           const randomSong = musicPlaylist[randomIndex];
 
-          // Update the audio src with the random song URL
-          document.getElementById("song").src = randomSong.url;
-          document.getElementById("playSong").textContent = randomSong.title;
+          const songElement = document.getElementById("song");
+          if (songElement instanceof HTMLAudioElement) {
+            songElement.src = randomSong.url;
+          }
+
+          const playSongElement = document.getElementById("playSong");
+          if (playSongElement) {
+            playSongElement.textContent = `"${randomSong.title}"`;
+          }
         });
 
         document

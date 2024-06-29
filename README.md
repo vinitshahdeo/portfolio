@@ -1,9 +1,6 @@
 <div align="center">
     <h1 align="center">Portfolio — Vinit Shahdeo</h1>
     <img src="https://astro.badg.es/v2/built-with-astro/small.svg" alt="Built with Astro" />
-    <p>
-        <strong>🏸 + 🍵 + 👨‍💻 = <code><a href="https://github.com/vinitshahdeo">@vinitshahdeo</a></code></strong>
-    </p>
     <img src="./.assets/vinitshahdeo-portfolio-cover.png" alt="Vinit Shahdeo Portfolio" />
 </div>
 
@@ -140,4 +137,9 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 
 
 --->
-
+<br/>
+<br/>
+<p align="center">
+    <strong>🏸 + 🍵 + 👨‍💻 = <code><a href="https://github.com/vinitshahdeo">@vinitshahdeo</a></code></strong>
+</p>
+<br/>

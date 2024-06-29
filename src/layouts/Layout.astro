@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 import { navBarLinks, identity } from "../config";
 import type { SEOInfo } from "../types/config";
+import "@styles/base.css";
 
 interface Props {
   seo: SEOInfo;
@@ -58,6 +59,14 @@ const { seo } = Astro.props;
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
     <meta property="og:image" content={seo.image} />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
   </head>
   <body>
     <header>
@@ -134,81 +143,3 @@ const { seo } = Astro.props;
     <footer></footer>
   </body>
 </html>
-
-<style is:global>
-  @import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Roboto+Slab:wght@100..900&family=Stint+Ultra+Expanded&family=Wellfleet&display=swap");
-  html {
-    font-family: "Wellfleet", serif;
-    background: #000000;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    color: #eaedf3;
-  }
-
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  }
-
-  .hover-underline {
-    text-decoration: underline 1px rgba(0, 0, 0, 0);
-    text-underline-offset: 5px;
-    transition: text-decoration-color 300ms;
-  }
-
-  .post:hover .hover-underline {
-    text-decoration-color: rgba(255, 255, 255, 1);
-  }
-
-  @keyframes glowingText {
-    0% {
-      filter: brightness(100%);
-    }
-    50% {
-      filter: brightness(150%);
-    }
-    100% {
-      filter: brightness(100%);
-    }
-  }
-
-  .glowing-animation {
-    animation: glowingText 2s infinite;
-  }
-
-  .icon-inline {
-    display: inline-block; /* Ensures the icon is inline */
-    vertical-align: middle; /* Centers the icon vertically with adjacent text */
-    margin-right: 4px; /* Optional: adds some space between the icon and the text */
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .icon-spin {
-    animation: spin 2s linear infinite;
-  }
-
-  #clickSong,
-  #refreshSong {
-    cursor: pointer;
-  }
-</style>

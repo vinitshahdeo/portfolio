@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Roboto+Slab:wght@100..900&family=Stint+Ultra+Expanded&family=Wellfleet&display=swap");
+  html {
+    font-family: "Wellfleet", serif;
+    background: #000000;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    color: #eaedf3;
+  }
+
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+
+  .hover-underline {
+    text-decoration: underline 1px rgba(0, 0, 0, 0);
+    text-underline-offset: 5px;
+    transition: text-decoration-color 300ms;
+  }
+
+  .post:hover .hover-underline {
+    text-decoration-color: rgba(255, 255, 255, 1);
+  }
+
+  @keyframes glowingText {
+    0% {
+      filter: brightness(100%);
+    }
+    50% {
+      filter: brightness(150%);
+    }
+    100% {
+      filter: brightness(100%);
+    }
+  }
+
+  .glowing-animation {
+    animation: glowingText 2s infinite;
+  }
+
+  .icon-inline {
+    display: inline-block; /* Ensures the icon is inline */
+    vertical-align: middle; /* Centers the icon vertically with adjacent text */
+    margin-right: 4px; /* Optional: adds some space between the icon and the text */
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .icon-spin {
+    animation: spin 2s linear infinite;
+  }
+
+  #clickSong,
+  #refreshSong {
+    cursor: pointer;
+  }

@@ -14,4 +14,11 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
+  vite: {
+    resolve: {
+      alias: {
+        '@styles': '/src/styles',
+      },
+    },
+  },
 });

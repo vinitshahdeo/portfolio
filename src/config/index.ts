@@ -130,7 +130,7 @@ export const featuredPageContent: FeaturedPageContent = {
   seo: {
     title: "Featured | Vinit Shahdeo",
     description: "Featured articles and stories from Vinit Shahdeo.",
-    image: identity.logo,
+    image: "/img/vinitshahdeo-og-image.png",
   },
   subtitle: "Thoughts, stories and interviews.",
 };

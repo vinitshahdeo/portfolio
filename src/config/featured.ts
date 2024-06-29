@@ -40,7 +40,7 @@ export const featuredPosts: FeaturedPost[] = [
       url: "/media/vinitshahdeo-opensource.jpg",
       alt: "Vinit Shahdeo - OpenSourceForU",
     },
-    publisher: "OpenSource4U",
+    publisher: "Open Source 4 U",
   },
   {
     title: "Vinit Shahdeo sharing his IT career journey",

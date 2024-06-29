@@ -8,7 +8,9 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   integrations: [tailwind(), icon()],
   output: "hybrid",
-  adapter: netlify(),
+  adapter: netlify({
+    imageCDN: false,
+  }),
   vite: {
     resolve: {
       alias: {

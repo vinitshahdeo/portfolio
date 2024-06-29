@@ -2,6 +2,8 @@
 
 Personal Portfolio using Astro
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys)
+
 ## 🚀 Getting started
 
 1. Clone/download the repo

@@ -1,5 +1,7 @@
 # Portfolio — Vinit Shahdeo
 
+![Portfolio — Vinit Shahdeo](./.assets/vinitshahdeo-portfolio-cover.png)
+
 Welcome to the repository hosting the source code of my portfolio to showcase my work and skills using [Astro](https://astro.build/) and [Tailwind](https://tailwindcss.com/) CSS.
 
 The site is live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and it's deployed on Netlify.

@@ -5,9 +5,6 @@ import { aboutPageContent, musicPlaylist } from "../config";
 import ResumeItem from "../components/ResumeItem.astro";
 import SocialLinkBox from "../components/SocialLinkBox.astro";
 import { Icon } from "astro-icon/components";
-
-const randomSong =
-  musicPlaylist[Math.floor(Math.random() * musicPlaylist.length)];
 ---
 
 <Layout seo={aboutPageContent.seo}>

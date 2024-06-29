@@ -14,6 +14,8 @@ export const identity: Identity = {
   email: "vinishahdeo@gmail.com",
 };
 
+export const openGraphImage: string = "/img/vinitshahdeo-og-image.png";
+
 export const navBarLinks: NavBarLink[] = [
   {
     title: "Home",
@@ -40,7 +42,7 @@ export const homePageContent: HomePageContent = {
     title: "Vinit Shahdeo | Portfolio",
     description:
       "Explore the portfolio of Vinit Shahdeo, a Senior Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
-    image: identity.logo,
+    image: openGraphImage,
   },
   role: "Senior Backend Engineer",
   description:
@@ -71,7 +73,7 @@ export const aboutPageContent: AboutPageContent = {
     title: "About Vinit Shahdeo | Senior Software Engineer & GitHub Star",
     description:
       "Discover Vinit Shahdeo, a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
-    image: identity.logo,
+    image: openGraphImage,
   },
   subtitle: "Thanks for stopping by! Here's a bit about me.",
   about: {
@@ -131,7 +133,7 @@ export const featuredPageContent: FeaturedPageContent = {
     title: "Vinit Shahdeo - Featured Articles, Stories & Interviews",
     description:
       "Explore a curated collection of articles, insightful stories, and exclusive interviews with Vinit Shahdeo, a Software Engineer and a GitHub Star from Bengaluru, India.",
-    image: "/img/vinitshahdeo-og-image.png",
+    image: openGraphImage,
   },
   subtitle: "Thoughts, stories, and interviews.",
 };

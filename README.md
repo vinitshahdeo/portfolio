@@ -1,6 +1,6 @@
 # Portfolio — Vinit Shahdeo
 
-Welcome to the repository hosting the source code of my personal portfolio to showcase my work and skills using [Astro](https://astro.build/) and [Tailwind](https://tailwindcss.com/) CSS.
+Welcome to the repository hosting the source code of my portfolio to showcase my work and skills using [Astro](https://astro.build/) and [Tailwind](https://tailwindcss.com/) CSS.
 
 The site is live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and it's deployed on Netlify.
 
@@ -44,7 +44,7 @@ All commands are run from the root of the project, from a terminal:
 The portfolio contains three main pages:
 
 - **Home**: A welcome page with my brief introduction.
-- **About**: Detailed information about me, my skills and experience.
+- **About**: Detailed information about me, my skills, and experience.
 - **Featured**: My thoughts, stories, and interviews.
 
 
@@ -54,7 +54,7 @@ This is inspired by [Minimal portfolio template](https://astro.build/themes/deta
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENCSE) file for details.
 
 ## 📫 Contact
 

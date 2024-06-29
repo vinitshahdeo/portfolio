@@ -1,11 +1,12 @@
 import type {
   NavBarLink,
-  SocialLink,
   Identity,
   AboutPageContent,
-  BlogPageContent,
+  FeaturedPageContent,
   HomePageContent,
 } from "../types/config";
+
+import { socialLinks, homeSocialLinks } from "./social";
 
 export const identity: Identity = {
   name: "Vinit Shahdeo",
@@ -27,59 +28,9 @@ export const navBarLinks: NavBarLink[] = [
     url: "https://vinitshahdeo.dev/",
     external: true,
   },
-  // {
-  //   title: "Projects",
-  //   url: "/projects",
-  // },
-  // {
-  //   title: "Blog",
-  //   url: "/blog",
-  // },
-];
-
-export const socialLinks: SocialLink[] = [
   {
-    title: "GitHub",
-    url: "https://github.com/vinitshahdeo",
-    icon: "mdi:github",
-    external: true,
-  },
-  {
-    title: "Twitter",
-    url: "https://x.com/vinit_shahdeo",
-    icon: "mdi:twitter",
-    external: true,
-  },
-  {
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/vinitshahdeo",
-    icon: "mdi:linkedin",
-    external: true,
-  },
-  {
-    title: "Instagram",
-    url: "https://www.instagram.com/vinitshahdeo",
-    icon: "mdi:instagram",
-    external: true,
-  },
-];
-
-export const homeSocialLinks: SocialLink[] = [
-  {
-    title: "GitHub",
-    url: "https://github.com/vinitshahdeo",
-    icon: "mdi:github",
-    external: true,
-  },
-  {
-    title: "Twitter",
-    url: "https://x.com/vinit_shahdeo",
-    icon: "mdi:twitter",
-  },
-  {
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/vinitshahdeo",
-    icon: "mdi:linkedin",
+    title: "Featured",
+    url: "/featured",
   },
 ];
 
@@ -175,13 +126,15 @@ export const aboutPageContent: AboutPageContent = {
 };
 
 // Blog (/blog)
-export const blogPageContent: BlogPageContent = {
+export const featuredPageContent: FeaturedPageContent = {
   seo: {
     title: "Featured | Vinit Shahdeo",
     description: "Featured articles and stories from Vinit Shahdeo.",
     image: identity.logo,
   },
-  subtitle: "Thoughts, stories and ideas.",
+  subtitle: "Thoughts, stories and interviews.",
 };
 
 export * from "./music";
+export * from "./social";
+export * from "./featured";

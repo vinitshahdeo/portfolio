@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import { featuredPageContent } from "../../config";
+import { featuredPosts } from "../../config";
+
+// Function to format date
+function formatDate(dateString: string): string {
+  const options: Intl.DateTimeFormatOptions = { day: "numeric", month: "short", year: "numeric" };
+  return new Date(dateString).toLocaleDateString("en-US", options);
+}
+---
+
+<Layout seo={featuredPageContent.seo}>
+  <section class="mt-10 max-w-2xl mx-auto px-6">
+    <h1 class="font-bold text-3xl mb-1">Featured Articles</h1>
+    <p class="opacity-60 mb-14">{featuredPageContent.subtitle}</p>
+
+    <div class="grid grid-cols-1 gap-10 sm:gap-6 mb-10">
+      {
+        featuredPosts.map((post) => (
+          <a
+            href={post.url}
+            class=" sm:flex sm:flex-row-reverse sm:justify-between sm:gap-6 post"
+            target="_blank"
+          >
+            <Image
+              src={post.image.url}
+              alt={post.image.url}
+              width={100}
+              height={100}
+              class={"rounded-lg w-[100px] h-[100px] object-cover"}
+            />
+            <div class="mt-4 sm:my-auto">
+              <p class="opacity-60 mb-2">
+                {formatDate(post.date)} · {post.publisher}
+              </p>
+              <h3 class="font-medium hover-underline">{post.title}</h3>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

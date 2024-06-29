@@ -89,7 +89,20 @@ export type ProjectPageContent = {
   projects: Project[];
 };
 
-export type BlogPageContent = {
+export type FeaturedPageContent = {
   seo: SEOInfo;
   subtitle: string;
+};
+
+export type FeaturedPost = {
+  title: string;
+  description: string;
+  image: {
+    url: string;
+    alt: string;
+  };
+  date: string;
+  url: string;
+  author: string;
+  publisher: string;
 };

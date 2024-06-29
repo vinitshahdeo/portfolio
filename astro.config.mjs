@@ -17,7 +17,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@styles': '/src/styles',
+        "@styles": "/src/styles",
       },
     },
   },

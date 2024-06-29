@@ -137,9 +137,14 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 
 
 --->
+
 <br/>
 <br/>
-<p align="center">
-    <strong>🏸 + 🍵 + 👨‍💻 = <code><a href="https://github.com/vinitshahdeo">@vinitshahdeo</a></code></strong>
-</p>
+<div align="center">
+    <a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJmbWl1b243aGNodWhqb3gydHdzemloaDhlbnUzdjZ1MHJjOWNhcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hXMGQqJFlIQMOjpsKC/giphy.webp" alt="Buy me a coffee - Vinit Shahdeo" width="100"  height="100"/></a><br/>
+    <strong>🏸 + 🍵 + 👨‍💻 = <a href="https://github.com/vinitshahdeo">@vinitshahdeo</a></strong>
+    <br/>
+    <br/>
+</div>
 <br/>

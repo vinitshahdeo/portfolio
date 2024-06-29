@@ -140,7 +140,7 @@ const randomSong =
                 icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
                 if (enjoySongElement)
                   enjoySongElement.textContent =
-                    "Enjoy the song, If you're not liking it, ";
+                    "Welcome to my radio station. Scroll further, relax, and enjoy the music! If you're not liking it, ";
                 if (clickSongElement)
                   clickSongElement.textContent = "click here to stop";
               } else {
@@ -194,19 +194,23 @@ const randomSong =
         document.addEventListener("DOMContentLoaded", function () {
           const audioElement = document.getElementById("song");
           const songTitleElement = document.getElementById("playSong");
+          const icon = document.querySelector(".icon-inline");
 
           if (audioElement && songTitleElement) {
             // Check if both elements are not null
             audioElement.addEventListener("play", function () {
               songTitleElement.classList.add("glowing-animation");
+              icon.classList.add("icon-spin");
             });
 
             audioElement.addEventListener("pause", function () {
               songTitleElement.classList.remove("glowing-animation");
+              icon.classList.remove("icon-spin");
             });
 
             audioElement.addEventListener("ended", function () {
               songTitleElement.classList.remove("glowing-animation");
+              icon.classList.remove("icon-spin");
             });
           }
         });
@@ -225,7 +229,7 @@ const randomSong =
                 } else {
                   if (enjoySongElement)
                     enjoySongElement.textContent =
-                      "Enjoy the song, If you're not liking it, ";
+                      "Welcome to my radio station. Scroll further, relax, and enjoy the music! If you're not liking it, ";
                   clickSongElement.textContent = "click here to stop";
                 }
               }

@@ -78,6 +78,14 @@ export const musicPlaylist: MusicPlaylist[] = [
     url: "/music/lag_ja_gale.mp3",
   },
   {
+    title: "Naina Lagaya Barisha",
+    url: "/music/naina_lagaya.mp3",
+  },
+  {
+    title: "Tumse Milke Dil Ka Hai Jo Haal",
+    url: "/music/tumse_milke.mp3",
+  },
+  {
     title: "Teri Deewani",
     url: "/music/teri_deewani.mp3",
   },

@@ -6,7 +6,7 @@ Welcome to the repository hosting the source code of my portfolio to showcase my
 
 The site is live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and it's deployed on Netlify.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 
 ## 🚀 Getting started
 

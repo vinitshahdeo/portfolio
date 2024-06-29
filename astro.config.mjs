@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [tailwind(), icon()],
   output: "hybrid",
   adapter: netlify({
-    imageCDN: false,
+    imageCDN: true,
   }),
   vite: {
     resolve: {

@@ -52,7 +52,7 @@ The portfolio contains three main pages:
 
 ## 🙏 Acknowledgments
 
-This is inspired by [Minimal portfolio template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam).
+This is inspired by [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam).
 
 ## 📝 License
 

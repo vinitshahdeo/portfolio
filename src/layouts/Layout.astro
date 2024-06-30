@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { seo } = Astro.props;
-const ogImageUrl = "/.netlify/images?url=" + seo.image;
+const ogImageUrl = seo.image;
 ---
 
 <script>

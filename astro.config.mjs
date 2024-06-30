@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [tailwind(), icon()],
   output: "hybrid",
   adapter: netlify({
-    imageCDN: true,
+    imageCDN: false,
   }),
   vite: {
     resolve: {
@@ -18,4 +18,5 @@ export default defineConfig({
       },
     },
   },
+  // cacheOnDemandPages: true, // @todo: Enable this for final build
 });

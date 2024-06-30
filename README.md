@@ -10,7 +10,6 @@ The site is live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build) ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
 
-
 ## 🛠️ Prerequisite
 
 This requires Node 20.11 or higher.
@@ -44,12 +43,12 @@ npm run dev
 
 Before running these commands, ensure you have Node.js and npm installed on your system. All commands should be executed from the root directory of the project, using a terminal.
 
-| Command         | Action                                      | Notes |
-| :-------------- | :------------------------------------------ | :---- |
-| `npm install`   | Installs all necessary dependencies.        | This is the first command you should run after cloning the repository to install all the required packages. |
-| `npm run dev`   | Starts the local development server.        | Access the site at `http://localhost:4321`. The server will automatically reload if you make any changes to the source files. |
+| Command         | Action                                      | Notes                                                                                                                                              |
+| :-------------- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm install`   | Installs all necessary dependencies.        | This is the first command you should run after cloning the repository to install all the required packages.                                        |
+| `npm run dev`   | Starts the local development server.        | Access the site at `http://localhost:4321`. The server will automatically reload if you make any changes to the source files.                      |
 | `npm run build` | Builds the site for production.             | The output is stored in the `./dist/` directory. Use this command before deploying to ensure you're publishing the optimized version of your site. |
-| `npm run lint`  | Lints your code to identify and fix issues. | It's recommended to run this command before committing your changes to ensure code quality and consistency. |
+| `npm run lint`  | Lints your code to identify and fix issues. | It's recommended to run this command before committing your changes to ensure code quality and consistency.                                        |
 
 ## 🧐 What's inside?
 
@@ -111,36 +110,36 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
     ██Ü-,::,:-:░░░░░░░░░░░░░░:,:::,::::::::::²!░░░=. ░,,|░░░░Ü░░░░░░░░░░░░░∩░': ░║██
     █▒----::----::░░░░░░=░░░░::::::::::::░░░░░░░░^ `||░░░░░░[░░░░░░░░░░░:░░--`- |║██
     █░-----::--`-::===░░░░░░░░░░░░░░░░░░░░░░░░░░░,|░░░░░░░░░Ü░░░░░░░░░░░:░░-  ` |║██
-    
 
-                                                                                 
-,--------. ,--.                        ,--.                ,---.                 
-'--.  .--' |  ,---.   ,--,--. ,--,--,  |  |,-.   ,---.    /  .-'  ,---.  ,--.--. 
-   |  |    |  .-.  | ' ,-.  | |      \ |     /  (  .-'    |  `-, | .-. | |  .--' 
-   |  |    |  | |  | \ '-'  | |  ||  | |  \  \  .-'  `)   |  .-' ' '-' ' |  |    
-   `--'    `--' `--'  `--`--' `--''--' `--'`--' `----'    `--'    `---'  `--'    
-                                                                                 
-                                                                                  ,---. 
-   ,--.                                 ,--.                    ,--.              |   | 
- ,-|  | ,--.--.  ,---.   ,---.   ,---.  `--' ,--,--,   ,---.    |  |-.  ,--. ,--. |  .' 
-' .-. | |  .--' | .-. | | .-. | | .-. | ,--. |      \ | .-. |   | .-. '  \  '  /  |  |  
-\ `-' | |  |    ' '-' ' | '-' ' | '-' ' |  | |  ||  | ' '-' '   | `-' |   \   '   `--'  
- `---'  `--'     `---'  |  |-'  |  |-'  `--' `--''--' .`-  /     `---'  .-'  /    .--.  
-                        `--'    `--'                  `---'             `---'     '--'  
-                                                                                                                                              
-,------.         ,--. ,--.                                                                ,----.    ,--.   ,--.   ,--.  ,--.          ,--.    
-|  .---'  ,---.  |  | |  |  ,---.  ,--.   ,--.   ,--,--,--.  ,---.     ,---.  ,--,--,    '  .-./    `--' ,-'  '-. |  '--'  | ,--.,--. |  |-.  
-|  `--,  | .-. | |  | |  | | .-. | |  |.'.|  |   |        | | .-. :   | .-. | |      \   |  | .---. ,--. '-.  .-' |  .--.  | |  ||  | | .-. ' 
-|  |`    ' '-' ' |  | |  | ' '-' ' |   .'.   |   |  |  |  | \   --.   ' '-' ' |  ||  |   '  '--'  | |  |   |  |   |  |  |  | '  ''  ' | `-' | 
-`--'      `---'  `--' `--'  `---'  '--'   '--'   `--`--`--'  `----'    `---'  `--''--'    `------'  `--'   `--'   `--'  `--'  `----'   `---'  
-                                                                                                                                              
-                                                                                                             
- ,----.             ,--.          ,--.   ,--.           ,--.               ,--.         ,--.                 
-'   ,  | ,--.  ,--. `--' ,--,--,  `--' ,-'  '-.  ,---.  |  ,---.   ,--,--. |  ,---.   ,-|  |  ,---.   ,---.  
-|  |   /  \  `'  /  ,--. |      \ ,--. '-.  .-' (  .-'  |  .-.  | ' ,-.  | |  .-.  | ' .-. | | .-. : | .-. | 
-'  '--'|   \    /   |  | |  ||  | |  |   |  |   .-'  `) |  | |  | \ '-'  | |  | |  | \ `-' | \   --. ' '-' ' 
- `----'     `--'    `--' `--''--' `--'   `--'   `----'  `--' `--'  `--`--' `--' `--'  `---'   `----'  `---'  
-                                                                                                             
+
+
+,--------. ,--.                        ,--.                ,---.
+'--.  .--' |  ,---.   ,--,--. ,--,--,  |  |,-.   ,---.    /  .-'  ,---.  ,--.--.
+   |  |    |  .-.  | ' ,-.  | |      \ |     /  (  .-'    |  `-, | .-. | |  .--'
+   |  |    |  | |  | \ '-'  | |  ||  | |  \  \  .-'  `)   |  .-' ' '-' ' |  |
+   `--'    `--' `--'  `--`--' `--''--' `--'`--' `----'    `--'    `---'  `--'
+
+                                                                                  ,---.
+   ,--.                                 ,--.                    ,--.              |   |
+ ,-|  | ,--.--.  ,---.   ,---.   ,---.  `--' ,--,--,   ,---.    |  |-.  ,--. ,--. |  .'
+' .-. | |  .--' | .-. | | .-. | | .-. | ,--. |      \ | .-. |   | .-. '  \  '  /  |  |
+\ `-' | |  |    ' '-' ' | '-' ' | '-' ' |  | |  ||  | ' '-' '   | `-' |   \   '   `--'
+ `---'  `--'     `---'  |  |-'  |  |-'  `--' `--''--' .`-  /     `---'  .-'  /    .--.
+                        `--'    `--'                  `---'             `---'     '--'
+
+,------.         ,--. ,--.                                                                ,----.    ,--.   ,--.   ,--.  ,--.          ,--.
+|  .---'  ,---.  |  | |  |  ,---.  ,--.   ,--.   ,--,--,--.  ,---.     ,---.  ,--,--,    '  .-./    `--' ,-'  '-. |  '--'  | ,--.,--. |  |-.
+|  `--,  | .-. | |  | |  | | .-. | |  |.'.|  |   |        | | .-. :   | .-. | |      \   |  | .---. ,--. '-.  .-' |  .--.  | |  ||  | | .-. '
+|  |`    ' '-' ' |  | |  | ' '-' ' |   .'.   |   |  |  |  | \   --.   ' '-' ' |  ||  |   '  '--'  | |  |   |  |   |  |  |  | '  ''  ' | `-' |
+`--'      `---'  `--' `--'  `---'  '--'   '--'   `--`--`--'  `----'    `---'  `--''--'    `------'  `--'   `--'   `--'  `--'  `----'   `---'
+
+
+ ,----.             ,--.          ,--.   ,--.           ,--.               ,--.         ,--.
+'   ,  | ,--.  ,--. `--' ,--,--,  `--' ,-'  '-.  ,---.  |  ,---.   ,--,--. |  ,---.   ,-|  |  ,---.   ,---.
+|  |   /  \  `'  /  ,--. |      \ ,--. '-.  .-' (  .-'  |  .-.  | ' ,-.  | |  .-.  | ' .-. | | .-. : | .-. |
+'  '--'|   \    /   |  | |  ||  | |  |   |  |   .-'  `) |  | |  | \ '-'  | |  | |  | \ `-' | \   --. ' '-' '
+ `----'     `--'    `--' `--''--' `--'   `--'   `----'  `--' `--'  `--`--' `--' `--'  `---'   `----'  `---'
+
 
 
 

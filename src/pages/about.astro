@@ -307,6 +307,33 @@ import { Icon } from "astro-icon/components";
           }
         }
 
+        function shuffleSong() {
+          const song = document.getElementById("song");
+          const icon = document.querySelector(".icon-inline");
+          const clickSongElement = document.getElementById("clickSong");
+          const enjoySongElement = document.getElementById("enjoySong");
+          if (song instanceof HTMLAudioElement) {
+            // Ensure the element is an HTMLAudioElement
+            song.volume = 0.3;
+            if (song.paused) {
+              song.play();
+              icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
+              if (enjoySongElement)
+                enjoySongElement.textContent =
+                  "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ";
+              if (clickSongElement)
+                clickSongElement.textContent = "click here to stop";
+            } else {
+              song.pause();
+              song.currentTime = 0; // Optionally, reset the song to the start if clicked again
+              icon && icon.classList.remove("icon-spin"); // Remove the spinning class when the song is paused
+              if (enjoySongElement) enjoySongElement.textContent = "";
+              if (clickSongElement)
+                clickSongElement.textContent = "click here to play";
+            }
+          }
+        }
+
         document.addEventListener("DOMContentLoaded", () => {
           randomSong();
         });
@@ -346,6 +373,10 @@ import { Icon } from "astro-icon/components";
           ?.addEventListener("click", function (event) {
             event.preventDefault(); // Prevent the default action
             randomSong();
+
+            setTimeout(() => {
+              shuffleSong();
+            }, 100);
           });
 
         document
@@ -416,7 +447,7 @@ import { Icon } from "astro-icon/components";
                 } else {
                   if (enjoySongElement)
                     enjoySongElement.textContent =
-                      "Welcome to my radio station. Scroll further, relax, and enjoy the music! If you're not liking it, ";
+                      "welcome to my radio station. Scroll further, relax, and enjoy the music! If you're not liking it, ";
                   clickSongElement.textContent = "click here to stop";
                 }
               }

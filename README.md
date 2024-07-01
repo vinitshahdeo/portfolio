@@ -4,11 +4,13 @@
     <img src="./.assets/vinitshahdeo-portfolio-cover.png" alt="Vinit Shahdeo Portfolio" />
 </div>
 
-Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
-
-The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and is deployed on Netlify. This project is a free, open-source Astro theme that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your own portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements. The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills, and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build) ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
+
+The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and is deployed on Netlify. This project is a free, open-source Astro theme that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements. 
+
+The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## 🔥 Features
 
@@ -31,16 +33,11 @@ npm create astro@latest -- --template vinitshahdeo/portfolio
 
 # For yarn users
 yarn create astro --template vinitshahdeo/portfolio
-
-For a quick start, you can also initialize the project with:
-
-```bash
-npm init astro@latest --template vinitshahdeo/portfolio
 ```
 
-For detailed local installation steps, refer to the sections below.
+For detailed local installation steps, please take a look at the sections below.
 
-## Deployment
+## 🌐 Deployment
 
 This template supports seamless deployment to [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/) without any additional configuration. Click on the buttons below to deploy on your preferred platform, which will also automatically create a new repository on GitHub for you.
 

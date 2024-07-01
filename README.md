@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 align="center">Portfolio — Vinit Shahdeo</h1>
+    <h1 align="center">Astro Portfolio — Vinit Shahdeo</h1>
     <img src="https://astro.badg.es/v2/built-with-astro/small.svg" alt="Built with Astro" />
     <img src="./.assets/vinitshahdeo-portfolio-cover.png" alt="Vinit Shahdeo Portfolio" />
 </div>

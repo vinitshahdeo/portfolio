@@ -12,6 +12,10 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 
 The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+You can preview the demo by scanning the QR code below or visiting my portfolio at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app).
+
+<img src='./.assets/vinitshahdeo-portfolio-qr.png' alt='Vinit Shahdeo Portfolio QR Code' width='20%' height='20%' />
+
 ## 🔥 Features
 
 - **Fully Responsive**: Adapts smoothly to any screen size.

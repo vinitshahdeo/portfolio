@@ -45,7 +45,7 @@ This template supports seamless deployment to [Netlify](https://www.netlify.com/
 
 Follow the steps in the subsequent sections for local setup instructions. 
 
-## 🚀 Local Setup
+## 🛠️  Local Setup
 
 1. Clone the repo
 
@@ -91,7 +91,7 @@ The portfolio contains three main pages:
 - **About**: Detailed information about me, my skills, and experience.
 - **Featured**: My thoughts, stories, and interviews.
 
-## 🙏 Acknowledgments
+## 🙏 Acknowledgment
 
 This is inspired by [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam).
 

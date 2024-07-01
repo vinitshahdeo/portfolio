@@ -47,7 +47,9 @@ This template supports seamless deployment to [Netlify](https://www.netlify.com/
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vinitshahdeo/portfolio) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/vinitshahdeo/portfolio)
 
-Follow the steps in the subsequent sections for local setup instructions. 
+Follow the steps in the subsequent sections for local setup instructions or open the source code in codespace:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vinitshahdeo/portfolio)
 
 ## 🛠️  Local Setup
 

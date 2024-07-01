@@ -39,17 +39,15 @@ npm create astro@latest -- --template vinitshahdeo/portfolio
 yarn create astro --template vinitshahdeo/portfolio
 ```
 
-For detailed local installation steps, please take a look at the sections below.
+Follow the steps in the subsequent sections for local setup instructions or [open the source code](https://codespaces.new/vinitshahdeo/portfolio) in codespace.
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vinitshahdeo/portfolio)
 
 ## 🌐 Deployment
 
 This template supports seamless deployment to [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/) without any additional configuration. Click on the buttons below to deploy on your preferred platform, which will also automatically create a new repository on GitHub for you.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vinitshahdeo/portfolio) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/vinitshahdeo/portfolio)
-
-Follow the steps in the subsequent sections for local setup instructions or open the source code in codespace:
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vinitshahdeo/portfolio)
 
 ## 🛠️  Local Setup
 

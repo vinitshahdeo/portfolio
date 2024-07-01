@@ -12,7 +12,7 @@ The site is live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app)
 
 ## 🛠️ Prerequisite
 
-This requires Node 18 or higher.
+This requires Node 20 or higher.
 
 ```bash
 nvm use

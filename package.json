@@ -1,7 +1,18 @@
 {
-  "name": "minimal-portfolio",
+  "name": "astro-minimal-portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "author": {
+    "name": "Vinit Shahdeo",
+    "email": "vinitshahdeo@gmail.com",
+    "url": "https://github.com/vinitshahdeo"
+  },
+  "license": "MIT",
+  "description": "Minimal Portfolio for Software Engineer using Astro and Tailwind CSS | Made with ❤️ by Vinit Shahdeo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinitshahdeo/portfolio.git"
+  },
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev --host",
@@ -24,5 +35,9 @@
     "@tailwindcss/typography": "^0.5.12",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0"
-  }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": ["portfolio", "astro", "developer", "minimalistic", "personal-website", "tailwind"]
 }

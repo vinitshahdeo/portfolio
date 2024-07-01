@@ -193,8 +193,5 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
     <strong>🏸 + 🍵 + 👨‍💻 = <a href="https://github.com/vinitshahdeo"><code>@vinitshahdeo</code></a></strong>
     <br/>
     <br/>
-    <img src='./.assets/vinitshahdeo-portfolio-qr.png' alt='Vinit Shahdeo Portfolio QR Code' width='20%' height='20%' />
-    <br/>
-    <br/>
 </div>
 <br/>

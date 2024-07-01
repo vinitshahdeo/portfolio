@@ -39,5 +39,17 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "keywords": ["portfolio", "astro", "developer", "minimalistic", "personal-website", "tailwind"]
+  "keywords": [
+    "portfolio",
+    "astro",
+    "developer",
+    "minimalistic",
+    "personal-website",
+    "tailwind"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx,json,astro}": [
+      "prettier --write --plugin=prettier-plugin-astro"
+    ]
+  }
 }

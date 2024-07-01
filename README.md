@@ -4,21 +4,51 @@
     <img src="./.assets/vinitshahdeo-portfolio-cover.png" alt="Vinit Shahdeo Portfolio" />
 </div>
 
-Welcome to the repository hosting the source code of my portfolio to showcase my work and skills using [Astro](https://astro.build/) and [Tailwind](https://tailwindcss.com/) CSS.
+Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
-The site is live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and it's deployed on Netlify.
+The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and is deployed on Netlify. This project is a free, open-source Astro theme that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your own portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements. The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build) ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
 
-## 🛠️ Prerequisite
+## 🔥 Features
 
-This requires Node 20 or higher.
+- **Fully Responsive**: Adapts smoothly to any screen size.
+- **Fast and SEO Optimized**: Ensures quick loading times and better search engine rankings.
+- **Fully Customizable**: Tailor the template to fit your unique style and needs.
+- **Comprehensive Pages**: Includes Home, About, and Featured pages.
+- **Self-Host Ready**: Easily deployable on your own hosting environment.
+
+## 🚀 Getting Started
+
+To use this template, execute one of the following commands based on your package manager:
 
 ```bash
-nvm use
+# For npm 6.x
+npm create astro@latest --template vinitshahdeo/portfolio
+
+# For npm 7+ (note the extra double-dash):
+npm create astro@latest -- --template vinitshahdeo/portfolio
+
+# For yarn users
+yarn create astro --template vinitshahdeo/portfolio
+
+For a quick start, you can also initialize the project with:
+
+```bash
+npm init astro@latest --template vinitshahdeo/portfolio
 ```
 
-## 🚀 Getting started
+For detailed local installation steps, refer to the sections below.
+
+## Deployment
+
+This template supports seamless deployment to [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/) without any additional configuration. Click on the buttons below to deploy on your preferred platform, which will also automatically create a new repository on GitHub for you.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vinitshahdeo/portfolio) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/vinitshahdeo/portfolio)
+
+Follow the steps in the subsequent sections for local setup instructions. 
+
+## 🚀 Local Setup
 
 1. Clone the repo
 
@@ -27,13 +57,19 @@ git clone https://github.com/vinitshahdeo/portfolio.git
 cd portfolio
 ```
 
-2. Install dependencies
+2. This requires Node 20 or higher.
+
+```bash
+nvm use
+```
+
+3. Install dependencies
 
 ```
 npm i
 ```
 
-3. Run the development server
+4. Run the development server
 
 ```
 npm run dev
@@ -64,7 +100,7 @@ This is inspired by [Minimal Portfolio Template](https://astro.build/themes/deta
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENCSE) file for details.
+The source code of this project is licensed under the MIT License - see the [LICENSE](./LICENCSE) file for details. The words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## 📫 Contact
 

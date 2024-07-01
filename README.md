@@ -41,7 +41,7 @@ npm create astro@latest -- --template vinitshahdeo/portfolio
 yarn create astro --template vinitshahdeo/portfolio
 ```
 
-Follow the steps in the subsequent sections for local setup instructions or [open the source code](https://codespaces.new/vinitshahdeo/portfolio) in codespace.
+Follow the steps in the subsequent sections for local setup instructions or [open the source code](https://codespaces.new/vinitshahdeo/portfolio) in the codespace.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vinitshahdeo/portfolio)
 

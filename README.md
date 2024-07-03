@@ -215,7 +215,8 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 <div align="center">
     <a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank">
     <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJmbWl1b243aGNodWhqb3gydHdzemloaDhlbnUzdjZ1MHJjOWNhcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hXMGQqJFlIQMOjpsKC/giphy.webp" alt="Buy me a coffee - Vinit Shahdeo" width="100"  height="100"/></a><br/>
-    <strong>🏸 + 🍵 + 👨‍💻 = <a href="https://github.com/vinitshahdeo"><code>@vinitshahdeo</code></a></strong>
+    <strong>🏸 + 🍵 + 👨‍💻 = <a href="https://github.com/vinitshahdeo"><code>@vinitshahdeo</code></a></strong><br><br/>
+    <a href="https://github.com/sponsors/vinitshahdeo"><img src="https://img.shields.io/badge/Sponsor-@vinitshahdeo-30363D?style=flat&logo=GitHub-Sponsors&logoColor=#EA4AA"/></a>
     <br/>
     <br/>
 </div>

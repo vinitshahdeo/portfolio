@@ -134,6 +134,8 @@ export const featuredPageContent: FeaturedPageContent = {
     description:
       "Explore a curated collection of articles, insightful stories, and exclusive interviews with Vinit Shahdeo, a Software Engineer and a GitHub Star from Bengaluru, India.",
     image: openGraphImage,
+    domain: "vinitshahdeo.netlify.app",
+    url: "https://vinitshahdeo.netlify.app",
   },
   subtitle: "Thoughts, stories, and interviews.",
 };

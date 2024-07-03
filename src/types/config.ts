@@ -21,6 +21,8 @@ export type SEOInfo = {
   title: string;
   description: string;
   image: string;
+  domain: string;
+  url: string;
 };
 
 export type HomePageContent = {

@@ -129,170 +129,9 @@ import { Icon } from "astro-icon/components";
       <audio id="song" src={musicPlaylist[0].url}></audio>
 
       <script>
-        function randomSong() {
-          const musicPlaylist = [
-            {
-              title: "O Mere Dil Ke Chain",
-              url: "/music/o-mere-dil-ke-chain.mp3",
-            },
-            {
-              title: "Papa Kehte Hain",
-              url: "/music/papa_kehte_hain.mp3",
-            },
-            {
-              title: "Naadan Parindey",
-              url: "/music/naadaan-parindey.mp3",
-            },
-            {
-              title: "Naadan Parindey",
-              url: "/music/nadaan_parinde_atif.mp3",
-            },
-            {
-              title: "Kehne Ko Jashne Bahara Hai",
-              url: "/music/kehne_ko.mp3",
-            },
-            {
-              title: "Keh Doon Tumhe",
-              url: "/music/keh_dun_tumhe.mp3",
-            },
-            {
-              title: "Tum Ho",
-              url: "/music/tum_ho.mp3",
-            },
-            {
-              title: "Lut Gaye",
-              url: "/music/lut_gaye.mp3",
-            },
-            {
-              title: "Rataan Lambiyan",
-              url: "/music/raatan_lambiyan_lofi.mp3",
-            },
-            {
-              title: "Madari",
-              url: "/music/madari.mp3",
-            },
-            {
-              title: "Allah Ke Bande",
-              url: "/music/allah_ke_bande.mp3",
-            },
-            {
-              title: "Man Mera",
-              url: "/music/man_mera.mp3",
-            },
-            {
-              title: "Mere Sapno Ki Rani",
-              url: "/music/mere_sapno_ki_rani.mp3",
-            },
-            {
-              title: "Dekha Tenu Pehli Pehli Baar Ve",
-              url: "/music/dekha-tenu.mp3",
-            },
-            {
-              title: "Yeh Shaam Mastani",
-              url: "/music/yeh-shaam.mp3",
-            },
-            {
-              title: "Chand Sifarish",
-              url: "/music/chand_sifarish.mp3",
-            },
-            {
-              title: "Chahun Main Ya Naa",
-              url: "/music/chahun_main_ya_naa.mp3",
-            },
-            {
-              title: "Jiya Dhadak Dhadak Jaye",
-              url: "/music/jiya_dhadak.mp3",
-            },
-            {
-              title: "Lag Ja Gale",
-              url: "/music/lag_ja_gale.mp3",
-            },
-            {
-              title: "Naina Lagaya Barisha",
-              url: "/music/naina_lagaya.mp3",
-            },
-            {
-              title: "Tumse Milke Dil Ka Hai Jo Haal",
-              url: "/music/tumse_milke.mp3",
-            },
-            {
-              title: "Teri Deewani",
-              url: "/music/teri_deewani.mp3",
-            },
-            {
-              title: "Teri Jhuki Nazar",
-              url: "/music/teri_jhuki_nazer.mp3",
-            },
-            {
-              title: "Tujh Mein Rab Dikhta Hai",
-              url: "/music/tujhme_rab.mp3",
-            },
-            {
-              title: "Afreen Afreen",
-              url: "/music/afreen.mp3",
-            },
-            {
-              title: "Pasoori",
-              url: "/music/pasoori.mp3",
-            },
-            {
-              title: "Saiyaara",
-              url: "/music/saiyara.mp3",
-            },
-            {
-              title: "Chura Liya Hai Tumne",
-              url: "/music/churaliya.mp3",
-            },
-            {
-              title: "Tere Mast Mast Do Nain",
-              url: "/music/tere_mast_mast.mp3",
-            },
-            {
-              title: "Mere Rang Mein",
-              url: "/music/mere_rang_mein.mp3",
-            },
-            {
-              title: "Zarooori Tha",
-              url: "/music/zaroori_tha.mp3",
-            },
-            {
-              title: "Kana Yaari",
-              url: "/music/kana_yaari.mp3",
-            },
-            {
-              title: "O Re Piya",
-              url: "/music/o_re_piya.mp3",
-            },
-            {
-              title: "Kali Kali Zulfon Ke Phande Na Dalo",
-              url: "/music/kali_kali_zulfon_ke.mp3",
-            },
-            {
-              title: "Laree Choote",
-              url: "/music/laare_choote.mp3",
-            },
-            {
-              title: "Emptiness",
-              url: "/music/emptiness.mp3",
-            },
-            {
-              title: "Kun Faya Kun",
-              url: "/music/kun_faya_kun.mp3",
-            },
-            {
-              title: "Tere Bin Nahi Lagda",
-              url: "/music/atif_unplugged.mp3",
-            },
-            {
-              title: "Neele Neele Ambar Par",
-              url: "/music/neele_neele.mp3",
-            },
-            {
-              title: "Kali Kali Zulfon Ke Phande Na Dalo",
-              url: "/music/kali_kali.mp3",
-            },
-          ];
+        import { musicPlaylist } from "../config";
 
+        function randomSong() {
           const randomIndex = Math.floor(Math.random() * musicPlaylist.length);
           const randomSong = musicPlaylist[randomIndex];
 
@@ -307,153 +146,87 @@ import { Icon } from "astro-icon/components";
           }
         }
 
-        function shuffleSong() {
+        document.addEventListener("DOMContentLoaded", () => {
+          randomSong();
+          initializeEventListeners();
+          initializeAudioEvents();
+        });
+
+        function updateSongState() {
           const song = document.getElementById("song");
           const icon = document.querySelector(".icon-inline");
           const clickSongElement = document.getElementById("clickSong");
           const enjoySongElement = document.getElementById("enjoySong");
+
           if (song instanceof HTMLAudioElement) {
-            // Ensure the element is an HTMLAudioElement
             song.volume = 0.3;
             if (song.paused) {
               song.play();
-              icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
-              if (enjoySongElement)
-                enjoySongElement.textContent =
-                  "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ";
-              if (clickSongElement)
-                clickSongElement.textContent = "click here to stop";
+              icon && icon.classList.add("icon-spin");
+              enjoySongElement &&
+                (enjoySongElement.textContent =
+                  "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ");
+              clickSongElement &&
+                (clickSongElement.textContent = "click here to stop");
             } else {
               song.pause();
-              song.currentTime = 0; // Optionally, reset the song to the start if clicked again
-              icon && icon.classList.remove("icon-spin"); // Remove the spinning class when the song is paused
-              if (enjoySongElement) enjoySongElement.textContent = "";
-              if (clickSongElement)
-                clickSongElement.textContent = "click here to play";
+              song.currentTime = 0;
+              icon && icon.classList.remove("icon-spin");
+              enjoySongElement && (enjoySongElement.textContent = "");
+              clickSongElement &&
+                (clickSongElement.textContent = "click here to play");
             }
           }
         }
 
-        document.addEventListener("DOMContentLoaded", () => {
-          randomSong();
-        });
+        function initializeEventListeners() {
+          document
+            .getElementById("playSong")
+            ?.addEventListener("click", (event) => {
+              event.preventDefault();
+              updateSongState();
+            });
 
-        document
-          .getElementById("playSong")
-          ?.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent the default anchor action
-            const song = document.getElementById("song");
-            const icon = document.querySelector(".icon-inline");
-            const clickSongElement = document.getElementById("clickSong");
-            const enjoySongElement = document.getElementById("enjoySong");
-            if (song instanceof HTMLAudioElement) {
-              // Ensure the element is an HTMLAudioElement
-              song.volume = 0.3;
-              if (song.paused) {
-                song.play();
-                icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
-                if (enjoySongElement)
-                  enjoySongElement.textContent =
-                    "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ";
-                if (clickSongElement)
-                  clickSongElement.textContent = "click here to stop";
-              } else {
-                song.pause();
-                song.currentTime = 0; // Optionally, reset the song to the start if clicked again
-                icon && icon.classList.remove("icon-spin"); // Remove the spinning class when the song is paused
-                if (enjoySongElement) enjoySongElement.textContent = "";
-                if (clickSongElement)
-                  clickSongElement.textContent = "click here to play";
-              }
-            }
-          });
+          document
+            .getElementById("refreshSong")
+            ?.addEventListener("click", (event) => {
+              event.preventDefault();
+              randomSong();
+              setTimeout(() => {
+                updateSongState();
+              }, 100);
+            });
 
-        document
-          .getElementById("refreshSong")
-          ?.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent the default action
-            randomSong();
+          document
+            .getElementById("clickSong")
+            ?.addEventListener("click", (event) => {
+              event.preventDefault();
+              updateSongState();
+            });
+        }
 
-            setTimeout(() => {
-              shuffleSong();
-            }, 100);
-          });
-
-        document
-          .getElementById("clickSong")
-          ?.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent the default anchor action
-            const song = document.getElementById("song");
-            const icon = document.querySelector(".icon-inline"); // Assuming your icon has the class 'icon-inline'
-            const clickSongElement = document.getElementById("clickSong");
-            const enjoySongElement = document.getElementById("enjoySong");
-            if (song instanceof HTMLAudioElement) {
-              // Ensure the element is an HTMLAudioElement
-              song.volume = 0.3;
-              if (song.paused) {
-                song.play();
-                icon && icon.classList.add("icon-spin"); // Add the spinning class when the song plays
-                if (enjoySongElement)
-                  enjoySongElement.textContent =
-                    "Enjoy the song, If you're not liking it, ";
-                if (clickSongElement)
-                  clickSongElement.textContent = "click here to stop";
-              } else {
-                song.pause();
-                song.currentTime = 0; // Optionally, reset the song to the start if clicked again
-                icon && icon.classList.remove("icon-spin"); // Remove the spinning class when the song is paused
-                if (enjoySongElement) enjoySongElement.textContent = "";
-                if (clickSongElement)
-                  clickSongElement.textContent = "click here to play";
-              }
-            }
-          });
-
-        document.addEventListener("DOMContentLoaded", function () {
+        function initializeAudioEvents() {
           const audioElement = document.getElementById("song");
           const songTitleElement = document.getElementById("playSong");
           const icon = document.querySelector(".icon-inline");
 
           if (audioElement && songTitleElement) {
-            // Check if both elements are not null
-            audioElement.addEventListener("play", function () {
+            audioElement.addEventListener("play", () => {
               songTitleElement.classList.add("glowing-animation");
               icon && icon.classList.add("icon-spin");
             });
 
-            audioElement.addEventListener("pause", function () {
+            audioElement.addEventListener("pause", () => {
               songTitleElement.classList.remove("glowing-animation");
               icon && icon.classList.remove("icon-spin");
             });
 
-            audioElement.addEventListener("ended", function () {
+            audioElement.addEventListener("ended", () => {
               songTitleElement.classList.remove("glowing-animation");
               icon && icon.classList.remove("icon-spin");
             });
           }
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-          const audioElement = document.getElementById("song");
-          const clickSongElement = document.getElementById("clickSong");
-          const enjoySongElement = document.getElementById("enjoySong");
-
-          if (clickSongElement) {
-            clickSongElement.addEventListener("click", function () {
-              if (audioElement instanceof HTMLAudioElement) {
-                if (audioElement.paused) {
-                  if (enjoySongElement) enjoySongElement.textContent = "";
-                  clickSongElement.textContent = "click here to play";
-                } else {
-                  if (enjoySongElement)
-                    enjoySongElement.textContent =
-                      "welcome to my radio station. Scroll further, relax, and enjoy the music! If you're not liking it, ";
-                  clickSongElement.textContent = "click here to stop";
-                }
-              }
-            });
-          }
-        });
+        }
       </script>
       <p class="mb-5 sm:text-left">
         <a href="https://github.com/vinitshahdeo" target="_blank">

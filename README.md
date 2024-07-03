@@ -83,7 +83,7 @@ npm run dev
 ```
 
 > [!TIP]
-> For enhanced Astro support in Visual Studio Code, it's highly recommended to install the [Astro VSCode extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode). This extension provides useful features such as syntax highlighting, IntelliSense, code formatting, and more, significantly improving your development experience with Astro projects.
+> For enhanced Astro support in Visual Studio Code, it's highly recommended to install the [Astro VSCode extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode). This extension provides useful features such as syntax highlighting, IntelliSense, code formatting, and more, significantly improving your development experience with the [Stellar Astro Dev Portfolio](/) template.
 
 ## 🧞 Commands
 

@@ -10,7 +10,8 @@ Welcome to the repository that hosts the source code for my portfolio, designed 
 
 The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and is deployed on Netlify. This project is a free, open-source Astro theme that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements. 
 
-The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+> [!IMPORTANT]
+> The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## 🔥 Features
 

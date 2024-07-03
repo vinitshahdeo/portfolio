@@ -17,7 +17,7 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 ## 🔥 Features
 
 - **Fully Responsive**: Adapts smoothly to any screen size.
-- **Fast and SEO Optimized**: Ensures quick loading times and better search engine rankings. Incorporates comprehensive Open Graph Meta tags for better social media sharing.
+- **Fast and SEO Optimized**: Ensures quick loading times and better search engine rankings. Incorporates comprehensive [Open Graph](https://ogp.me/) Meta tags for better social media sharing.
 - **Fully Customizable**: Tailor the template to fit your unique style and needs.
 - **Comprehensive Pages**: Includes Home, About, and Featured pages.
 - **Self-Host Ready**: Easily deployable on your own hosting environment like [Netlify](https://www.netlify.com/) / [Vercel](https://vercel.com/).

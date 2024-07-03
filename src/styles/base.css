@@ -73,3 +73,32 @@ code {
 #refreshSong {
   cursor: pointer;
 }
+
+.gradient-link {
+  font-weight: bold;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #00abda, #1476ff);
+}
+
+.gradient-link:hover::after {
+  background-image: linear-gradient(to right, #00abda, #1476ff);
+}
+
+.underline-hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  opacity: 60%;
+  transition: opacity 0.3s;
+}
+
+.underline-hover:hover {
+  opacity: 100%;
+}
+
+.icon-inline {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}

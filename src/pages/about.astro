@@ -13,8 +13,7 @@ import { Icon } from "astro-icon/components";
     <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
     <div class="mb-14">
       <p class="mb-5 sm:text-left">
-        Hello 👋, I'm a Software Engineer who adores <span
-          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff]"
+        Hello 👋, I'm a Software Engineer who adores <span class="gradient-link"
           >JavaScript</span
         > and is passionate about open-source. With a knack for building event-driven
         architecture, I balance code with badminton and find peace in a sip of tea
@@ -23,35 +22,31 @@ import { Icon } from "astro-icon/components";
       <p class="mb-5 sm:text-left">
         My journey began fueled by curiosity about how Facebook worked, and it's
         led me here. I've worked as a Software Engineer II at <a
-          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          class="gradient-link"
           href="https://www.postman.com/"
           target="_blank">Postman</a
         >, graduated from <a
-          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          class="gradient-link"
           href="https://vit.ac.in/"
           target="_blank">VIT Vellore</a
         >, and now I'm building & scaling neo-banking solutions at <a
-          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          class="gradient-link"
           href="https://novo.co/"
           target="_blank">Novo</a
         >. My notable contributions at Postman include building <a
           href="https://www.postman.com/product/postman-interceptor"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >Interceptor</a
+          class="underline-hover">Interceptor</a
         > and <a
           href="https://www.postman.com/product/integrations"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >Integrations</a
+          class="underline-hover">Integrations</a
         >. Discover more about my Postman <a
           href="https://vinitshahdeo.dev/saying-goodbye-to-postman"
           target="_blank"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >journey</a
+          class="underline-hover">journey</a
         > and valuable <a
           href="https://vinitshahdeo.dev/10-lessons-learned-as-software-engineer-at-postman"
           target="_blank"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >lessons</a
+          class="underline-hover">lessons</a
         >.
       </p>
     </div>
@@ -100,8 +95,7 @@ import { Icon } from "astro-icon/components";
         while the soothing melody of <a
           href="#"
           id="playSong"
-          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
-          >"{musicPlaylist[0].title}"</a
+          class="gradient-link">"{musicPlaylist[0].title}"</a
         >
         plays in the background.
 
@@ -114,11 +108,11 @@ import { Icon } from "astro-icon/components";
             class="icon-inline"
           />Here's a surprise for you</strong
         >—<span id="enjoySong"></span><span
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          class="underline-hover"
           id="clickSong"
           >click here to play
         </span> the current song, and <span
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
+          class="underline-hover"
           id="refreshSong">hit shuffle</span
         > to change tracks.
         <br /><br />
@@ -127,107 +121,6 @@ import { Icon } from "astro-icon/components";
         in late-night strolls and enjoy the simple joys of life.
       </p>
       <audio id="song" src={musicPlaylist[0].url}></audio>
-
-      <script>
-        import { musicPlaylist } from "../config";
-
-        function randomSong() {
-          const randomIndex = Math.floor(Math.random() * musicPlaylist.length);
-          const randomSong = musicPlaylist[randomIndex];
-
-          const songElement = document.getElementById("song");
-          if (songElement instanceof HTMLAudioElement) {
-            songElement.src = randomSong.url;
-          }
-
-          const playSongElement = document.getElementById("playSong");
-          if (playSongElement) {
-            playSongElement.textContent = `"${randomSong.title}"`;
-          }
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-          randomSong();
-          initializeEventListeners();
-          initializeAudioEvents();
-        });
-
-        function updateSongState() {
-          const song = document.getElementById("song");
-          const icon = document.querySelector(".icon-inline");
-          const clickSongElement = document.getElementById("clickSong");
-          const enjoySongElement = document.getElementById("enjoySong");
-
-          if (song instanceof HTMLAudioElement) {
-            song.volume = 0.3;
-            if (song.paused) {
-              song.play();
-              icon && icon.classList.add("icon-spin");
-              enjoySongElement &&
-                (enjoySongElement.textContent =
-                  "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ");
-              clickSongElement &&
-                (clickSongElement.textContent = "click here to stop");
-            } else {
-              song.pause();
-              song.currentTime = 0;
-              icon && icon.classList.remove("icon-spin");
-              enjoySongElement && (enjoySongElement.textContent = "");
-              clickSongElement &&
-                (clickSongElement.textContent = "click here to play");
-            }
-          }
-        }
-
-        function initializeEventListeners() {
-          document
-            .getElementById("playSong")
-            ?.addEventListener("click", (event) => {
-              event.preventDefault();
-              updateSongState();
-            });
-
-          document
-            .getElementById("refreshSong")
-            ?.addEventListener("click", (event) => {
-              event.preventDefault();
-              randomSong();
-              setTimeout(() => {
-                updateSongState();
-              }, 100);
-            });
-
-          document
-            .getElementById("clickSong")
-            ?.addEventListener("click", (event) => {
-              event.preventDefault();
-              updateSongState();
-            });
-        }
-
-        function initializeAudioEvents() {
-          const audioElement = document.getElementById("song");
-          const songTitleElement = document.getElementById("playSong");
-          const icon = document.querySelector(".icon-inline");
-
-          if (audioElement && songTitleElement) {
-            audioElement.addEventListener("play", () => {
-              songTitleElement.classList.add("glowing-animation");
-              icon && icon.classList.add("icon-spin");
-            });
-
-            audioElement.addEventListener("pause", () => {
-              songTitleElement.classList.remove("glowing-animation");
-              icon && icon.classList.remove("icon-spin");
-            });
-
-            audioElement.addEventListener("ended", () => {
-              songTitleElement.classList.remove("glowing-animation");
-              icon && icon.classList.remove("icon-spin");
-            });
-          }
-        }
-      </script>
       <p class="mb-5 sm:text-left">
         <a href="https://github.com/vinitshahdeo" target="_blank">
           <img
@@ -240,20 +133,118 @@ import { Icon } from "astro-icon/components";
         <strong>Open source?</strong> It's a world I'm deeply involved in. I've had
         the privilege of mentoring in <a
           href="https://blog.postman.com/author/vinit-shahdeo/"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >GSoC</a
+          class="underline-hover">GSoC</a
         > at AsyncAPI and Postman. I'm truly honored to have been recognized as a
         <a
-          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
+          class="gradient-link"
           href="https://stars.github.com/profiles/vinitshahdeo/"
           target="_blank">GitHub Star</a
         > twice, representing India. I'm always available for a 1:1 chat on <a
           href="https://topmate.io/vinitshahdeo"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >Topmate</a
+          class="underline-hover">Topmate</a
         >.
       </p>
     </div>
+    <script>
+      import { musicPlaylist } from "../config";
+
+      function randomSong() {
+        const randomIndex = Math.floor(Math.random() * musicPlaylist.length);
+        const randomSong = musicPlaylist[randomIndex];
+
+        const songElement = document.getElementById("song");
+        if (songElement instanceof HTMLAudioElement) {
+          songElement.src = randomSong.url;
+        }
+
+        const playSongElement = document.getElementById("playSong");
+        if (playSongElement) {
+          playSongElement.textContent = `"${randomSong.title}"`;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        randomSong();
+        initializeEventListeners();
+        initializeAudioEvents();
+      });
+
+      function updateSongState() {
+        const song = document.getElementById("song");
+        const icon = document.querySelector(".icon-inline");
+        const clickSongElement = document.getElementById("clickSong");
+        const enjoySongElement = document.getElementById("enjoySong");
+
+        if (song instanceof HTMLAudioElement) {
+          song.volume = 0.3;
+          if (song.paused) {
+            song.play();
+            icon && icon.classList.add("icon-spin");
+            enjoySongElement &&
+              (enjoySongElement.textContent =
+                "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ");
+            clickSongElement &&
+              (clickSongElement.textContent = "click here to stop");
+          } else {
+            song.pause();
+            song.currentTime = 0;
+            icon && icon.classList.remove("icon-spin");
+            enjoySongElement && (enjoySongElement.textContent = "");
+            clickSongElement &&
+              (clickSongElement.textContent = "click here to play");
+          }
+        }
+      }
+
+      function initializeEventListeners() {
+        document
+          .getElementById("playSong")
+          ?.addEventListener("click", (event) => {
+            event.preventDefault();
+            updateSongState();
+          });
+
+        document
+          .getElementById("refreshSong")
+          ?.addEventListener("click", (event) => {
+            event.preventDefault();
+            randomSong();
+            setTimeout(() => {
+              updateSongState();
+            }, 100);
+          });
+
+        document
+          .getElementById("clickSong")
+          ?.addEventListener("click", (event) => {
+            event.preventDefault();
+            updateSongState();
+          });
+      }
+
+      function initializeAudioEvents() {
+        const audioElement = document.getElementById("song");
+        const songTitleElement = document.getElementById("playSong");
+        const icon = document.querySelector(".icon-inline");
+
+        if (audioElement && songTitleElement) {
+          audioElement.addEventListener("play", () => {
+            songTitleElement.classList.add("glowing-animation");
+            icon && icon.classList.add("icon-spin");
+          });
+
+          audioElement.addEventListener("pause", () => {
+            songTitleElement.classList.remove("glowing-animation");
+            icon && icon.classList.remove("icon-spin");
+          });
+
+          audioElement.addEventListener("ended", () => {
+            songTitleElement.classList.remove("glowing-animation");
+            icon && icon.classList.remove("icon-spin");
+          });
+        }
+      }
+    </script>
   </section>
 
   <section class="my-20 mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
@@ -277,23 +268,18 @@ import { Icon } from "astro-icon/components";
         Come find me on <a
           href="https://twitter.com/Vinit_Shahdeo"
           target="_blank"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >Twitter</a
+          class="underline-hover">Twitter</a
         > and <a
           href="https://www.linkedin.com/in/vinitshahdeo"
           target="_blank"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >LinkedIn</a
+          class="underline-hover">LinkedIn</a
         > – I'm excited to connect! You can explore my professional side on <a
           href="https://peerlist.io/vinitshahdeo"
           target="_blank"
-          class="underline underline-offset-4 opacity-60 hover:opacity-100 transition-opacity"
-          >Peerlist</a
+          class="underline-hover">Peerlist</a
         >. And if you're curious about my thoughts, swing by my blog
-        <a
-          class="unset gradient-link font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
-          href="https://vinitshahdeo.dev"
-          target="_blank">vinitshahdeo.dev</a
+        <a class="gradient-link" href="https://vinitshahdeo.dev" target="_blank"
+          >vinitshahdeo.dev</a
         >.
       </div>
       <div class="grid grid-cols-2 gap-2 group">
@@ -306,3 +292,25 @@ import { Icon } from "astro-icon/components";
     </div>
   </section>
 </Layout>
+
+<!--
+
+___  ___          _                 _ _   _       _                           
+|  \/  |         | |               (_) | | |     | |                          
+| .  . | __ _  __| | ___  __      ___| |_| |__   | |     _____   _____        
+| |\/| |/ _` |/ _` |/ _ \ \ \ /\ / / | __| '_ \  | |    / _ \ \ / / _ \       
+| |  | | (_| | (_| |  __/  \ V  V /| | |_| | | | | |___| (_) \ V /  __/       
+\_|  |_/\__,_|\__,_|\___|   \_/\_/ |_|\__|_| |_| \_____/\___/ \_/ \___|       
+                                                                              
+                                                                              
+______         _   _ _       _ _     _____ _           _         _            
+| ___ \       | | | (_)     (_) |   /  ___| |         | |       | |           
+| |_/ /_   _  | | | |_ _ __  _| |_  \ `--.| |__   __ _| |__   __| | ___  ___  
+| ___ \ | | | | | | | | '_ \| | __|  `--. \ '_ \ / _` | '_ \ / _` |/ _ \/ _ \ 
+| |_/ / |_| | \ \_/ / | | | | | |_  /\__/ / | | | (_| | | | | (_| |  __/ (_) |
+\____/ \__, |  \___/|_|_| |_|_|\__| \____/|_| |_|\__,_|_| |_|\__,_|\___|\___/ 
+        __/ |                                                                 
+       |___/                                                                  
+
+
+-->

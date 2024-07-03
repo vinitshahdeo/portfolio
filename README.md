@@ -20,7 +20,15 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 - **Fast and SEO Optimized**: Ensures quick loading times and better search engine rankings.
 - **Fully Customizable**: Tailor the template to fit your unique style and needs.
 - **Comprehensive Pages**: Includes Home, About, and Featured pages.
-- **Self-Host Ready**: Easily deployable on your own hosting environment.
+- **Self-Host Ready**: Easily deployable on your own hosting environment like [Netlify](https://www.netlify.com/) / [Vercel](https://vercel.com/).
+
+## 🧐 What's inside?
+
+The portfolio contains three main pages:
+
+- **Home**: A welcome page with my brief introduction.
+- **About**: Detailed information about me, my skills, and experience.
+- **Featured**: My thoughts, stories, and interviews.
 
 ## 📱 Demo
 
@@ -47,11 +55,6 @@ Follow the steps in the subsequent sections for local setup instructions or [ope
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vinitshahdeo/portfolio)
 
-## 🌐 Deployment
-
-This template supports seamless deployment to [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/) without any additional configuration. Click on the buttons below to deploy on your preferred platform, which will also automatically create a new repository on GitHub for you.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vinitshahdeo/portfolio) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/vinitshahdeo/portfolio)
 
 ## 🛠️  Local Setup
 
@@ -91,13 +94,37 @@ Before running these commands, ensure you have Node.js and npm installed on your
 | `npm run build` | Builds the site for production.             | The output is stored in the `./dist/` directory. Use this command before deploying to ensure you're publishing the optimized version of your site. |
 | `npm run lint`  | Lints your code to identify and fix issues. | It's recommended to run this command before committing your changes to ensure code quality and consistency.                                        |
 
-## 🧐 What's inside?
+## 🌐 Deployment
 
-The portfolio contains three main pages:
+Deploying your site is a breeze with seamless support for both [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/). Choose your preferred platform by clicking the buttons below. These options also automatically create a new repository on GitHub for you. For more details, explore the documentation:
 
-- **Home**: A welcome page with my brief introduction.
-- **About**: Detailed information about me, my skills, and experience.
-- **Featured**: My thoughts, stories, and interviews.
+1. [Deploy your Astro Site to Vercel](https://docs.astro.build/en/guides/deploy/vercel/)
+2. [Deploy your Astro Site to Netlify](https://docs.astro.build/en/guides/deploy/netlify/)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vinitshahdeo/portfolio) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/vinitshahdeo/portfolio)
+
+Currently, this project is set up for deployment on **Netlify**. To switch to Vercel, update the adapter in [`astro.config.mjs`](./astro.config.mjs) after running `npx astro add vercel`.
+
+```ts
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
+import icon from "astro-icon";
+
+import vercel from '@astrojs/vercel/serverless';
+
+export default defineConfig({
+  integrations: [tailwind(), icon()],
+  output: "hybrid",
+  adapter: vercel()
+  vite: {
+    resolve: {
+      alias: {
+        "@styles": "/src/styles",
+      },
+    },
+  },
+});
+```
 
 ## 🙏 Acknowledgment
 
@@ -192,7 +219,8 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 <div align="center">
     <a href="https://www.buymeacoffee.com/vinitshahdeo" target="_blank">
     <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJmbWl1b243aGNodWhqb3gydHdzemloaDhlbnUzdjZ1MHJjOWNhcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hXMGQqJFlIQMOjpsKC/giphy.webp" alt="Buy me a coffee - Vinit Shahdeo" width="100"  height="100"/></a><br/>
-    <strong>🏸 + 🍵 + 👨‍💻 = <a href="https://github.com/vinitshahdeo"><code>@vinitshahdeo</code></a></strong>
+    <strong>🏸 + 🍵 + 👨‍💻 = <a href="https://github.com/vinitshahdeo"><code>@vinitshahdeo</code></a></strong><br><br/>
+    <a href="https://github.com/sponsors/vinitshahdeo"><img src="https://img.shields.io/badge/Sponsor-@vinitshahdeo-30363D?style=flat&logo=GitHub-Sponsors&logoColor=#EA4AA"/></a>
     <br/>
     <br/>
 </div>

@@ -43,6 +43,8 @@ export const homePageContent: HomePageContent = {
     description:
       "Explore the portfolio of Vinit Shahdeo, a Senior Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
     image: openGraphImage,
+    domain: "vinitshahdeo.netlify.app",
+    url: "https://vinitshahdeo.netlify.app",
   },
   role: "Senior Backend Engineer",
   description:
@@ -74,6 +76,8 @@ export const aboutPageContent: AboutPageContent = {
     description:
       "Discover Vinit Shahdeo, a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
     image: openGraphImage,
+    domain: "vinitshahdeo.netlify.app",
+    url: "https://vinitshahdeo.netlify.app/about",
   },
   subtitle: "Thanks for stopping by! Here's a bit about me.",
   about: {

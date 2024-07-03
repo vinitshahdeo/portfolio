@@ -179,12 +179,6 @@ import { Icon } from "astro-icon/components";
           song.volume = 0.3;
           if (song.paused) {
             song.play();
-            icon && icon.classList.add("icon-spin");
-            enjoySongElement &&
-              (enjoySongElement.textContent =
-                "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ");
-            clickSongElement &&
-              (clickSongElement.textContent = "click here to stop");
           } else {
             song.pause();
             song.currentTime = 0;
@@ -226,21 +220,34 @@ import { Icon } from "astro-icon/components";
         const audioElement = document.getElementById("song");
         const songTitleElement = document.getElementById("playSong");
         const icon = document.querySelector(".icon-inline");
+        const clickSongElement = document.getElementById("clickSong");
+        const enjoySongElement = document.getElementById("enjoySong");
 
         if (audioElement && songTitleElement) {
           audioElement.addEventListener("play", () => {
             songTitleElement.classList.add("glowing-animation");
             icon && icon.classList.add("icon-spin");
+            enjoySongElement &&
+              (enjoySongElement.textContent =
+                "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ");
+            clickSongElement &&
+              (clickSongElement.textContent = "click here to stop");
           });
 
           audioElement.addEventListener("pause", () => {
             songTitleElement.classList.remove("glowing-animation");
             icon && icon.classList.remove("icon-spin");
+            enjoySongElement && (enjoySongElement.textContent = "");
+            clickSongElement &&
+              (clickSongElement.textContent = "click here to play");
           });
 
           audioElement.addEventListener("ended", () => {
             songTitleElement.classList.remove("glowing-animation");
             icon && icon.classList.remove("icon-spin");
+            enjoySongElement && (enjoySongElement.textContent = "");
+            clickSongElement &&
+              (clickSongElement.textContent = "click here to play");
           });
         }
       }

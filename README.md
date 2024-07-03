@@ -95,11 +95,14 @@ Before running these commands, ensure you have Node.js and npm installed on your
 
 ## 🌐 Deployment
 
-This template supports seamless deployment to [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/) without any additional configuration. Click on the buttons below to deploy on your preferred platform, which will also automatically create a new repository on GitHub for you.
+Deploying your site is a breeze with seamless support for both [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/). Choose your preferred platform by clicking the buttons below. These options also automatically create a new repository on GitHub for you. For more details, explore the documentation:
+
+1. [Deploy your Astro Site to Vercel](https://docs.astro.build/en/guides/deploy/vercel/)
+2. [Deploy your Astro Site to Netlify](https://docs.astro.build/en/guides/deploy/netlify/)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vinitshahdeo/portfolio) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/vinitshahdeo/portfolio)
 
-Currently, this project is configured for Deployment on Netlify. Please update the adapter in [`astro.config.mjs`](./astro.config.mjs) to enable the Vercel adapter after running `npx astro add vercel`.
+Currently, this project is set up for deployment on **Netlify**. To switch to Vercel, update the adapter in [`astro.config.mjs`](./astro.config.mjs) after running `npx astro add vercel`.
 
 ```ts
 import { defineConfig } from "astro/config";

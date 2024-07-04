@@ -203,9 +203,7 @@ import { Icon } from "astro-icon/components";
           ?.addEventListener("click", (event) => {
             event.preventDefault();
             randomSong();
-            setTimeout(() => {
-              updateSongState();
-            }, 100);
+            updateSongState();
           });
 
         document

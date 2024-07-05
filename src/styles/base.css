@@ -92,6 +92,22 @@ code {
   transition: opacity 0.3s;
 }
 
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Invisible shadow */
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 171, 218, 0.6); /* Glowing effect */
+  }
+}
+
+.image-effect:hover {
+  border-color: #00abda;
+  transform: scale(1.05);
+  cursor: pointer;
+  animation: glow 2s infinite ease-in-out;
+}
+
 .underline-hover:hover {
   opacity: 100%;
 }

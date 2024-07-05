@@ -147,7 +147,7 @@ export const featuredPageContent: FeaturedPageContent = {
 
 export const nowPageContent: NowPageContent = {
   seo: {
-    title: "What I'm doing now? | Vinit Shahdeo",
+    title: "What I'm doing now | Vinit Shahdeo",
     description:
       "A updated log of what I'm building, learning, reading or exploring at different points of time.",
     image: openGraphImage,

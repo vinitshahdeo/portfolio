@@ -102,6 +102,12 @@ code {
   }
 }
 
+.image-music-effect {
+  border-color: #00abda;
+  cursor: pointer;
+  animation: glow 2s infinite ease-in-out;
+}
+
 .image-effect:hover {
   border-color: #00abda;
   transform: scale(1.05);

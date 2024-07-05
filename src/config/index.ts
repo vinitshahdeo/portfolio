@@ -73,7 +73,7 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About Vinit Shahdeo | Senior Software Engineer & GitHub Star",
+    title: "About | Vinit Shahdeo | Senior Software Engineer & GitHub Star",
     description:
       "Discover Vinit Shahdeo, a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
     image: openGraphImage,
@@ -83,7 +83,7 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "Thanks for stopping by! Here's a bit about me.",
   about: {
     description: `
-      Senior Software Engineer at Novo | Previously at Postman | GitHub Star from India | Node.js, Go, Microservices, Kafka, GraphQL, REST, AWS
+      Senior Software Engineer at Novo | Previously at Postman | GitHub Star from India | Node.js, Go, Microservices, Kafka, GraphQL, REST, AWS | Based in Bengaluru, India
     `,
     image_l: {
       url: "/img/vinit_shahdeo.jpg",
@@ -145,6 +145,7 @@ export const featuredPageContent: FeaturedPageContent = {
   subtitle: "Thoughts, stories, and interviews.",
 };
 
+// Now (/now)
 export const nowPageContent: NowPageContent = {
   seo: {
     title: "What I'm doing now | Vinit Shahdeo",

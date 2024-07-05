@@ -52,6 +52,7 @@ import { Icon } from "astro-icon/components";
     </div>
     <div class="flex flex-col sm:flex-row">
       <Image
+        id="about-image-left"
         src={aboutPageContent.about.image_l.url}
         alt={aboutPageContent.about.image_l.alt}
         width={350}
@@ -63,6 +64,7 @@ import { Icon } from "astro-icon/components";
         class="w-[350px] h-[250px] object-cover rounded-xl sm:-rotate-6 sm:block image-effect"
       />
       <Image
+        id="about-image-right"
         src={aboutPageContent.about.image_r.url}
         alt={aboutPageContent.about.image_r.alt}
         width={150}
@@ -220,11 +222,17 @@ import { Icon } from "astro-icon/components";
         const icon = document.querySelector(".icon-inline");
         const clickSongElement = document.getElementById("clickSong");
         const enjoySongElement = document.getElementById("enjoySong");
+        const leftImageElement = document.getElementById("about-image-left");
+        const rightImageElement = document.getElementById("about-image-right");
 
         if (audioElement && songTitleElement) {
           audioElement.addEventListener("play", () => {
             songTitleElement.classList.add("glowing-animation");
             icon && icon.classList.add("icon-spin");
+            leftImageElement &&
+              leftImageElement.classList.add("image-music-effect");
+            rightImageElement &&
+              rightImageElement.classList.add("image-music-effect");
             enjoySongElement &&
               (enjoySongElement.textContent =
                 "welcome to my radio station! Scroll further, relax, and enjoy the music! If you're not liking it, ");
@@ -235,6 +243,10 @@ import { Icon } from "astro-icon/components";
           audioElement.addEventListener("pause", () => {
             songTitleElement.classList.remove("glowing-animation");
             icon && icon.classList.remove("icon-spin");
+            leftImageElement &&
+              leftImageElement.classList.remove("image-music-effect");
+            rightImageElement &&
+              rightImageElement.classList.remove("image-music-effect");
             enjoySongElement && (enjoySongElement.textContent = "");
             clickSongElement &&
               (clickSongElement.textContent = "click here to play");

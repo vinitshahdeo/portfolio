@@ -11,6 +11,13 @@ export type SocialLink = {
   external?: boolean;
 };
 
+export type SourceLink = {
+  title: string;
+  url: string;
+  icon: string;
+  external?: boolean;
+};
+
 export type Identity = {
   name: string;
   logo: string;
@@ -75,6 +82,12 @@ export type AboutPageContent = {
     description: string;
     links: SocialLink[];
   };
+};
+
+export type NowPageContent = {
+  seo: SEOInfo;
+  subtitle: string;
+  sourceLinks: SocialLink[];
 };
 
 export type Project = {

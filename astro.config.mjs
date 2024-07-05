@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
+import { remarkModifiedTime } from "./remark-modified-time.mjs";
 
 import netlify from "@astrojs/netlify";
 
@@ -17,6 +18,9 @@ export default defineConfig({
         "@styles": "/src/styles",
       },
     },
+  },
+  markdown: {
+    remarkPlugins: [remarkModifiedTime],
   },
   // cacheOnDemandPages: true, // @todo: Enable this for final build
 });

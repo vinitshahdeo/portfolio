@@ -4,9 +4,11 @@ import type {
   AboutPageContent,
   FeaturedPageContent,
   HomePageContent,
+  NowPageContent,
 } from "../types/config";
 
 import { socialLinks, homeSocialLinks } from "./social";
+import { sourceLinks } from "./source";
 
 export const identity: Identity = {
   name: "Vinit Shahdeo",
@@ -26,8 +28,8 @@ export const navBarLinks: NavBarLink[] = [
     url: "/about",
   },
   {
-    title: "Blog",
-    url: "https://vinitshahdeo.dev/",
+    title: "Now",
+    url: "/now",
     external: true,
   },
   {
@@ -144,6 +146,20 @@ export const featuredPageContent: FeaturedPageContent = {
   subtitle: "Thoughts, stories, and interviews.",
 };
 
+export const nowPageContent: NowPageContent = {
+  seo: {
+    title: "What I'm doing now | Vinit Shahdeo",
+    description:
+      "A updated log of what I'm building, learning, reading or exploring at different points of time.",
+    image: openGraphImage,
+    domain: "vinitshahdeo.netlify.app",
+    url: "https://vinitshahdeo.netlify.app/now",
+  },
+  subtitle: "Where I’m at, what I’m focused on, and what I’m not.",
+  sourceLinks,
+};
+
 export * from "./music";
 export * from "./social";
 export * from "./featured";
+export * from "./source";

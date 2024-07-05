@@ -93,7 +93,8 @@ code {
 }
 
 @keyframes glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Invisible shadow */
   }
   50% {

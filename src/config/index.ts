@@ -30,7 +30,6 @@ export const navBarLinks: NavBarLink[] = [
   {
     title: "Now",
     url: "/now",
-    external: true,
   },
   {
     title: "Featured",

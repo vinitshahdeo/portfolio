@@ -135,7 +135,7 @@ export const aboutPageContent: AboutPageContent = {
 // Featured (/featured)
 export const featuredPageContent: FeaturedPageContent = {
   seo: {
-    title: "Vinit Shahdeo - Featured Articles, Stories & Interviews",
+    title: "Featured Articles, Stories & Interviews | Vinit Shahdeo",
     description:
       "Explore a curated collection of articles, insightful stories, and exclusive interviews with Vinit Shahdeo, a Software Engineer and a GitHub Star from Bengaluru, India.",
     image: openGraphImage,
@@ -147,7 +147,7 @@ export const featuredPageContent: FeaturedPageContent = {
 
 export const nowPageContent: NowPageContent = {
   seo: {
-    title: "What I'm doing now | Vinit Shahdeo",
+    title: "What I'm doing now? | Vinit Shahdeo",
     description:
       "A updated log of what I'm building, learning, reading or exploring at different points of time.",
     image: openGraphImage,

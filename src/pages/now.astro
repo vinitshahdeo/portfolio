@@ -58,6 +58,15 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
         > developers worldwide.
       </p>
       <p class="mb-5 sm:text-left">
+        <a href="https://50daysofjavascript.netlify.app/">
+          <img
+            class="mt-2 mb-2"
+            src="https://img.shields.io/badge/Join-%2350DaysOfJavaScript-EAD54D?logo=javascript&labelColor=31322E"
+            alt="Join #50DaysOfJavaScript"
+          />
+        </a>
+      </p>
+      <p class="mb-5 sm:text-left">
         Outside of coding, I've been cafe-hopping through <span
           class="gradient-link glowing-animation">Bengaluru</span
         >, hunting down epic eats. Plus, I've tackled my sleep schedule and
@@ -78,8 +87,9 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
         got options to kickstart your own Astro portfolio.
       </p>
     </div>
-    <div class="grid grid-cols-2 gap-2 group mt-8 mb-8">
+    <div class="grid grid-cols-2 gap-2 group">
       {nowPageContent.sourceLinks.map((item) => <SoourceLinkBox {...item} />)}
+      <br /><br />
     </div>
     <div class="mb-14">
       <p class="mb-5 sm:text-left">

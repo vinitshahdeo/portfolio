@@ -27,9 +27,10 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 
 The portfolio contains three main pages:
 
-- 🏠 **Home**: A welcome page with my brief introduction.
-- 👤 **About**: Detailed information about me, my skills, and experience.
-- 📚 **Featured**: My thoughts, stories, and interviews.
+- 🏠 **[Home](https://vinitshahdeo.netlify.app/)**: A welcome page with my brief introduction.
+- 👤 **[About](https://vinitshahdeo.netlify.app/about/)**: Detailed information about me, my skills, and my experience.
+- 📚 **[Featured](https://vinitshahdeo.netlify.app/featured/)**: My thoughts, stories, and interviews.
+- 📆 **[Now](https://vinitshahdeo.netlify.app/now/)**: What I'm doing now? — This page is inspired by [Derek Sivers](https://nownownow.com/about)'s `/now` page. It's a great way to share what you're up to now. 
 
 ## 📱 Demo
 

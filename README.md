@@ -4,6 +4,7 @@
     <img src="https://astro.badg.es/v2/built-with-astro/small.svg" alt="Built with Astro" />
     <img src="./.assets/vinitshahdeo-portfolio-cover.png" alt="Vinit Shahdeo Portfolio" />
     <p align="center"><strong>Stellar Astro Dev Portfolio Template</strong></p><br/>
+     <img src="./.assets/stellar-dev-astro-portfolio.jpg" alt="Vinit Shahdeo Portfolio" />
 </div>
 
 Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills, and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).

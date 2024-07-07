@@ -2,30 +2,50 @@
 import Layout from "../layouts/Layout.astro";
 import { nowPageContent } from "../config";
 import SoourceLinkBox from "../components/SocialLinkBox.astro";
-
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
-import { getEntry } from "astro:content";
 import { Icon } from "astro-icon/components";
 
-dayjs.extend(utc);
+function formatDate(dateString: string) {
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
-const now = await getEntry("now", "now");
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-let Content, remarkPluginFrontmatter;
-if (now && typeof now.render === "function") {
-  const rendered = await now.render();
-  Content = rendered.Content;
-  remarkPluginFrontmatter = rendered.remarkPluginFrontmatter;
-} else {
-  console.error('Failed to load or render the "now" entry.');
-  Content = null;
-  remarkPluginFrontmatter = { lastModified: new Date().toISOString() };
+  const date = new Date(dateString);
+  const dayName = days[date.getDay()];
+  const monthName = months[date.getMonth()];
+  const day = date.getDate();
+  const year = date.getFullYear();
+  let hours = date.getHours();
+  const minutes = date.getMinutes();
+  const ampm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+  return `${dayName}, ${monthName} ${day}, ${year} ${hours}:${minutesStr} ${ampm}`;
 }
 
-const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
-  .utc()
-  .format("dddd, MMMM D, YYYY h:mm A");
+const lastModified = formatDate(new Date().toISOString());
 ---
 
 <Layout seo={nowPageContent.seo}>

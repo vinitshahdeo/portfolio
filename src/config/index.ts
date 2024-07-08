@@ -16,7 +16,7 @@ export const identity: Identity = {
   email: "vinishahdeo@gmail.com",
 };
 
-export const openGraphImage: string = "/img/vinitshahdeo-og-image.png";
+export const openGraphImage: string = "/img/vinitshahdeo-og.jpg";
 
 export const navBarLinks: NavBarLink[] = [
   {

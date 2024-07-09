@@ -150,9 +150,27 @@ import { Icon } from "astro-icon/components";
     <script>
       import { musicPlaylist } from "../config";
 
+      let shuffledPlaylist: any[] = [];
+      let currentIndex = 0;
+
+      function shuffleArray(array: any[]) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      shuffledPlaylist = shuffleArray([...musicPlaylist]);
+
       function randomSong() {
-        const randomIndex = Math.floor(Math.random() * musicPlaylist.length);
-        const randomSong = musicPlaylist[randomIndex];
+        if (currentIndex >= shuffledPlaylist.length) {
+          shuffledPlaylist = shuffleArray([...musicPlaylist]);
+          currentIndex = 0;
+        }
+
+        const randomSong = shuffledPlaylist[currentIndex];
+        currentIndex++;
 
         const songElement = document.getElementById("song");
         if (songElement instanceof HTMLAudioElement) {

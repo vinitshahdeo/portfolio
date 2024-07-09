@@ -161,4 +161,12 @@ export const musicPlaylist: MusicPlaylist[] = [
     title: "Kali Kali Zulfon Ke Phande Na Dalo",
     url: "/music/kali_kali.mp3",
   },
+  {
+    title: "Tainu Khabar Nahin",
+    url: "/music/munjya.mp3",
+  },
+  {
+    title: "Main Tenu Samjhawan Ki",
+    url: "/music/main_tenu.mp3",
+  },
 ];

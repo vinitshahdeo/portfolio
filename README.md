@@ -1,6 +1,7 @@
 <div align="center">
     <img src="./.assets/stellar-dev-astro-portfolio.jpg" alt="Vinit Shahdeo Portfolio" />
     <h1 align="center">Astro Portfolio — Vinit Shahdeo</h1>
+     <a href="https://astro.build"><img src="https://astro.badg.es/v2/built-with-astro/medium.svg" alt="Built with Astro" width="240" height="40"></a>
     <p align="center"><strong>Stellar Astro Dev Portfolio Template</strong></p><br/>
 </div>
 

@@ -18,5 +18,5 @@ export default defineConfig({
       },
     },
   },
-  // cacheOnDemandPages: true, // @todo: Enable this for final build
+  cacheOnDemandPages: true,
 });

@@ -97,8 +97,7 @@ export const featuredPosts: FeaturedPost[] = [
   },
   {
     title: "Milepost: From a GitHub User to a GitHub Star",
-    description:
-      "From a (green) dot to a star, here’s how my journey uncoiled",
+    description: "From a (green) dot to a star, here’s how my journey uncoiled",
     date: "2021-05-14",
     url: "https://vinitshahdeo.dev/milepost-from-a-github-user-to-a-github-star",
     author: "Vinit Shahdeo",
@@ -109,7 +108,8 @@ export const featuredPosts: FeaturedPost[] = [
     publisher: "Personal Blog",
   },
   {
-    title: "Saying Goodbye to Postman: A Journey of Growth, Innovation, and Friendship",
+    title:
+      "Saying Goodbye to Postman: A Journey of Growth, Innovation, and Friendship",
     description:
       "Bidding farewell to 4.5 incredible years at Postman! Taking with me the friendships and amazing experiences that have shaped me.",
     date: "2023-08-28",
@@ -122,9 +122,9 @@ export const featuredPosts: FeaturedPost[] = [
     publisher: "Personal Blog",
   },
   {
-    title: "Announcing Postman’s projects and accepted contributors for Google Summer of Code 2023",
-    description:
-      "Postman at GSoC",
+    title:
+      "Announcing Postman’s projects and accepted contributors for Google Summer of Code 2023",
+    description: "Postman at GSoC",
     date: "2023-05-15",
     url: "https://blog.postman.com/postmans-projects-and-contributors-google-summer-of-code-2023/",
     author: "Vinit Shahdeo",
@@ -135,7 +135,8 @@ export const featuredPosts: FeaturedPost[] = [
     publisher: "Postman Blog",
   },
   {
-    title: "Navigating open source — AMA with Vinit Shahdeo, Software Engineer @Postman & Github Star",
+    title:
+      "Navigating open source — AMA with Vinit Shahdeo, Software Engineer @Postman & Github Star",
     description:
       "Navigating open source — AMA with Vinit Shahdeo, Software Engineer @Postman & Github Star",
     date: "2021-03-27",
@@ -146,5 +147,5 @@ export const featuredPosts: FeaturedPost[] = [
       alt: "Vinit Shahdeo - GSSoC",
     },
     publisher: "Medium",
-  }
+  },
 ];

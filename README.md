@@ -21,6 +21,7 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 - 🎨 **Fully Customizable**: Tailor the template to fit your unique style and needs.
 - 📄 **Comprehensive Pages**: Includes Home, About, and Featured pages.
 - 🚀 **Self-Host Ready**: Easily deployable on your own hosting environment like [Netlify](https://www.netlify.com/) / [Vercel](https://vercel.com/).
+- 📊 **Google Analytics Integration**: Simplified configuration for Google Analytics with your measurement ID.
 
 ## 🧐 What's inside?
 
@@ -127,6 +128,14 @@ export default defineConfig({
     },
   },
 });
+```
+
+## 📊 Google Analytics
+
+To update your Google Analytics measurement ID, follow these steps in [analytics.ts](./src/config/analytics.ts). For detailed instructions, refer to [this guide](https://support.google.com/analytics/answer/9539598?hl=en). This setup includes optimization with [@astrojs/partytown](https://docs.astro.build/en/guides/integrations-guide/partytown/) to prevent page rendering delays.
+
+```typescript
+export const measurementId = "G-XXXXXXXX"; // Replace G-XXXXXXXX with your measurement ID.
 ```
 
 ## 🙏 Acknowledgment

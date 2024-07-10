@@ -153,6 +153,10 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/)
 
+## 💙 Support
+
+If you liked this project, leave a star or share the blog on Twitter to spread the word.
+
 <!--
 
     ████████████████████████████████████████████████████████████████████████████████

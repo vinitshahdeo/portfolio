@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
-import { navBarLinks, identity, measurementId } from "../config";
+import { navBarLinks, identity, measurementId, googleSiteVerification } from "../config";
 import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import type { SEOInfo } from "../types/config";
 import "@styles/base.css";
@@ -81,6 +81,8 @@ const ogImageUrl = seo.image;
     <meta name="twitter:title" content={seo.title} />
     <meta name="twitter:description" content={seo.description} />
     <meta name="twitter:image" content={ogImageUrl} />
+
+    <meta name="google-site-verification" content={googleSiteVerification} />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -163,3 +163,4 @@ export * from "./music";
 export * from "./social";
 export * from "./featured";
 export * from "./source";
+export * from "./analytics";

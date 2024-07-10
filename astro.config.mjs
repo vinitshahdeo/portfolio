@@ -4,8 +4,7 @@ import icon from "astro-icon";
 
 import netlify from "@astrojs/netlify";
 import partytown from "@astrojs/partytown";
-import sitemap from '@astrojs/sitemap';
-
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({

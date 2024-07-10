@@ -22,6 +22,7 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 - 📄 **Comprehensive Pages**: Includes Home, About, and Featured pages.
 - 🚀 **Self-Host Ready**: Easily deployable on your own hosting environment like [Netlify](https://www.netlify.com/) / [Vercel](https://vercel.com/).
 - 📊 **Google Analytics Integration**: Simplified configuration for Google Analytics with your measurement ID.
+- Auto generation of Robots.txt and Sitemap generator 
 
 ## 🧐 What's inside?
 

@@ -139,6 +139,12 @@ To update your Google Analytics measurement ID, follow these steps in [analytics
 export const measurementId = "G-XXXXXXXX"; // Replace G-XXXXXXXX with your measurement ID.
 ```
 
+> [!WARNING]
+> Please update your [Google Site Verification](https://developers.google.com/site-verification/v1/getting_started) token in [analytics.ts](./src/config/analytics.ts).
+> ```ts
+> export const googleSiteVerification = "YOUR-VERIFICATION-TOKEN"
+> ```
+
 ## 🙏 Acknowledgment
 
 This is inspired by [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). The [`/now`](https://vinitshahdeo.netlify.app/now/) page is inspired by the [Now Page](https://sive.rs/nowff) movement.

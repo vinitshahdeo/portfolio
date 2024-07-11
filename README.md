@@ -21,8 +21,8 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 - 🎨 **Fully Customizable**: Tailor the template to fit your unique style and needs.
 - 📄 **Comprehensive Pages**: Includes Home, About, and Featured pages.
 - 🚀 **Self-Host Ready**: Easily deployable on your own hosting environment like [Netlify](https://www.netlify.com/) / [Vercel](https://vercel.com/).
-- 📊 **Google Analytics Integration**: Simplified configuration for Google Analytics with your measurement ID.
-- Auto generation of Robots.txt and Sitemap generator 
+- 📊 **Google Analytics Integration**: Simplifies the configuration process with your measurement ID for insightful analytics.
+- 🔍 **Automated SEO Tools**: Features automatic generation of Robots.txt and Sitemap for improved search engine indexing and site navigation.
 
 ## 🧐 What's inside?
 
@@ -152,6 +152,10 @@ The source code of this project is licensed under the MIT License - see the [LIC
 For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_shahdeo) (𝕏) or follow me on [GitHub](https://github.com/vinitshahdeo).
 
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/)
+
+## 💙 Support
+
+If you liked this project, leave a star or share the blog on Twitter to spread the word.
 
 <!--
 

@@ -44,8 +44,8 @@ export const homePageContent: HomePageContent = {
     description:
       "Explore the portfolio of Vinit Shahdeo, a Senior Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
     image: openGraphImage,
-    domain: "vinitshahdeo.netlify.app",
-    url: "https://vinitshahdeo.netlify.app",
+    domain: "vinitshahdeo.com",
+    url: "https://vinitshahdeo.com",
   },
   role: "Senior Backend Engineer",
   description:
@@ -77,8 +77,8 @@ export const aboutPageContent: AboutPageContent = {
     description:
       "Discover Vinit Shahdeo, a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
     image: openGraphImage,
-    domain: "vinitshahdeo.netlify.app",
-    url: "https://vinitshahdeo.netlify.app/about",
+    domain: "vinitshahdeo.com",
+    url: "https://vinitshahdeo.com/about",
   },
   subtitle: "Thanks for stopping by! Here's a bit about me.",
   about: {
@@ -139,8 +139,8 @@ export const featuredPageContent: FeaturedPageContent = {
     description:
       "Explore a curated collection of articles, insightful stories, and exclusive interviews with Vinit Shahdeo, a Software Engineer and a GitHub Star from Bengaluru, India.",
     image: openGraphImage,
-    domain: "vinitshahdeo.netlify.app",
-    url: "https://vinitshahdeo.netlify.app",
+    domain: "vinitshahdeo.com",
+    url: "https://vinitshahdeo.com/featured",
   },
   subtitle: "Thoughts, stories, and interviews.",
 };
@@ -152,8 +152,8 @@ export const nowPageContent: NowPageContent = {
     description:
       "A updated log of what I'm building, learning, reading or exploring at different points of time.",
     image: openGraphImage,
-    domain: "vinitshahdeo.netlify.app",
-    url: "https://vinitshahdeo.netlify.app/now",
+    domain: "vinitshahdeo.com",
+    url: "https://vinitshahdeo.com/now",
   },
   subtitle: "Where I’m at, what I’m focused on, and what I’m not.",
   sourceLinks,

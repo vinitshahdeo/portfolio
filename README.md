@@ -16,13 +16,20 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 
 ## 🔥 Features
 
-- 📱 **Fully Responsive**: Adapts smoothly to any screen size.
-- ⚡ **Fast and SEO Optimized**: Ensures quick loading times and better search engine rankings. Incorporates comprehensive [Open Graph](https://ogp.me/) Meta tags for better social media sharing.
-- 🎨 **Fully Customizable**: Tailor the template to fit your unique style and needs.
-- 📄 **Comprehensive Pages**: Includes Home, About, and Featured pages.
-- 🚀 **Self-Host Ready**: Easily deployable on your own hosting environment like [Netlify](https://www.netlify.com/) / [Vercel](https://vercel.com/).
-- 📊 **Google Analytics Integration**: Simplifies the configuration process with your measurement ID for insightful analytics.
-- 🔍 **Automated SEO Tools**: Features automatic generation of Robots.txt and Sitemap for improved search engine indexing and site navigation.
+This website is designed to be **performant**, **smooth**, **accessible**, and **SEO-friendly**, boasting a perfect Lighthouse score. Check it out here: [Lighthouse Report](https://lighthouse-metrics.com/lighthouse/checks/217641f6-26a8-480f-b511-fd5e1754110c).
+
+![](./.assets/lighthouse.png)
+
+Here are the key features:
+
+- 📱 **Fully Responsive**: Seamlessly adapts to any screen size for an optimal user experience.
+- ⚡ **Fast and SEO Optimized**: Ensures quick loading times and higher search engine rankings. Incorporates comprehensive [Open Graph](https://ogp.me/) meta tags for enhanced social media sharing.
+- 🎨 **Fully Customizable**: Easily modify the template to match your personal style and requirements.
+- 📄 **Comprehensive Pages**: Comes with pre-built Home, About, Now and Featured pages.
+- 🚀 **Self-Host Ready**: Easily deployable on hosting platforms like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
+- 📊 **Google Analytics Integration**: Simplifies the configuration with your measurement ID for insightful analytics.
+- 🔍 **Automated SEO Tools**: Includes automatic generation of `Robots.txt` and **Sitemap** for better search engine indexing and site navigation.
+
 
 ## 🧐 What's inside?
 

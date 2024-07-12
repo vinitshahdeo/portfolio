@@ -25,7 +25,7 @@ Here are the key features:
 - 📱 **Fully Responsive**: Seamlessly adapts to any screen size for an optimal user experience.
 - ⚡ **Fast and SEO Optimized**: Ensures quick loading times and higher search engine rankings. Incorporates comprehensive [Open Graph](https://ogp.me/) meta tags for enhanced social media sharing.
 - 🎨 **Fully Customizable**: Easily modify the template to match your personal style and requirements.
-- 📄 **Comprehensive Pages**: Comes with pre-built Home, About, Now and Featured pages.
+- 📄 **Comprehensive Pages**: Comes with pre-built [`Home`](https://vinitshahdeo.com/), [`About`](https://vinitshahdeo.com/about), [`Now`](https://vinitshahdeo.com/now), and [`Featured`](https://vinitshahdeo.com/featured) pages.
 - 🚀 **Self-Host Ready**: Easily deployable on hosting platforms like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
 - 📊 **Google Analytics Integration**: Simplifies the configuration with your measurement ID for insightful analytics.
 - 🔍 **Automated SEO Tools**: Includes automatic generation of `Robots.txt` and **Sitemap** for better search engine indexing and site navigation.

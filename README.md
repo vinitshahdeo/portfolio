@@ -16,7 +16,7 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 
 ## 🔥 Features
 
-This website is designed to be **performant**, **smooth**, **accessible**, and **SEO-friendly**, boasting a perfect Lighthouse score. Check it out here: [Lighthouse Report](https://lighthouse-metrics.com/lighthouse/checks/217641f6-26a8-480f-b511-fd5e1754110c).
+This website is designed to be **performant**, **smooth**, **accessible**, and **SEO-friendly**, boasting a perfect Lighthouse score. Check it out here: [Lighthouse Report](https://lighthouse-metrics.com/lighthouse/checks/6476d271-f309-4ff3-aa53-3a6863acc0eb).
 
 ![](./.assets/lighthouse.png)
 

@@ -161,7 +161,7 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 
 ## 💙 Support
 
-If you liked this project, leave a star or share the blog on Twitter to spread the word.
+If you enjoyed this project, please consider giving it a **star on GitHub**. You can also help **spread the word** by sharing the blog post on Twitter. Your support is greatly appreciated!
 
 <!--
 

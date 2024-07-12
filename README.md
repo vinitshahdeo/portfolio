@@ -30,7 +30,6 @@ Here are the key features:
 - 📊 **Google Analytics Integration**: Simplifies the configuration with your measurement ID for insightful analytics.
 - 🔍 **Automated SEO Tools**: Includes automatic generation of `Robots.txt` and **Sitemap** for better search engine indexing and site navigation.
 
-
 ## 🧐 What's inside?
 
 The portfolio contains three main pages:
@@ -148,8 +147,9 @@ export const measurementId = "G-XXXXXXXX"; // Replace G-XXXXXXXX with your measu
 
 > [!NOTE]
 > Please update your [Google Site Verification](https://developers.google.com/site-verification/v1/getting_started) token in [analytics.ts](./src/config/analytics.ts).
+>
 > ```ts
-> export const googleSiteVerification = "YOUR-VERIFICATION-TOKEN"
+> export const googleSiteVerification = "YOUR-VERIFICATION-TOKEN";
 > ```
 
 ## 🙏 Acknowledgment

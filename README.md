@@ -9,7 +9,7 @@ Welcome to the repository that hosts the source code for my portfolio, designed 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build) ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
 
-The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app) and is deployed on Netlify. This project is a free, open-source Astro theme that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements.
+The portfolio is currently live at [vinitshahdeo.com](https://vinitshahdeo.com) and is deployed on Netlify. This project is a free, open-source Astro theme that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements.
 
 > [!IMPORTANT]
 > The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
@@ -34,10 +34,10 @@ Here are the key features:
 
 The portfolio contains three main pages:
 
-- 🏠 **[Home](https://vinitshahdeo.netlify.app/)**: A welcome page with my brief introduction.
-- 👤 **[About](https://vinitshahdeo.netlify.app/about/)**: Detailed information about me, my skills, and my experience.
-- 📚 **[Featured](https://vinitshahdeo.netlify.app/featured/)**: My thoughts, stories, and interviews.
-- 📆 **[Now](https://vinitshahdeo.netlify.app/now/)**: What I'm doing now? — This page is inspired by [Derek Sivers](https://nownownow.com/about)'s `/now` page. It's a great way to share what you're up to now.
+- 🏠 **[Home](https://vinitshahdeo.com/)**: A welcome page with my brief introduction.
+- 👤 **[About](https://vinitshahdeo.com/about/)**: Detailed information about me, my skills, and my experience.
+- 📚 **[Featured](https://vinitshahdeo.com/featured/)**: My thoughts, stories, and interviews.
+- 📆 **[Now](https://vinitshahdeo.com/now/)**: What I'm doing now? — This page is inspired by [Derek Sivers](https://nownownow.com/about)'s `/now` page. It's a great way to share what you're up to now.
 
 ## 🌟 Perfect Lighthouse Score
 
@@ -49,7 +49,8 @@ This portfolio is designed to be performant and accessible, achieving a perfect 
 
 [![Vinit Shahdeo Portfolio Demo](./.assets/stellar-dev-astro-porfolio-banner.png)](https://vinitshahdeo.com)
 
-You can preview the demo by scanning the QR code below or visiting my portfolio at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app).
+You can preview the demo by scanning the QR code below or visiting my portfolio at [vinitshahdeo.com](https://vinitshahdeo.com). In case, you are not able to reach [vinitshahdeo.com](https://vinitshahdeo.com), please try [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app)
+
 
 <img src='./.assets/vinitshahdeo-portfolio-qr.png' alt='Vinit Shahdeo Portfolio QR Code' width='20%' height='20%' />
 
@@ -162,7 +163,7 @@ export const measurementId = "G-XXXXXXXX"; // Replace G-XXXXXXXX with your measu
 
 ## 🙏 Acknowledgment
 
-This is inspired by [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). The [`/now`](https://vinitshahdeo.netlify.app/now/) page is inspired by the [Now Page](https://sive.rs/nowff) movement.
+This is inspired by [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). The [`/now`](https://vinitshahdeo.com/now/) page is inspired by the [Now Page](https://sive.rs/nowff) movement.
 
 ## 📝 License
 

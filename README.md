@@ -18,8 +18,6 @@ The portfolio is currently live at [vinitshahdeo.netlify.app](https://vinitshahd
 
 This website is designed to be **performant**, **smooth**, **accessible**, and **SEO-friendly**, boasting a perfect Lighthouse score. Check it out here: [Lighthouse Report](https://lighthouse-metrics.com/lighthouse/checks/6476d271-f309-4ff3-aa53-3a6863acc0eb).
 
-![](./.assets/lighthouse.png)
-
 Here are the key features:
 
 - 📱 **Fully Responsive**: Seamlessly adapts to any screen size for an optimal user experience.
@@ -38,6 +36,12 @@ The portfolio contains three main pages:
 - 👤 **[About](https://vinitshahdeo.netlify.app/about/)**: Detailed information about me, my skills, and my experience.
 - 📚 **[Featured](https://vinitshahdeo.netlify.app/featured/)**: My thoughts, stories, and interviews.
 - 📆 **[Now](https://vinitshahdeo.netlify.app/now/)**: What I'm doing now? — This page is inspired by [Derek Sivers](https://nownownow.com/about)'s `/now` page. It's a great way to share what you're up to now.
+
+## 🌟 Perfect Lighthouse Score
+
+This portfolio is designed to be performant and accessible, achieving a perfect score on Lighthouse. Check it out here: [Lighthouse Report](https://lighthouse-metrics.com/lighthouse/checks/6476d271-f309-4ff3-aa53-3a6863acc0eb).
+
+![Lighthouse Report of Vinit Shahdeo's Portfolio](./.assets/lighthouse.png)
 
 ## 📱 Demo
 

@@ -28,7 +28,7 @@ Here are the key features:
 - 📄 **Comprehensive Pages**: Comes with pre-built [`Home`](https://vinitshahdeo.com/), [`About`](https://vinitshahdeo.com/about), [`Now`](https://vinitshahdeo.com/now), and [`Featured`](https://vinitshahdeo.com/featured) pages.
 - 🚀 **Self-Host Ready**: Easily deployable on hosting platforms like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
 - 📊 **Google Analytics Integration**: Simplifies the configuration with your measurement ID for insightful analytics.
-- 🔍 **Automated SEO Tools**: Includes automatic generation of `Robots.txt` and **Sitemap** for better search engine indexing and site navigation.
+- 🔍 **Automated SEO Tools**: Includes automatic generation of `robots.txt` and **Sitemap** for better search engine indexing and site navigation.
 
 ## 🧐 What's inside?
 

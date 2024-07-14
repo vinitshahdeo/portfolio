@@ -138,8 +138,20 @@ export const musicPlaylist: MusicPlaylist[] = [
     url: "/music/kali_kali_zulfon_ke.mp3",
   },
   {
+    title: "Kabhi Shaam Dhale",
+    url: "/music/kabhi-shaam-dhale.mp3",
+  },
+  {
+    title: "Sajni Paas Bulao Naa",
+    url: "/music/sajni.mp3",
+  },
+  {
     title: "Laree Choote",
     url: "/music/laare_choote.mp3",
+  },
+  {
+    title: "Sajni",
+    url: "/music/sajni_jal_band.mp3",
   },
   {
     title: "Emptiness",

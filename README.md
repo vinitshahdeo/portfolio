@@ -47,9 +47,7 @@ This portfolio is designed to be performant and accessible, achieving a perfect 
 
 ## 📱 Demo
 
-[![Vinit Shahdeo Portfolio Demo](./.assets/stellar-dev-astro-porfolio-banner.png)](https://vinitshahdeo.com)
-
-You can preview the demo by scanning the QR code below or visiting my portfolio at [vinitshahdeo.com](https://vinitshahdeo.com). In case, you are not able to reach [vinitshahdeo.com](https://vinitshahdeo.com), please try [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app)
+You can preview the demo by scanning the QR code below or visiting my portfolio at [vinitshahdeo.com](https://vinitshahdeo.com). In case, you are not able to reach [vinitshahdeo.com](https://vinitshahdeo.com), please try [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app).
 
 
 <img src='./.assets/vinitshahdeo-portfolio-qr.png' alt='Vinit Shahdeo Portfolio QR Code' width='20%' height='20%' />

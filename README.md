@@ -18,7 +18,7 @@ The portfolio is live at [vinitshahdeo.com](https://vinitshahdeo.com) and deploy
 
 This website is designed to be **performant**, **smooth**, **accessible**, and **SEO-friendly**, boasting a perfect Lighthouse score. Check it out here: [Lighthouse Report](https://lighthouse-metrics.com/lighthouse/checks/6476d271-f309-4ff3-aa53-3a6863acc0eb).
 
-![](./.assets/stellar-dev-astro-portfolio-1.png)
+![](./.assets/covers/stellar-dev-astro-portfolio-1.png)
 
 Here are the key features:
 

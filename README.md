@@ -41,6 +41,8 @@ The portfolio contains three main pages:
 
 ## 📱 Demo
 
+[![Vinit Shahdeo Portfolio Demo](./.assets/stellar-dev-astro-porfolio-banner.png)](https://vinitshahdeo.com)
+
 You can preview the demo by scanning the QR code below or visiting my portfolio at [vinitshahdeo.netlify.app](https://vinitshahdeo.netlify.app).
 
 <img src='./.assets/vinitshahdeo-portfolio-qr.png' alt='Vinit Shahdeo Portfolio QR Code' width='20%' height='20%' />

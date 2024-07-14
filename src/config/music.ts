@@ -150,6 +150,14 @@ export const musicPlaylist: MusicPlaylist[] = [
     url: "/music/laare_choote.mp3",
   },
   {
+    title: "Khalasi",
+    url: "/music/khalasi.mp3",
+  },
+  {
+    title: "Ek Ajnabee Haseena Se",
+    url: "/music/ek-ajnabee.mp3",
+  },
+  {
     title: "Sajni",
     url: "/music/sajni_jal_band.mp3",
   },

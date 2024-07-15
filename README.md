@@ -3,6 +3,7 @@
     <h1 align="center">Stellar Astro Dev Portfolio</h1>
      <a href="https://astro.build"><img src="https://astro.badg.es/v2/built-with-astro/medium.svg" alt="Built with Astro" width="240" height="40"></a>
     <p align="center"><strong><a href="https://vinitshahdeo.com/">Preview Demo</a>  ✨  <a href="https://vinitshahdeo.dev/">Read Blog</a></strong></p><br/>
+    <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src="./.assets/peerlist.svg"></a><br/>
 </div>
 
 Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills, and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/). This is also available as the [Stellar Astro Dev Portfolio](https://astro.build/themes/) Template.

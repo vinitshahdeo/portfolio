@@ -1,5 +1,6 @@
 import type { MusicPlaylist } from "../types/config";
 
+// @todo: Fetch it from API (Spotify, Apple Music, etc.)
 export const musicPlaylist: MusicPlaylist[] = [
   {
     title: "O Mere Dil Ke Chain",

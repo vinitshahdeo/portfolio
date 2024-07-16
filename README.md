@@ -165,7 +165,7 @@ This is inspired by [Minimal Portfolio Template](https://astro.build/themes/deta
 
 ## 📝 License
 
-The source code of this project is licensed under the MIT License - see the [LICENSE](./LICENCSE) file for details. The words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The source code of this project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details. The words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## 📫 Contact
 

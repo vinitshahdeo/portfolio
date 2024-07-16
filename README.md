@@ -33,7 +33,7 @@ Here are the key features:
 
 ## 🧐 What's inside?
 
-The portfolio contains three main pages:
+The portfolio contains four main pages:
 
 - 🏠 **[Home](https://vinitshahdeo.com/)**: A welcome page with my brief introduction.
 - 👤 **[About](https://vinitshahdeo.com/about/)**: Detailed information about me, my skills, and my experience.

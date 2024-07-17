@@ -9,7 +9,7 @@ export const sourceLinks: SourceLink[] = [
   },
   {
     title: "Download Astro Template",
-    url: "https://github.com/vinitshahdeo/portfolio", // @todo: replace with Astro link
+    url: "https://astro.build/themes/details/stellar-astro-dev-portfolio",
     icon: "mdi:code-block-tags",
     external: true,
   },

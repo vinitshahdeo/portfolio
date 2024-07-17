@@ -1,16 +1,16 @@
 <div align="center">
     <img src="./.assets/covers/stellar-dev-astro-portfolio.jpg" alt="Vinit Shahdeo Portfolio" />
     <h1 align="center">Stellar Astro Dev Portfolio</h1>
-     <a href="https://astro.build"><img src="https://astro.badg.es/v2/built-with-astro/medium.svg" alt="Built with Astro" width="240" height="40"></a>
+     <a href="https://astro.build/themes/details/stellar-astro-dev-portfolio"><img src="https://astro.badg.es/v2/built-with-astro/medium.svg" alt="Built with Astro" width="240" height="40"></a>
     <p align="center"><strong><a href="https://vinitshahdeo.com/">Preview Demo</a>  ✨  <a href="https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css">Read Blog</a></strong></p><br/>
     <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src="./.assets/peerlist.svg"></a><br/><br/>
 </div>
 
 Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills, and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/). This is also available as the [Stellar Astro Dev Portfolio](https://astro.build/themes/) Template.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build) ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build/themes/details/stellar-astro-dev-portfolio) ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
 
-The portfolio is live at [vinitshahdeo.com](https://vinitshahdeo.com) and deployed on Netlify. This project is a free, open-source Astro theme that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements—[learn more](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css).
+The portfolio is live at [vinitshahdeo.com](https://vinitshahdeo.com) and deployed on Netlify. This project is a **free**, **open-source** [Astro theme](https://astro.build/themes/details/stellar-astro-dev-portfolio) that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements—[learn more](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css).
 
 > [!IMPORTANT]
 > The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
@@ -33,7 +33,7 @@ Here are the key features:
 
 ## 🧐 What's inside?
 
-The portfolio contains three main pages:
+The portfolio contains four main pages:
 
 - 🏠 **[Home](https://vinitshahdeo.com/)**: A welcome page with my brief introduction.
 - 👤 **[About](https://vinitshahdeo.com/about/)**: Detailed information about me, my skills, and my experience.
@@ -99,7 +99,7 @@ npm run dev
 ```
 
 > [!TIP]
-> For enhanced Astro support in Visual Studio Code, it's highly recommended to install the [Astro VSCode extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode). This extension provides useful features such as syntax highlighting, IntelliSense, code formatting, and more, significantly improving your development experience with the [Stellar Astro Dev Portfolio](/) template.
+> For enhanced Astro support in Visual Studio Code, it's highly recommended to install the [Astro VSCode extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode). This extension provides useful features such as syntax highlighting, IntelliSense, code formatting, and more, significantly improving your development experience with the [Stellar Astro Dev Portfolio](https://astro.build/themes/details/stellar-astro-dev-portfolio) template.
 
 ## 🧞 Commands
 
@@ -165,7 +165,7 @@ This is inspired by [Minimal Portfolio Template](https://astro.build/themes/deta
 
 ## 📝 License
 
-The source code of this project is licensed under the MIT License - see the [LICENSE](./LICENCSE) file for details. The words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The source code of this project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details. The words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## 📫 Contact
 
@@ -174,6 +174,8 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/) [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
 
 ## 💙 Support
+
+[![Stargazers repo roster for @vinitshahdeo/portfolio](https://reporoster.com/stars/dark/vinitshahdeo/portfolio)](https://github.com/vinitshahdeo/portfolio/stargazers)
 
 If you enjoyed this project, please consider giving it a **star on GitHub**. You can also help **[spread the word](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2Fportfolio&text=Build%20your%20portfolio%20with%20Astro%20and%20Tailwind%20CSS.%20Here%27s%20a%20sleek%2C%20modern%2C%20highly%20customizable%20Astro%20template%20that%20is%20optimized%20for%20performance%20and%20SEO.%20)** by sharing the [blog post](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css) on 𝕏 (Twitter). Your support is greatly appreciated!
 

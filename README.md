@@ -6,7 +6,7 @@
     <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src="./.assets/peerlist.svg"></a><br/><br/>
 </div>
 
-Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills, and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/). This is also available as the [Stellar Astro Dev Portfolio](https://astro.build/themes/) Template.
+Welcome to the repository that hosts the source code for my portfolio, designed to showcase my work, skills, and featured articles, leveraging [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/). This is also available as the [Stellar Astro Dev Portfolio](https://astro.build/themes/details/stellar-astro-dev-portfolio) Template.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4d43738-02ac-4a8d-9e64-7137bab31be8/deploy-status)](https://app.netlify.com/sites/vinitshahdeo/deploys) [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build/themes/details/stellar-astro-dev-portfolio) ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
 

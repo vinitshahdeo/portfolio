@@ -155,9 +155,13 @@ export const nowPageContent: NowPageContent = {
     domain: "vinitshahdeo.com",
     url: "https://vinitshahdeo.com/now",
   },
+  title: "Now (Recently)",
   subtitle: "Where I’m at, what I’m focused on, and what I’m not.",
   sourceLinks,
 };
+
+export const gitHubUserId = "20594326";
+export const gitHubUserName = "vinitshahdeo";
 
 export * from "./music";
 export * from "./social";

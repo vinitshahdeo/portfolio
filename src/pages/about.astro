@@ -9,8 +9,8 @@ import { Icon } from "astro-icon/components";
 
 <Layout seo={aboutPageContent.seo}>
   <section class="mt-10 max-w-2xl mx-auto px-6">
-    <h1 class="font-bold text-3xl mb-1">About</h1>
-    <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
+    <h1 class="text-3xl mb-1">About</h1>
+    <p class="opacity-60 mb-10 subtitle">{aboutPageContent.subtitle}</p>
     <div class="mb-14">
       <p class="mb-5 sm:text-left">
         Hello 👋, I'm a Software Engineer who adores <span class="gradient-link"
@@ -89,9 +89,9 @@ import { Icon } from "astro-icon/components";
         spot me on the badminton court, rallying shuttlecocks.
       </p>
       <p class="mb-5 sm:text-left">
-        <strong>I prefer FM Radio over Spotify</strong>—call me old school, but
-        there's something magical about tuning into RJs and their spontaneous
-        charm.
+        <span class="subtitle">I prefer FM Radio over Spotify</span>—call me old
+        school, but there's something magical about tuning into RJs and their
+        spontaneous charm.
         <br /><br />
         <strong>Picture this:</strong> I'm deep into debugging production issues
         while the soothing melody of <a
@@ -132,7 +132,7 @@ import { Icon } from "astro-icon/components";
         </a>
       </p>
       <p class="mb-5 sm:text-left">
-        <strong>Open source?</strong> It's a world I'm deeply involved in. I've had
+        <strong>Open Source?</strong> It's a world I'm deeply involved in. I've had
         the privilege of mentoring in <a
           href="https://blog.postman.com/author/vinit-shahdeo/"
           class="underline-hover">GSoC</a

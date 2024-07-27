@@ -38,10 +38,12 @@ export const homeSocialLinks: SocialLink[] = [
     title: "Twitter",
     url: "https://x.com/vinit_shahdeo",
     icon: "mdi:twitter",
+    external: true,
   },
   {
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/vinitshahdeo",
     icon: "mdi:linkedin",
+    external: true,
   },
 ];

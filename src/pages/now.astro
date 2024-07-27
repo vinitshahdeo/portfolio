@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { nowPageContent } from "../config";
+import { nowPageContent, gitHubUserId, gitHubUserName } from "../config";
 import SoourceLinkBox from "../components/SocialLinkBox.astro";
 import { Icon } from "astro-icon/components";
 
@@ -50,8 +50,8 @@ const lastModified = formatDate(new Date().toISOString());
 
 <Layout seo={nowPageContent.seo}>
   <section class="mt-10 max-w-2xl mx-auto px-6">
-    <h1 class="font-bold text-3xl mb-1">Now (Recently)</h1>
-    <p class="opacity-60 mb-10">{nowPageContent.subtitle}</p>
+    <h1 class="text-3xl mb-1">{nowPageContent.title}</h1>
+    <p class="opacity-60 mb-10 subtitle">{nowPageContent.subtitle}</p>
     <div class="mb-14">
       <p class="mb-5 sm:text-left">
         Lately, I've been tinkering with <span class="gradient-link">Go</span>,
@@ -61,6 +61,22 @@ const lastModified = formatDate(new Date().toISOString());
           class="underline-hover">Novo</a
         > to supercharge banking platforms for small and medium businesses across
         the USA.
+      </p>
+      <p class="mb-5 sm:text-left">
+        On weekends, I actively contribute to open-source projects, work towards
+        building better developer communities, and deliver talks on open-source.
+        Happy to collaborate if you're looking for a speaker.
+        <p class="mb-5 sm:text-left">
+          <a href=`https://github.com/${gitHubUserName}` target="_blank">
+            <img
+              src=`https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=${gitHubUserId}&image_size=auto&color_scheme=dark`
+              width="770"
+              height="auto"
+              alt="Dashboard stats of @vinitshahdeo"
+              loading="lazy"
+            />
+          </a>
+        </p>
       </p>
       <p class="mb-5 sm:text-left">
         On the side, I'm working on another community-led open-source initiative

@@ -64,7 +64,7 @@ export const homePageContent: HomePageContent = {
       external: true,
     },
     {
-      title: "About Me",
+      title: "About",
       url: "/about",
     },
   ],

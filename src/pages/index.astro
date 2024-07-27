@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import { homePageContent, identity } from "../config";
 import SocialLink from "../components/SocialLink.astro";
 import Link from "../components/Link.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout seo={homePageContent.seo}>
@@ -63,6 +64,14 @@ import Link from "../components/Link.astro";
           <Link text={link.title} href={link.url} external={link.external} />
         ))
       }
+      <a
+        href="https://github.com/vinitshahdeo/portfolio"
+        target="_blank"
+        class="opacity-70 inline-flex items-center gap-1"
+      >
+        <Icon name="mdi:github" width={24} height={24} />
+        Source
+      </a>
     </div>
   </section>
 </Layout>

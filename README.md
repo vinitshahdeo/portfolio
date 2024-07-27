@@ -171,7 +171,7 @@ The source code of this project is licensed under the MIT License - see the [LIC
 
 For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_shahdeo) (𝕏) or follow me on [GitHub](https://github.com/vinitshahdeo).
 
-[![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/) [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
+[![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/) [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo)
 
 ## 💙 Support
 

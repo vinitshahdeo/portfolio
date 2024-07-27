@@ -87,6 +87,7 @@ export type AboutPageContent = {
 export type NowPageContent = {
   seo: SEOInfo;
   subtitle: string;
+  title: string;
   sourceLinks: SocialLink[];
 };
 

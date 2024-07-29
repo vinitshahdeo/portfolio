@@ -56,16 +56,25 @@ export const homePageContent: HomePageContent = {
     {
       title: "Peerlist",
       url: "https://peerlist.io/vinitshahdeo",
-      external: true,
-    },
-    {
-      title: "Blog",
-      url: "https://vinitshahdeo.dev/",
+      icon: "mdi:link-circle",
       external: true,
     },
     {
       title: "About",
       url: "/about",
+      icon: "mdi:account-circle",
+    },
+    {
+      title: "Blog",
+      url: "https://vinitshahdeo.dev/",
+      icon: "mdi:share-circle",
+      external: true,
+    },
+    {
+      title: "Source",
+      url: "https://github.com/vinitshahdeo/portfolio",
+      icon: "mdi:github",
+      external: true,
     },
   ],
 };

@@ -41,6 +41,7 @@ export type HomePageContent = {
   links: {
     title: string;
     url: string;
+    icon: string;
     external?: boolean;
   }[];
 };

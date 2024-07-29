@@ -3,11 +3,12 @@ import { Icon } from "astro-icon/components";
 interface Props {
   text: string;
   href: string;
+  icon: string;
   external?: boolean;
   noAnchor?: boolean;
 }
 
-const { text, href, external, noAnchor } = Astro.props;
+const { text, href, external, noAnchor, icon } = Astro.props;
 ---
 
 {
@@ -17,16 +18,14 @@ const { text, href, external, noAnchor } = Astro.props;
       target={external ? "_blank" : "_self"}
       class="flex items-center gap-2 opacity-60 group-hover:opacity-30 hover:!opacity-60 transition-opacity"
     >
-      <div class="rotate-45">
-        <Icon name="mdi:arrow-up" />
-      </div>
+      <Icon name={icon} width={24} height={24} />
+
       <span>{text}</span>
     </a>
   ) : (
     <div class="flex items-center gap-2 opacity-60 group-hover:opacity-30 hover:!opacity-60 transition-opacity">
-      <div class="rotate-45">
-        <Icon name="mdi:arrow-up" />
-      </div>
+      <Icon name={icon} width={24} height={24} />
+
       <span>{text}</span>
     </div>
   )

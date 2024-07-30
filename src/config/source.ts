@@ -4,7 +4,7 @@ export const sourceLinks: SourceLink[] = [
   {
     title: "View GitHub Repository",
     url: "https://github.com/vinitshahdeo/portfolio",
-    icon: "mdi:github",
+    icon: "mdi:source-pull",
     external: true,
   },
   {

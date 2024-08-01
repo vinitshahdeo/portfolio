@@ -1,7 +1,9 @@
 <div align="center">
     <img src="./.assets/covers/stellar-dev-astro-portfolio.jpg" alt="Vinit Shahdeo Portfolio" />
     <h1 align="center">Stellar Astro Dev Portfolio</h1>
-     <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src="./.assets/winner.svg"></a><br/>
+     <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src="./.assets/winner.svg"></a>
+     <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src="./.assets/peerlist-spotlight-winner.svg"></a>
+     <br/>
      <a href="https://astro.build/themes/details/stellar-astro-dev-portfolio"><img src="https://astro.badg.es/v2/built-with-astro/medium.svg" alt="Built with Astro" width="240" height="40"></a>
     <p align="center"><strong><a href="https://vinitshahdeo.com/">Preview Demo</a>  ✨  <a href="https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css">Read Blog</a>  ✨  <a href="https://astro.build/themes/details/stellar-astro-dev-portfolio">Astro Theme</a>  ✨  <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio">Peerlist Spotlight</a></strong></p><br/>
 </div>

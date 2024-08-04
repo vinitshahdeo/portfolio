@@ -33,7 +33,7 @@ Here are the key features:
 - 🚀 **Self-Host Ready**: Easily deployable on hosting platforms like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
 - 📊 **Google Analytics Integration**: Simplifies the configuration with your measurement ID for insightful analytics.
 - 🔍 **Automated SEO Tools**: Includes automatic generation of `robots.txt` and **Sitemap** for better search engine indexing and site navigation.
-- 🤖 **Dynamic GitHub Dashboard**: Integrates a real-time OSS Insight widget to showcase your **GitHub contributions and stats**, providing an engaging overview of your open-source activity.
+- 🤖 **Dynamic GitHub Dashboard**: Integrates a real-time [OSS Insight widget](https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20594326&image_size=auto&color_scheme=dark) to showcase your **GitHub contributions and stats**, providing an engaging overview of your open-source activity.
 
 ## 🧐 What's inside?
 

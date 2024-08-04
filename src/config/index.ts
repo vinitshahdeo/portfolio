@@ -169,11 +169,9 @@ export const nowPageContent: NowPageContent = {
   sourceLinks,
 };
 
-export const gitHubUserId = "20594326";
-export const gitHubUserName = "vinitshahdeo";
-
 export * from "./music";
 export * from "./social";
 export * from "./featured";
 export * from "./source";
 export * from "./analytics";
+export * from "./github";

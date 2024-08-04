@@ -15,7 +15,7 @@ Welcome to the repository that hosts the source code for my portfolio, designed 
 
 The portfolio is live at [vinitshahdeo.com](https://vinitshahdeo.com) and deployed on Netlify. This project is a **free**, **open-source** [Astro theme](https://astro.build/themes/details/stellar-astro-dev-portfolio) that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements—[learn more](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css).
 
-> [!IMPORTANT]
+> [!IMPORTANT] 
 > **The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
 ## 🔥 Features
@@ -33,6 +33,7 @@ Here are the key features:
 - 🚀 **Self-Host Ready**: Easily deployable on hosting platforms like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
 - 📊 **Google Analytics Integration**: Simplifies the configuration with your measurement ID for insightful analytics.
 - 🔍 **Automated SEO Tools**: Includes automatic generation of `robots.txt` and **Sitemap** for better search engine indexing and site navigation.
+- 🤖 **Dynamic GitHub Dashboard**: Integrates a real-time OSS Insight widget to showcase your **GitHub contributions and stats**, providing an engaging overview of your open-source activity.
 
 ## 🧐 What's inside?
 
@@ -164,9 +165,27 @@ export const measurementId = "G-XXXXXXXX"; // Replace G-XXXXXXXX with your measu
 
 ## 🤖 GitHub Stats
 
-The GitHub Stats available on `/now` page are powered by [OSS Insight](https://ossinsight.io/) widget.
+The GitHub Stats available on the `/now` page are powered by the [OSS Insight](https://ossinsight.io/) widget.
 
 [![Vinit Shahdeo's GitHub Stats](https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20594326&image_size=auto&color_scheme=dark)](https://github.com/vinitshahdeo)
+
+To display your GitHub stats, update your GitHub user ID and username in the `config/github.ts` file as shown below:
+
+```ts
+export const gitHubUserId = "20594326";
+export const gitHubUserName = "vinitshahdeo";
+```
+
+> [!TIP]
+> You can find your user ID by hitting the following API endpoint: `https://api.github.com/users/<your-username>`. Replace `<your-username>` with your actual GitHub username.
+
+Here's an example for user `vinitshahdeo`:
+
+```sh
+curl https://api.github.com/users/vinitshahdeo
+```
+
+This will return a JSON response containing your user ID among other details.
 
 ## 🙏 Acknowledgment
 

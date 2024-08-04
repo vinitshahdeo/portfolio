@@ -16,7 +16,7 @@ Welcome to the repository that hosts the source code for my portfolio, designed 
 The portfolio is live at [vinitshahdeo.com](https://vinitshahdeo.com) and deployed on Netlify. This project is a **free**, **open-source** [Astro theme](https://astro.build/themes/details/stellar-astro-dev-portfolio) that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements—[learn more](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css).
 
 > [!IMPORTANT]
-> The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+> **The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
 ## 🔥 Features
 
@@ -161,6 +161,12 @@ export const measurementId = "G-XXXXXXXX"; // Replace G-XXXXXXXX with your measu
 > ```ts
 > export const googleSiteVerification = "YOUR-VERIFICATION-TOKEN";
 > ```
+
+## 🤖 GitHub Stats
+
+The GitHub Stats available on `/now` page are powered by [OSS Insight](https://ossinsight.io/) widget.
+
+[![Vinit Shahdeo's GitHub Stats](https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=20594326&image_size=auto&color_scheme=dark)](https://github.com/vinitshahdeo)
 
 ## 🙏 Acknowledgment
 

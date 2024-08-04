@@ -19,7 +19,9 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "npx prettier . --write"
+    "lint": "npx prettier . --write",
+    "author": "open https://github.com/vinitshahdeo",
+    "demo": "open https://vinitshahdeo.com"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",

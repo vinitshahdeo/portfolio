@@ -15,7 +15,7 @@ Welcome to the repository that hosts the source code for my portfolio, designed 
 
 The portfolio is live at [vinitshahdeo.com](https://vinitshahdeo.com) and deployed on Netlify. This project is a **free**, **open-source** [Astro theme](https://astro.build/themes/details/stellar-astro-dev-portfolio) that is both accessible and SEO-friendly. It draws inspiration from the [Minimal Portfolio Template](https://astro.build/themes/details/minimal-portfolio-template/) by [Tim Witzdam](https://github.com/TimWitzdam). This template can serve as a foundation for your personal portfolio. Start by using the command `npm init astro@latest --template vinitshahdeo/portfolio`. Feel free to customize it to fit your personal style and requirements—[learn more](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css).
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > **The source code is available under the [MIT License](./LICENSE), while the textual content and images are protected under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
 ## 🔥 Features
@@ -186,6 +186,14 @@ curl https://api.github.com/users/vinitshahdeo
 ```
 
 This will return a JSON response containing your user ID among other details.
+
+## 🏆 Launch
+
+This Astro template was launched on **Peerlist Project Spotlight** and was nominated as both the **Project of the Week** and the **Project of the Month** by the Peerlist community. You can check out the launch details [here](https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio).
+
+![Peerlist Spotlight](.assets/supporters.png)
+
+A heartfelt thank you to everyone who upvoted and supported this project, making it the Project of the Month. Your support means the world to me!
 
 ## 🙏 Acknowledgment
 

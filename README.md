@@ -192,7 +192,7 @@ This will return a JSON response containing your user ID among other details.
 This Astro template was launched on **Peerlist Project Spotlight** and was nominated as both the **Project of the Week** and the **Project of the Month** by the Peerlist community. You can check out the launch details [here](https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio).
 
 <div align="center">
-    <img src=".assets/supporters.png" />
+    <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src=".assets/supporters.png" /></a>
 </div>
 
 A heartfelt thank you to everyone who upvoted and supported this project, making it the **Project of the Month**. Your support means the world to me!

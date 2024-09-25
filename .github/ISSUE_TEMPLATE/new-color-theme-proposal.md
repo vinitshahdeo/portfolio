@@ -2,7 +2,7 @@
 name: New Color Theme Proposal
 about: Suggest a new color theme for the portfolio, including different colors for
   headings, body text, and background (with light and dark variants).
-title: "[New Theme["
+title: "[New Theme] <Theme Name>"
 labels: proposal, theme
 assignees: vinitshahdeo
 

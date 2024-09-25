@@ -123,7 +123,7 @@ Your contributions are most welcome! Here's how you can get started:
 
 1. 📖 **Check the [Contributing Guidelines](CONTRIBUTING.md)** for details on how to contribute.
 2. 🐛 **Browse the [Issues](https://github.com/vinitshahdeo/portfolio/issues)** and help fix bugs or suggest enhancements. Submit your fixes via a pull request using the provided template.
-3. 🎨 **Submit a new color theme** by following the [New Color Theme Proposal](https://github.com/vinitshahdeo/portfolio/issues/new?assignees=vinitshahdeo&labels=proposal%2C+theme&projects=&template=new-color-theme-proposal.md&title=%5BNew+Theme%5D+%3CTheme+Name%3E) process, then implement it and submit a pull request.
+3. 🎨 **Submit a new color theme** by following the [New Color Theme Proposal](https://github.com/vinitshahdeo/portfolio/issues/new?assignees=vinitshahdeo&labels=proposal%2C+theme&projects=&template=new-color-theme-proposal.md&title=%5BNew+Theme%5D+%3CTheme+Name%3E) issue template, then implement it and submit a pull request.
 
 
 ## 🌐 Deployment

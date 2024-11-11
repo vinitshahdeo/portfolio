@@ -125,6 +125,7 @@ Your contributions are most welcome! Here's how you can get started:
 2. 🐛 **Browse the [Issues](https://github.com/vinitshahdeo/portfolio/issues)** and help fix bugs or suggest enhancements. Submit your fixes via a pull request using the provided template.
 3. 🎨 **Submit a new color theme** by following the [New Color Theme Proposal](https://github.com/vinitshahdeo/portfolio/issues/new?assignees=vinitshahdeo&labels=proposal%2C+theme&projects=&template=new-color-theme-proposal.md&title=%5BNew+Theme%5D+%3CTheme+Name%3E) issue template, then implement it and submit a pull request.
 
+[![Forkers repo roster for @vinitshahdeo/portfolio](https://reporoster.com/forks/dark/vinitshahdeo/portfolio)](https://github.com/vinitshahdeo/portfolio/network/members)
 
 ## 🌐 Deployment
 
@@ -224,7 +225,6 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 ## 💙 Support
 
 [![Stargazers repo roster for @vinitshahdeo/portfolio](https://reporoster.com/stars/dark/vinitshahdeo/portfolio)](https://github.com/vinitshahdeo/portfolio/stargazers)
-[![Forkers repo roster for @vinitshahdeo/portfolio](https://reporoster.com/forks/dark/vinitshahdeo/portfolio)](https://github.com/vinitshahdeo/portfolio/network/members)
 
 If you enjoyed this project, please consider giving it a **star on GitHub**. You can also help **[spread the word](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2Fportfolio&text=Build%20your%20portfolio%20with%20Astro%20and%20Tailwind%20CSS.%20Here%27s%20a%20sleek%2C%20modern%2C%20highly%20customizable%20Astro%20template%20that%20is%20optimized%20for%20performance%20and%20SEO.%20)** by sharing the [blog post](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css) on 𝕏 (Twitter). Your support is greatly appreciated!
 

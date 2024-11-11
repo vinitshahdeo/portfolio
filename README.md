@@ -224,6 +224,7 @@ For any queries, feel free to get in touch via [Twitter](https://x.com/vinit_sha
 ## 💙 Support
 
 [![Stargazers repo roster for @vinitshahdeo/portfolio](https://reporoster.com/stars/dark/vinitshahdeo/portfolio)](https://github.com/vinitshahdeo/portfolio/stargazers)
+[![Forkers repo roster for @vinitshahdeo/portfolio](https://reporoster.com/forks/dark/vinitshahdeo/portfolio)](https://github.com/vinitshahdeo/portfolio/network/members)
 
 If you enjoyed this project, please consider giving it a **star on GitHub**. You can also help **[spread the word](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2Fportfolio&text=Build%20your%20portfolio%20with%20Astro%20and%20Tailwind%20CSS.%20Here%27s%20a%20sleek%2C%20modern%2C%20highly%20customizable%20Astro%20template%20that%20is%20optimized%20for%20performance%20and%20SEO.%20)** by sharing the [blog post](https://vinitshahdeo.dev/create-stellar-developer-portfolio-astro-tailwind-css) on 𝕏 (Twitter). Your support is greatly appreciated!
 

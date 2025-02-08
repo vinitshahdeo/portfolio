@@ -116,6 +116,17 @@ Before running these commands, ensure you have Node.js and npm installed on your
 | `npm run build` | Builds the site for production.             | The output is stored in the `./dist/` directory. Use this command before deploying to ensure you're publishing the optimized version of your site. |
 | `npm run lint`  | Lints your code to identify and fix issues. | It's recommended to run this command before committing your changes to ensure code quality and consistency.                                        |
 
+
+## 🎉 Contributing
+
+Your contributions are most welcome! Here's how you can get started:
+
+1. 📖 **Check the [Contributing Guidelines](CONTRIBUTING.md)** for details on how to contribute.
+2. 🐛 **Browse the [Issues](https://github.com/vinitshahdeo/portfolio/issues)** and help fix bugs or suggest enhancements. Submit your fixes via a pull request using the provided template.
+3. 🎨 **Submit a new color theme** by following the [New Color Theme Proposal](https://github.com/vinitshahdeo/portfolio/issues/new?assignees=vinitshahdeo&labels=proposal%2C+theme&projects=&template=new-color-theme-proposal.md&title=%5BNew+Theme%5D+%3CTheme+Name%3E) issue template, then implement it and submit a pull request.
+
+[![Forkers repo roster for @vinitshahdeo/portfolio](https://reporoster.com/forks/dark/vinitshahdeo/portfolio)](https://github.com/vinitshahdeo/portfolio/network/members)
+
 ## 🌐 Deployment
 
 Deploying your site is a breeze with seamless support for both [Netlify](https://www.netlify.com/) and [Vercel](https://vercel.com/). Choose your preferred platform by clicking the buttons below. These options also automatically create a new repository on GitHub for you. For more details, explore the documentation:
@@ -191,9 +202,11 @@ This will return a JSON response containing your user ID among other details.
 
 This Astro template was launched on **Peerlist Project Spotlight** and was nominated as both the **Project of the Week** and the **Project of the Month** by the Peerlist community. You can check out the launch details [here](https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio).
 
-![Peerlist Spotlight](.assets/supporters.png)
+<div align="center">
+    <a href="https://peerlist.io/vinitshahdeo/project/stellar-astro-dev-portfolio"><img src=".assets/supporters.png" /></a>
+</div>
 
-A heartfelt thank you to everyone who upvoted and supported this project, making it the Project of the Month. Your support means the world to me!
+A heartfelt thank you to everyone who upvoted and supported this project, making it the **Project of the Month**. Your support means the world to me!
 
 ## 🙏 Acknowledgment
 

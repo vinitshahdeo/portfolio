@@ -1,24 +1,9 @@
 html {
-  background: #242424;
+  background: #1f1f22; /* deep soft dark */
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-
-.navbar {
-  font-family: "DM Sans", sans-serif;
-}
-
-h1 {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-optical-sizing: auto;
-}
-
-.subtitle {
-  color: #ffe895;
-  opacity: 0.8;
 }
 
 * {
@@ -26,7 +11,27 @@ h1 {
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  color: #c9c9c9;
+  color: #d1d5db; /* soft gray text */
+}
+
+.navbar {
+  font-family: "DM Sans", sans-serif;
+  background-color: rgba(14, 14, 16, 0.8); /* slight blur */
+  backdrop-filter: blur(10px);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  color: #dfdfe3; /* soft bright heading */
+}
+
+.subtitle {
+  color: #facc15; /* golden subtitle */
+  opacity: 0.8;
 }
 
 code {
@@ -39,16 +44,50 @@ code {
     Bitstream Vera Sans Mono,
     Courier New,
     monospace;
+  color: #7dd3fc; /* soft sky blue for code */
+}
+
+.gradient-link {
+  font-weight: bold;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #0ea5e9, #6366f1);
+  transition:
+    background-image 0.4s ease,
+    text-decoration-color 0.3s ease,
+    filter 0.3s;
+  text-decoration: underline 1px rgba(255, 255, 255, 0); /* hidden initially */
+  text-underline-offset: 5px;
+}
+
+.gradient-link:hover {
+  background-image: linear-gradient(to right, #38bdf8, #818cf8);
+  text-decoration-color: #f1f5f9;
+  filter: drop-shadow(0 0 5px rgba(14, 165, 233, 0.5)); /* subtle glow */
 }
 
 .hover-underline {
-  text-decoration: underline 1px rgba(0, 0, 0, 0);
+  text-decoration: underline 1px rgba(255, 255, 255, 0);
   text-underline-offset: 5px;
   transition: text-decoration-color 300ms;
 }
 
 .post:hover .hover-underline {
-  text-decoration-color: rgba(255, 255, 255, 1);
+  text-decoration-color: #f1f5f9;
+}
+
+.underline-hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  opacity: 60%;
+  transition:
+    opacity 0.3s,
+    text-decoration-color 0.3s;
+}
+
+.underline-hover:hover {
+  opacity: 100%;
+  text-decoration-color: #f1f5f9;
 }
 
 @keyframes glowingText {
@@ -67,12 +106,6 @@ code {
   animation: glowingText 2s infinite;
 }
 
-.icon-inline {
-  display: inline-block; /* Ensures the icon is inline */
-  vertical-align: middle; /* Centers the icon vertically with adjacent text */
-  margin-right: 4px; /* Optional: adds some space between the icon and the text */
-}
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -80,6 +113,14 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+.icon-inline {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 
 .icon-spin {
@@ -91,54 +132,20 @@ code {
   cursor: pointer;
 }
 
-.gradient-link {
-  font-weight: bold;
-  background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #00abda, #1476ff);
-}
-
-.gradient-link:hover::after {
-  background-image: linear-gradient(to right, #00abda, #1476ff);
-}
-
-.underline-hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  opacity: 60%;
-  transition: opacity 0.3s;
-}
-
 @keyframes glow {
   0%,
   100% {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Invisible shadow */
+    box-shadow: 0 0 5px rgba(14, 165, 233, 0);
   }
   50% {
-    box-shadow: 0 0 20px rgba(0, 171, 218, 0.6); /* Glowing effect */
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.6);
   }
 }
 
-.image-music-effect {
-  border-color: #00abda;
-  cursor: pointer;
-  animation: glow 2s infinite ease-in-out;
-}
-
+.image-music-effect,
 .image-effect:hover {
-  border-color: #00abda;
-  transform: scale(1.05);
+  border-color: #0ea5e9;
   cursor: pointer;
   animation: glow 2s infinite ease-in-out;
-}
-
-.underline-hover:hover {
-  opacity: 100%;
-}
-
-.icon-inline {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
+  transform: scale(1.05);
 }

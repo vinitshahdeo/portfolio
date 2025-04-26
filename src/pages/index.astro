@@ -10,7 +10,14 @@ import { Icon } from "astro-icon/components";
 <Layout seo={homePageContent.seo}>
   <section class="mt-10 max-w-2xl mx-auto px-6">
     <h1 class="text-3xl mb-1">{identity.name}</h1>
-    <p class="opacity-60 mb-10 subtitle">{homePageContent.role}</p>
+    <p class="opacity-60 mb-10 subtitle">
+      {homePageContent.role}
+      <span
+        class="inline-flex items-center bg-indigo-100 text-indigo-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full"
+      >
+        zzazz
+      </span>
+    </p>
     <div class="flex flex-row flex-wrap gap-6 mb-8">
       <Image
         src={identity.logo}
@@ -58,8 +65,10 @@ import { Icon } from "astro-icon/components";
         >Postman<a></a>.
         <br /><br />
         Passionate about building event-driven architectures, designing AI-powered
-        platforms, and scaling microservices with <strong>Node.js</strong> and <strong>Go</strong>. Beyond code, you’ll
-        find me chasing shuttlecocks, sipping tea, and listening to poetry.
+        platforms, and scaling microservices with <strong>Node.js</strong> and <strong
+          >Go</strong
+        >. Beyond code, you’ll find me chasing shuttlecocks, sipping tea, and
+        listening to poetry.
         <br /><br />
         In a nutshell, 🏸 + 🍵 + 👨‍💻 = <a
           class="gradient-link glowing-animation"

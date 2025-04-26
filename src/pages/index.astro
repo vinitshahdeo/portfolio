@@ -37,43 +37,51 @@ import { Icon } from "astro-icon/components";
       </div>
     </div>
     <p class="max-w-md mb-8">
-      Software Engineer specializing in building scalable, secure, and
-      performant microservices using <strong>Node.js</strong> and <strong
-        >Go</strong
-      >.
+      Software Engineer leading engineering efforts at <a
+        class="gradient-link"
+        href="https://zzazz.com/"
+        target="_blank">zzazz</a
+      >, building the world's first large pricing model (LPM) — turning any
+      content into a valuable, tradable asset.
       <br /><br />
-      Honored to be recognized as a <a
+      From SaaS to FinTech to now AI, it’s been a rewarding journey—honored to be
+      a 3x <a
         class="gradient-link"
         href="https://stars.github.com/profiles/vinitshahdeo/"
         target="_blank">GitHub Star</a
       >
-      thrice from India and to have maintained open-source projects for Google Summer
-      of Code (<strong>GSoC</strong>).
-      <br /><br />
-      With a knack for building event-driven architectures, I balance coding with
-      badminton and find peace in a sip of tea and poetry.
-      <br /><br />
-      In a nutshell, 🏸 + 🍵 + 👨‍💻 = <a
-        class="gradient-link glowing-animation"
-        href="/about">@vinitshahdeo</a
-      >
+      from India and a maintainer for Google Summer Of Code(<strong>GSoC</strong
+      >), nurturing open-source innovation at <a
+        class="underline-hover"
+        target="_blank"
+        href="https://github.com/postmanlabs"
+        >Postman<a></a>.
+        <br /><br />
+        Passionate about building event-driven architectures, designing AI-powered
+        platforms, and scaling microservices with <strong>Node.js</strong> and <strong>Go</strong>. Beyond code, you’ll
+        find me chasing shuttlecocks, sipping tea, and listening to poetry.
+        <br /><br />
+        In a nutshell, 🏸 + 🍵 + 👨‍💻 = <a
+          class="gradient-link glowing-animation"
+          href="/about">@vinitshahdeo</a
+        >
+      </a>
+      <div class="flex items-center gap-4 group w-fit">
+        {
+          homePageContent.links.map((link) => (
+            <Link
+              text={link.title}
+              href={link.url}
+              external={link.external}
+              icon={link.icon}
+            />
+          ))
+        }
+      </div>
     </p>
-    <div class="flex items-center gap-4 group w-fit">
-      {
-        homePageContent.links.map((link) => (
-          <Link
-            text={link.title}
-            href={link.url}
-            external={link.external}
-            icon={link.icon}
-          />
-        ))
-      }
-    </div>
   </section>
-</Layout>
 
-<!--
+  <!--
 
     ████████████████████████████████████████████████████████████████████████████████
     ████████████████████████████████▀▀▀╚╙╙╙╙╙▀██████████████████████████████████████
@@ -146,3 +154,4 @@ import { Icon } from "astro-icon/components";
 
 
 --->
+</Layout>

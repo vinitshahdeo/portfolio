@@ -42,12 +42,12 @@ export const homePageContent: HomePageContent = {
   seo: {
     title: "Vinit Shahdeo | Portfolio",
     description:
-      "Explore the portfolio of Vinit Shahdeo, a Senior Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
+      "Explore the portfolio of Vinit Shahdeo, a Lead Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
     image: openGraphImage,
     domain: "vinitshahdeo.com",
     url: "https://vinitshahdeo.com",
   },
-  role: "Senior Backend Engineer",
+  role: "Engineering Lead",
   description:
     "Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go. Honored to be recognized as a GitHub Star twice from India. With a knack for building event-driven architecture, I balance code with badminton and find peace in a sip of tea and poetry.",
   socialLinks: socialLinks,
@@ -82,9 +82,9 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Vinit Shahdeo | Senior Software Engineer & GitHub Star",
+    title: "About | Vinit Shahdeo | Lead Software Engineer & GitHub Star",
     description:
-      "Discover Vinit Shahdeo, a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
+      "Discover Vinit Shahdeo, a Lead Software Engineer at an AI startup, formerly Senior Software Engineer at Novo and Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
     image: openGraphImage,
     domain: "vinitshahdeo.com",
     url: "https://vinitshahdeo.com/about",
@@ -107,13 +107,22 @@ export const aboutPageContent: AboutPageContent = {
     description: `I'm a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. I'm a GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.`,
     items: [
       {
+        title: "Engineering Lead",
+        company: {
+          name: "ZZAZZ",
+          image: "/logo/zzazz.jpeg",
+          url: "https://zzazz.com/",
+        },
+        date: "Mar 2025 - Present",
+      },
+      {
         title: "Senior Software Engineer",
         company: {
           name: "Novo",
           image: "/logo/novo.jpg",
           url: "https://novo.co/",
         },
-        date: "Aug 2023 - Present",
+        date: "Aug 2023 - Mar 2025",
       },
       {
         title: "Software Engineer II",

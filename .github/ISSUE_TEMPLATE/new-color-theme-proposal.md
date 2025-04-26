@@ -1,14 +1,15 @@
 ---
 name: New Color Theme Proposal
-about: Suggest a new color theme for the portfolio, including different colors for
+about:
+  Suggest a new color theme for the portfolio, including different colors for
   headings, body text, and background (with light and dark variants).
 title: "[New Theme] <Theme Name>"
 labels: proposal, theme
 assignees: vinitshahdeo
-
 ---
 
 ---
+
 name: New Color Theme Proposal
 about: Suggest a new color theme for the portfolio, including different colors for headings, body text, and background (with light and dark variants).
 title: "New Color Theme Proposal: [Theme Name]"
@@ -22,6 +23,7 @@ assignees: ''
 ### Description
 
 Propose a new color theme for the portfolio with distinct colors for:
+
 - **Headings**
 - **Body text**
 - **Background**
@@ -37,11 +39,13 @@ Propose a new color theme for the portfolio with distinct colors for:
 Please provide the proposed color values for both light and dark variants:
 
 #### Light Theme:
+
 - **Headings**: [Provide color]
 - **Body Text**: [Provide color]
 - **Background**: [Provide color]
 
 #### Dark Theme:
+
 - **Headings**: [Provide color]
 - **Body Text**: [Provide color]
 - **Background**: [Provide color]

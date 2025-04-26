@@ -2,6 +2,19 @@ import type { FeaturedPost } from "../types/config";
 
 export const featuredPosts: FeaturedPost[] = [
   {
+    title: "Vinit Shahdeo: From a GitHub User to a GitHub Star",
+    description:
+      "Meet Vinit Shahdeo, a two-time GitHub Star from India, who is a senior backend engineer at Novo, where he’s building neobanking solutions for SMBs in the USA.",
+    date: "2024-12-18",
+    url: "https://technovans.com/vinit-shahdeo-from-a-github-user-to-a-github-star",
+    author: "Vinit Shahdeo",
+    image: {
+      url: "/media/vinitshahdeo-technovans.jpg",
+      alt: "Vinit Shahdeo: From a GitHub User to a GitHub Star",
+    },
+    publisher: "TechnoVans",
+  },
+  {
     title: "A Developer’s Story – Vinit Shahdeo",
     description:
       "Vinit is a Software Engineer at Postman, whose journey into the world of programming can inspire anyone.",

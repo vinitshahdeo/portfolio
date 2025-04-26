@@ -42,7 +42,7 @@ export const homePageContent: HomePageContent = {
   seo: {
     title: "Vinit Shahdeo | Portfolio",
     description:
-      "Explore the portfolio of Vinit Shahdeo, a Senior Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
+      "Explore the portfolio of Vinit Shahdeo, a Lead Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
     image: openGraphImage,
     domain: "vinitshahdeo.com",
     url: "https://vinitshahdeo.com",
@@ -82,9 +82,9 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Vinit Shahdeo | Senior Software Engineer & GitHub Star",
+    title: "About | Vinit Shahdeo | Lead Software Engineer & GitHub Star",
     description:
-      "Discover Vinit Shahdeo, a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
+      "Discover Vinit Shahdeo, a Lead Software Engineer at an AI startup, formerly Senior Software Engineer at Novo and Software Engineer II at Postman. GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.",
     image: openGraphImage,
     domain: "vinitshahdeo.com",
     url: "https://vinitshahdeo.com/about",

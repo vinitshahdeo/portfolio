@@ -47,7 +47,7 @@ To propose a new feature or improvement, feel free to:
 
 ## Style Guide and Linting
 
-To maintain consistency across the codebase, make sure your code adheres to the existing style guide. Don't forget to lint your code before submitting your pull request. 
+To maintain consistency across the codebase, make sure your code adheres to the existing style guide. Don't forget to lint your code before submitting your pull request.
 
 ```bash
 npm run lint

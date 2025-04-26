@@ -158,3 +158,18 @@ code {
 .pulse-dot {
   animation: pulseDot 2s ease-in-out infinite;
 }
+
+@keyframes lazyBadgeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lazy-badge {
+  opacity: 0;
+  animation: lazyBadgeAppear 0.8s ease-out forwards;
+  animation-delay: 1.5s;
+}

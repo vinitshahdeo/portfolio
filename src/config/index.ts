@@ -47,7 +47,7 @@ export const homePageContent: HomePageContent = {
     domain: "vinitshahdeo.com",
     url: "https://vinitshahdeo.com",
   },
-  role: "Senior Backend Engineer",
+  role: "Engineering Lead",
   description:
     "Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go. Honored to be recognized as a GitHub Star twice from India. With a knack for building event-driven architecture, I balance code with badminton and find peace in a sip of tea and poetry.",
   socialLinks: socialLinks,
@@ -107,13 +107,22 @@ export const aboutPageContent: AboutPageContent = {
     description: `I'm a Senior Software Engineer at Novo, formerly Software Engineer II at Postman. I'm a GitHub Star from India, specializing in Node.js, Go, Microservices, Kafka, GraphQL, REST, and AWS.`,
     items: [
       {
+        title: "Engineering Lead",
+        company: {
+          name: "ZZAZZ",
+          image: "/logo/zzazz.jpeg",
+          url: "https://zzazz.com/",
+        },
+        date: "Mar 2025 - Present",
+      },
+      {
         title: "Senior Software Engineer",
         company: {
           name: "Novo",
           image: "/logo/novo.jpg",
           url: "https://novo.co/",
         },
-        date: "Aug 2023 - Present",
+        date: "Aug 2023 - Mar 2025",
       },
       {
         title: "Software Engineer II",

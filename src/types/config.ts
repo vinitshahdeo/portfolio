@@ -35,6 +35,7 @@ export type SEOInfo = {
 export type HomePageContent = {
   seo: SEOInfo;
   role: string;
+  company: string;
   description: string;
   socialLinks: SocialLink[];
   homeSocialLinks: SocialLink[];

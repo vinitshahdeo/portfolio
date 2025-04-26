@@ -48,6 +48,7 @@ export const homePageContent: HomePageContent = {
     url: "https://vinitshahdeo.com",
   },
   role: "Engineering Lead",
+  company: "ZZAZZ",
   description:
     "Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go. Honored to be recognized as a GitHub Star twice from India. With a knack for building event-driven architecture, I balance code with badminton and find peace in a sip of tea and poetry.",
   socialLinks: socialLinks,

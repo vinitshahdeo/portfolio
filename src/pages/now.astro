@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import { nowPageContent, gitHubUserId, gitHubUserName } from "../config";
 import SourceLinkBox from "../components/SocialLinkBox.astro";
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import zzazzImage from "/public/img/vinitshahdeo-zzazz.png";
 
 function formatDate(dateString: string) {
   const days = [
@@ -63,10 +65,12 @@ const lastModified = formatDate(new Date().toISOString());
         </span></span
       ><br /><br />
 
-      <img
-        src="img/vinitshahdeo-zzazz.png"
+      <Image
+        src={zzazzImage}
         alt="Placeholder Image"
-        class="rounded-lg shadow-lg mb-5"
+        loading="lazy"
+        decoding="async"
+        class="rounded-lg shadow-lg mb-5 object-cover"
       />
 
       Lately, I've been crafting event-driven microservices at an AI startup,

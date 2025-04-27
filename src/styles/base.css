@@ -12,13 +12,16 @@ html {
 
 h1 {
   font-family: "Kanit", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-optical-sizing: auto;
 }
 
 .subtitle {
   color: #ffe895;
   opacity: 0.8;
+  font-family: "KoHo", sans-serif;
+  font-weight: 600;
+  /* font-style: italic; */
 }
 
 * {

@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { nowPageContent, gitHubUserId, gitHubUserName } from "../config";
-import SoourceLinkBox from "../components/SocialLinkBox.astro";
+import SourceLinkBox from "../components/SocialLinkBox.astro";
 import { Icon } from "astro-icon/components";
 
 function formatDate(dateString: string) {
@@ -162,7 +162,7 @@ const lastModified = formatDate(new Date().toISOString());
       </p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 group social-bar">
-      {nowPageContent.sourceLinks.map((item) => <SoourceLinkBox {...item} />)}
+      {nowPageContent.sourceLinks.map((item) => <SourceLinkBox {...item} />)}
       <br /><br />
     </div>
     <div class="mb-14">

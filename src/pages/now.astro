@@ -79,7 +79,7 @@ const lastModified = formatDate(new Date().toISOString());
               class="text-[#ffe895]"
             />
           </div>
-          <div>
+          <div class="social-bar">
             <p class="text-sm">
               Recently, I shared 30 non-technical lessons from my developer
               journey in a blog titled
@@ -156,7 +156,7 @@ const lastModified = formatDate(new Date().toISOString());
         offering you multiple ways to kickstart your own portfolio.
       </p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 group">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 group social-bar">
       {nowPageContent.sourceLinks.map((item) => <SoourceLinkBox {...item} />)}
       <br /><br />
     </div>
@@ -172,7 +172,7 @@ const lastModified = formatDate(new Date().toISOString());
       </p>
     </div>
     <div
-      class="p-4 mb-14 sm:text-left opacity-60 group-hover:opacity-30 hover:!opacity-100 transition-opacity border border-dashed border-gray-300 rounded-lg space-y-2 hover:cursor-pointer"
+      class="p-4 mb-14 sm:text-left opacity-60 group-hover:opacity-30 hover:!opacity-100 transition-opacity border border-dashed border-gray-300 rounded-lg space-y-2 hover:cursor-pointer social-bar"
     >
       <div class="flex items-center space-x-2">
         <Icon

@@ -304,7 +304,7 @@ import { Icon } from "astro-icon/components";
   </section>
 
   <section class="my-20 mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
-    <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
+    <h2 class="mb-8 sm:mb-0 opacity-60 navbar">Work</h2>
     <div>
       <div class="mb-6">
         My tech toolbox includes <strong>Node.js</strong>, <strong>Go</strong>, <strong
@@ -312,13 +312,13 @@ import { Icon } from "astro-icon/components";
         >, <strong>GraphQL</strong>, <strong>REST</strong>, <strong>AWS</strong
         >, and much more – but my true love? APIs, of course!
       </div>
-      <div class="grid grid-cols-1 group">
+      <div class="grid grid-cols-1 group social-bar">
         {aboutPageContent.work.items.map((item) => <ResumeItem {...item} />)}
       </div>
     </div>
   </section>
   <section class="mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
-    <h2 class="mb-8 sm:mb-0 opacity-60">Connect</h2>
+    <h2 class="mb-8 sm:mb-0 opacity-60 navbar">Connect</h2>
     <div>
       <div class="mb-6">
         Come find me on 𝕏 (<a
@@ -338,7 +338,7 @@ import { Icon } from "astro-icon/components";
           >vinitshahdeo.dev</a
         >.
       </div>
-      <div class="grid grid-cols-2 gap-2 group">
+      <div class="grid grid-cols-2 gap-2 group social-bar">
         {
           aboutPageContent.connect.links.map((item) => (
             <SocialLinkBox {...item} />

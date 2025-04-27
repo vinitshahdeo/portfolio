@@ -70,7 +70,10 @@ const ogImageUrl = seo.image;
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kanit&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{seo.title}</title>
 
@@ -118,22 +121,32 @@ const ogImageUrl = seo.image;
             class="w-[50px] h-[50px] object-cover"
           />
         </a>
-        <nav class="ml-auto mr-6 sm:m-0">
+        <nav class="ml-auto mr-6 sm:m-0 navbar">
           <ul class="hidden sm:flex sm:items-center sm:gap-2">
             {
-              navBarLinks.map((link) => (
-                <li>
-                  <a
-                    class="group px-4 py-2 rounded-lg hover:bg-gray-bg opacity-60 hover:opacity-100 transition-all"
-                    href={link.url}
-                    target={link.external ? "_blank" : "_self"}
-                  >
-                    {link.title}
-                  </a>
-                </li>
-              ))
+              navBarLinks.map((link) => {
+                const isActive =
+                  Astro.url.pathname === link.url ||
+                  (link.url !== "/" && Astro.url.pathname.startsWith(link.url));
+                return (
+                  <li>
+                    <a
+                      class={`group px-4 py-2 rounded-lg transition-all ${
+                        isActive
+                          ? "active-nav-link border-b-2 border-[#ffe895] bg-[#2a2a2a] opacity-30"
+                          : "opacity-60 hover:opacity-100 hover:bg-[#2a2a2a]/40"
+                      }`}
+                      href={link.url}
+                      target={link.external ? "_blank" : "_self"}
+                    >
+                      {link.title}
+                    </a>
+                  </li>
+                );
+              })
             }
           </ul>
+          <!-- Mobile menu with background highlight -->
           <div class="relative sm:hidden">
             <button
               id="link-menu-button"
@@ -146,17 +159,27 @@ const ogImageUrl = seo.image;
             >
               <ul>
                 {
-                  navBarLinks.map((link) => (
-                    <li>
-                      <a
-                        class="block pl-4 py-3"
-                        href={link.url}
-                        target={link.external ? "_blank" : "_self"}
-                      >
-                        {link.title}
-                      </a>
-                    </li>
-                  ))
+                  navBarLinks.map((link) => {
+                    const isActive =
+                      Astro.url.pathname === link.url ||
+                      (link.url !== "/" &&
+                        Astro.url.pathname.startsWith(link.url));
+                    return (
+                      <li>
+                        <a
+                          class={`block py-3 rounded-md ${
+                            isActive
+                              ? "active-nav-link border-l-2 border-[#ffe895] pl-3 bg-[#2a2a2a] opacity-90"
+                              : "pl-4 hover:bg-[#2a2a2a]/40"
+                          }`}
+                          href={link.url}
+                          target={link.external ? "_blank" : "_self"}
+                        >
+                          {link.title}
+                        </a>
+                      </li>
+                    );
+                  })
                 }
               </ul>
             </div>

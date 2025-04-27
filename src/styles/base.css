@@ -7,7 +7,8 @@ html {
 }
 
 .navbar {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Kanit", sans-serif !important;
+  font-weight: 600 !important;
 }
 
 h1 {
@@ -160,7 +161,7 @@ code {
 
 .pulse-dot {
   animation: pulseDot 2s ease-in-out infinite;
-  background-color: #4CAF50 !important; /* Override any inline background color */
+  background-color: #4caf50 !important;
 }
 
 @keyframes lazyBadgeAppear {
@@ -176,4 +177,22 @@ code {
   opacity: 0;
   animation: lazyBadgeAppear 0.8s ease-out forwards;
   animation-delay: 1.5s;
+}
+
+.active-nav-link {
+  position: relative;
+  opacity: 1;
+  color: #ffe895;
+  font-weight: 700;
+}
+
+/* Hide both indicator dots */
+.nav-indicator,
+.nav-indicator-mobile {
+  display: none;
+}
+
+.social-bar {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
 }

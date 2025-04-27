@@ -150,16 +150,17 @@ code {
   0%,
   100% {
     opacity: 0.8;
-    box-shadow: 0 0 0 rgba(0, 171, 218, 0);
+    box-shadow: 0 0 0 rgba(76, 175, 80, 0);
   }
   50% {
     opacity: 1;
-    box-shadow: 0 0 5px rgba(0, 171, 218, 0.8);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
   }
 }
 
 .pulse-dot {
   animation: pulseDot 2s ease-in-out infinite;
+  background-color: #4CAF50 !important; /* Override any inline background color */
 }
 
 @keyframes lazyBadgeAppear {

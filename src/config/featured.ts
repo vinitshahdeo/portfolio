@@ -161,4 +161,18 @@ export const featuredPosts: FeaturedPost[] = [
     },
     publisher: "Medium",
   },
+  {
+    title:
+      "Math.random() is not so random: The Illusion of Randomness in JavaScript",
+    description:
+      "Don't Trust Math.random(): Uncovering the Hidden Predictability of Random Numbers.",
+    date: "2025-06-29",
+    url: "https://vinitshahdeo.substack.com/p/mathrandom-is-not-so-random-the-illusion",
+    author: "Vinit Shahdeo",
+    image: {
+      url: "/media/vinitshahdeo-talks.jpg",
+      alt: "Vinit Shahdeo - Substack",
+    },
+    publisher: "Substack",
+  },
 ];

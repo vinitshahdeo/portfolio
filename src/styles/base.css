@@ -7,6 +7,12 @@ html {
 }
 
 .navbar {
+  font-family: "General Sans", sans-serif !important;
+  font-weight:500 !important;
+  letter-spacing: -0.01em;
+}
+
+.kanit {
   font-family: "Kanit", sans-serif !important;
   font-weight: 600 !important;
 }

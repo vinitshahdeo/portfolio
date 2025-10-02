@@ -47,7 +47,7 @@ const bookCategories = [
         subtitle: "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
         author: "Martin Kleppmann",
         description: "Data models, streams, and storage trade-offs. The definitive guide to modern data systems.",
-        amazonUrl: "https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373320",
+        amazonUrl: "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245",
         completed: true
       },
       {
@@ -191,15 +191,13 @@ const bookCategories = [
 <Layout seo={booksPageContent.seo}>
   <section class="mt-10 max-w-2xl mx-auto px-6">
     <div class="mb-12">
-      <h1 class="mb-4">Books I Recommend</h1>
+      <h1 class="text-2xl mb-1">Books I Recommend</h1>
+      <p class="opacity-60 mb-10 subtitle">
+        Click on any book to find it on Amazon</p>
       <p class="text-large opacity-80 mb-6">
         A curated collection of technical books that have shaped my engineering philosophy and practices. 
         From core programming skills to system design and leadership.
       </p>
-      <div class="flex items-center gap-2 opacity-60">
-        <Icon name="mdi:book-open-variant" width={16} height={16} class="text-[#ffe895]" />
-        <span class="text-small">Click on any book to find it on Amazon</span>
-      </div>
     </div>
 
     {bookCategories.map(category => (
@@ -307,7 +305,7 @@ const bookCategories = [
     <div class="mt-8 text-center">
       <p class="opacity-60 text-small">
         Have book recommendations for me? 
-        <a href="mailto:mail@vinitshahdeo.com" class="gradient-link">I'd love to hear them!</a>
+        <a href="https://www.linkedin.com/in/vinitshahdeo/" class="gradient-link">I'd love to hear them!</a>
       </p>
     </div>
   </section>

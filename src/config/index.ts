@@ -35,6 +35,14 @@ export const navBarLinks: NavBarLink[] = [
     title: "Featured",
     url: "/featured",
   },
+  {
+    title: "Practices",
+    url: "/practices",
+  },
+  {
+    title: "Books",
+    url: "/books",
+  },
 ];
 
 // Home (/)

@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+const practicesPageContent = {
+  seo: {
+    title: "Practices & Pages I'm a Fan of | Vinit Shahdeo",
+    description:
+      "A curated collection of engineering practices, communication principles, and resources that I recommend for better software development and team collaboration.",
+    image: "https://vinitshahdeo.dev/img/vinitshahdeo-og.jpg",
+    url: "https://vinitshahdeo.dev/practices",
+    domain: "vinitshahdeo.dev",
+  },
+};
+
+const practices = [
+  {
+    title: "No Hello",
+    description:
+      'Don\'t ping with just "hi," ask the question to respect async time.',
+    url: "https://nohello.net/",
+    icon: "mdi:message-text-outline",
+    category: "Communication",
+  },
+  {
+    title: "Don't Ask to Ask",
+    description: 'Skip "any experts here?" and ask directly.',
+    url: "https://dontasktoask.com/",
+    icon: "mdi:help-circle-outline",
+    category: "Communication",
+  },
+  {
+    title: "The XY Problem",
+    description: "Describe the real problem, not only your attempted solution.",
+    url: "https://xyproblem.info/",
+    icon: "mdi:puzzle-outline",
+    category: "Problem Solving",
+  },
+  {
+    title: "Kind Engineering",
+    description:
+      "Practical ways to build psychological safety and kindness in teams.",
+    url: "https://kind.engineering/",
+    icon: "mdi:heart-outline",
+    category: "Team Culture",
+  },
+  {
+    title: "How to Report Bugs Effectively",
+    description:
+      "The canonical guide to writing actionable bug reports by Simon Tatham.",
+    url: "https://www.chiark.greenend.org.uk/~sgtatham/bugs.html",
+    icon: "mdi:bug-outline",
+    category: "Development",
+  },
+];
+
+const categories = [...new Set(practices.map((p) => p.category))];
+---
+
+<Layout seo={practicesPageContent.seo}>
+  <section class="mt-10 max-w-2xl mx-auto px-6">
+    <div class="mb-12">
+      <h1 class="text-2xl mb-1">Practices & Pages I'm a Fan of</h1>
+      <p class="opacity-60 mb-10 subtitle">
+        Handpicked resources for thoughtful engineering</p>
+      <p class="text-large opacity-80 mb-6">
+        A curated collection of engineering practices, communication principles,
+        and resources that I recommend for better software development and team
+        collaboration.
+      </p>
+    </div>
+
+    {
+      categories.map((category) => (
+        <div class="mb-10">
+          <h2 class="mb-6 text-[#ffe895] opacity-90">{category}</h2>
+          <div class="grid gap-4">
+            {practices
+              .filter((p) => p.category === category)
+              .map((practice) => (
+                <a
+                  href={practice.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group block p-6 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg hover:border-[#00abda] transition-all duration-300 hover:bg-[#2f2f2f]"
+                >
+                  <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                      <Icon
+                        name={practice.icon}
+                        width={24}
+                        height={24}
+                        class="text-[#00abda] group-hover:text-[#ffe895] transition-colors duration-300"
+                      />
+                    </div>
+                    <div class="flex-1">
+                      <h3 class="mb-2 group-hover:text-[#ffe895] transition-colors duration-300">
+                        {practice.title}
+                      </h3>
+                      <p class="opacity-80 text-small leading-relaxed">
+                        {practice.description}
+                      </p>
+                      <div class="flex items-center gap-2 mt-3 opacity-60">
+                        <Icon name="mdi:open-in-new" width={14} height={14} />
+                        <span class="text-small">
+                          {new URL(practice.url).hostname}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              ))}
+          </div>
+        </div>
+      ))
+    }
+
+    <div class="mt-12 p-6 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg">
+      <div class="flex items-center gap-3 mb-3">
+        <Icon
+          name="mdi:lightbulb-outline"
+          width={20}
+          height={20}
+          class="text-[#ffe895]"
+        />
+        <h3 class="text-[#ffe895]">Why These Matter</h3>
+      </div>
+      <p class="opacity-80 text-small leading-relaxed">
+        These resources have shaped how I approach software engineering, team
+        collaboration, and communication. They promote clarity, empathy, and
+        effectiveness—values that make engineering teams more successful and
+        enjoyable to work with.
+      </p>
+    </div>
+
+    <div class="mt-8 text-center">
+      <p class="opacity-60 text-small">
+        Know of other great practices or resources?
+        <a href="https://x.com/vinit_shahdeo" class="gradient-link"
+          >Let me know!</a
+        >
+      </p>
+    </div>
+  </section>
+</Layout>

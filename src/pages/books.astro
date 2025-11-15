@@ -191,10 +191,10 @@ const bookCategories = [
 <Layout seo={booksPageContent.seo}>
   <section class="mt-10 max-w-2xl mx-auto px-6">
     <div class="mb-12">
-      <h1 class="text-2xl mb-1">Books I Recommend</h1>
-      <p class="opacity-60 mb-10 subtitle">
+      <h2 class="text-xl mb-2">Books I Recommend</h2>
+      <p class="opacity-60 mb-6 text-sm">
         Click on any book to find it on Amazon</p>
-      <p class="text-large opacity-80 mb-6">
+      <p class="opacity-80 mb-6">
         A curated collection of technical books that have shaped my engineering philosophy and practices. 
         From core programming skills to system design and leadership.
       </p>
@@ -203,10 +203,10 @@ const bookCategories = [
     {bookCategories.map(category => (
       <div class="mb-12">
         <div class="flex items-center gap-3 mb-6">
-          <Icon name={category.icon} width={24} height={24} class="text-[#ffe895]" />
+          <Icon name={category.icon} width={22} height={22} class="text-[#ffe895]" />
           <div>
-            <h2 class="text-[#ffe895] opacity-90">{category.title}</h2>
-            <p class="opacity-60 text-small mt-1">{category.description}</p>
+            <h3 class="text-base text-[#ffe895] opacity-90">{category.title}</h3>
+            <p class="opacity-60 text-xs mt-1">{category.description}</p>
           </div>
         </div>
         
@@ -238,13 +238,13 @@ const bookCategories = [
                 <div class="flex-1">
                   <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                     <div>
-                      <h3 class="group-hover:text-[#ffe895] transition-colors duration-300 mb-1">
+                      <h4 class="text-base group-hover:text-[#ffe895] transition-colors duration-300 mb-1">
                         {book.title}
-                      </h3>
+                      </h4>
                       {book.subtitle && (
-                        <p class="text-small opacity-70 mb-2">{book.subtitle}</p>
+                        <p class="text-xs opacity-70 mb-2">{book.subtitle}</p>
                       )}
-                      <p class="text-small opacity-80 font-medium">{book.author}</p>
+                      <p class="text-sm opacity-80 font-medium">{book.author}</p>
                     </div>
                   </div>
                   

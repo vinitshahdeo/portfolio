@@ -8,72 +8,44 @@ import { Icon } from "astro-icon/components";
 ---
 
 <Layout seo={homePageContent.seo}>
-  <section class="mt-10 max-w-3xl mx-auto px-6">
-    <!-- Terminal Header -->
-    <div class="terminal-card mb-8 glitch-effect">
-      <div class="flex items-center justify-between mb-4 pb-3 border-b border-[var(--color-terminal-green)] border-opacity-30">
-        <div class="flex items-center gap-2">
-          <span class="w-3 h-3 rounded-full bg-red-500 opacity-80"></span>
-          <span class="w-3 h-3 rounded-full bg-yellow-500 opacity-80"></span>
-          <span class="w-3 h-3 rounded-full bg-green-500 opacity-80"></span>
-        </div>
-        <span class="text-xs opacity-60 font-mono">terminal@portfolio:~$</span>
-      </div>
-      
-      <div class="space-y-2 font-mono text-sm">
-        <p class="text-[var(--color-terminal-cyan)]">$ whoami</p>
-        <p class="ml-4">&gt; {identity.name}</p>
-        <p class="text-[var(--color-terminal-cyan)] mt-3">$ cat role.txt</p>
-        <p class="ml-4">&gt; {homePageContent.role}
-          <span class="lazy-badge inline-flex items-center bg-[#0a0a0a] text-[var(--color-terminal-yellow)] text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full border border-[var(--color-terminal-green)]">
-            <span class="inline-block w-2 h-2 rounded-full bg-[var(--color-terminal-green)] mr-1.5 pulse-dot"></span>
-            HIRING
-          </span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Profile Section with Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      <!-- Profile Image -->
-      <div class="terminal-card p-4 flex flex-col items-center justify-center">
-        <Image
-          src="/img/vinitshahdeo-home.png"
-          alt={identity.name}
-          width={120}
-          height={120}
-          loading="lazy"
-          decoding="async"
-          quality={100}
-          densities={[1.5, 2]}
-          class="rounded-lg border-2 border-[var(--color-terminal-green)] mb-3"
-          style="box-shadow: 0 0 15px var(--color-glow);"
-        />
-        <p class="text-xs text-center opacity-60 font-mono">[AUTHENTICATED]</p>
-      </div>
-
-      <!-- Social Links -->
-      <div class="terminal-card p-4 md:col-span-2">
-        <p class="text-xs text-[var(--color-terminal-cyan)] mb-3 font-mono">$ ls -la connections/</p>
-        <div class="grid grid-cols-1 gap-2">
-          {
-            homePageContent.homeSocialLinks.map((link) => (
-              <SocialLink
-                title={link.title}
-                url={link.url}
-                icon={link.icon}
-                external={link.external}
-              />
-            ))
-          }
-        </div>
+  <section class="mt-10 max-w-2xl mx-auto px-6">
+    <h1 class="text-3xl mb-1">{identity.name}</h1>
+    <p class="opacity-60 mb-10 subtitle">
+      {homePageContent.role}<span
+        class="lazy-badge inline-flex items-center bg-[#2a2a2a] text-[#ffe895] text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full border border-[#3a3a3a]"
+        ><span
+          class="inline-block w-2 h-2 rounded-full bg-[#00abda] mr-1.5 pulse-dot"
+        ></span>
+        Hiring
+      </span>
+    </p>
+    <div class="flex flex-row flex-wrap gap-6 mb-8">
+      <Image
+        src="/img/vinitshahdeo-home.png"
+        alt={identity.name}
+        width={100}
+        height={100}
+        loading="lazy"
+        decoding="async"
+        quality={100}
+        densities={[1.5, 2]}
+        class="rounded-lg border border-[#3a3a3a] border-2 border-opacity-80"
+      />
+      <div class="group flex flex-col justify-center gap-2 w-fit social-bar">
+        {
+          homePageContent.homeSocialLinks.map((link) => (
+            <SocialLink
+              title={link.title}
+              url={link.url}
+              icon={link.icon}
+              external={link.external}
+            />
+          ))
+        }
       </div>
     </div>
 
-    <!-- Main Content Terminal -->
-    <div class="terminal-card mb-6">
-      <p class="text-xs text-[var(--color-terminal-cyan)] mb-4 font-mono">$ cat bio.md</p>
-      
+    <p class="max-w-md mb-8">
       <a
         class="github-button"
         href="https://github.com/vinitshahdeo"
@@ -82,37 +54,41 @@ import { Icon } from "astro-icon/components";
         data-show-count="true"
         aria-label="Follow @vinitshahdeo on GitHub">Follow @vinitshahdeo</a
       >
-
-      <div class="mt-6 space-y-4 leading-relaxed">
-        <p>
-          <span class="text-[var(--color-terminal-green)]">&gt;</span> Software Engineer leading engineering efforts at 
-          <a class="gradient-link" href="https://zzazz.com/" target="_blank">zzazz</a>, 
-          building the world's first <strong>large pricing model (LPM)</strong> — turning any content into a valuable, tradable asset.
-        </p>
-
-        <p>
-          <span class="text-[var(--color-terminal-green)]">&gt;</span> From SaaS to FinTech to now AI, it's been a rewarding journey—honored to be a 
-          <strong>3x</strong> <a class="gradient-link" href="https://stars.github.com/profiles/vinitshahdeo/" target="_blank">GitHub Star</a> 
-          from India and a maintainer for <strong>Google Summer Of Code (GSoC)</strong>, nurturing open-source innovation at 
-          <a href="https://github.com/postmanlabs" target="_blank" class="gradient-link">Postman</a>.
-        </p>
-
-        <p>
-          <span class="text-[var(--color-terminal-green)]">&gt;</span> Passionate about building <strong>event-driven architectures</strong>, 
-          designing AI-powered platforms, and scaling microservices with <span class="badge">Node.js</span> and <span class="badge">Go</span>. 
-          Beyond code, you'll find me chasing shuttlecocks, sipping tea, and listening to poetry.
-        </p>
-
-        <p class="text-[var(--color-terminal-yellow)] font-mono text-sm pt-2 border-t border-[var(--color-terminal-green)] border-opacity-20">
-          🏸 + 🍵 + 👨‍💻 = <a class="gradient-link glowing-animation" href="/about">@vinitshahdeo</a><span class="cursor"></span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="terminal-card">
-      <p class="text-xs text-[var(--color-terminal-cyan)] mb-4 font-mono">$ ./explore.sh --list</p>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <br /><br />
+      Software Engineer leading engineering efforts at <a
+        class="gradient-link"
+        href="https://zzazz.com/"
+        target="_blank">zzazz</a
+      >, building the world's first large pricing model (LPM) — turning any
+      content into a valuable, tradable asset.
+      <br /><br />
+      From SaaS to FinTech to now AI, it’s been a rewarding journey—honored to be
+      a 3x <a
+        class="gradient-link"
+        href="https://stars.github.com/profiles/vinitshahdeo/"
+        target="_blank">GitHub Star</a
+      >
+      from India and a maintainer for Google Summer Of Code(<strong>GSoC</strong
+      >), nurturing open-source innovation at <a
+        class="underline-hover"
+        target="_blank"
+        href="https://github.com/postmanlabs"
+        >Postman<a></a>.
+        <br /><br />
+        Passionate about building event-driven architectures, designing AI-powered
+        platforms, and scaling microservices with <strong>Node.js</strong> and <strong
+          >Go</strong
+        >. Beyond code, you’ll find me chasing shuttlecocks, sipping tea, and
+        listening to poetry.
+        <br /><br />
+        <span class="kanit"
+          >In a nutshell, 🏸 + 🍵 + 👨‍💻 = <a
+            class="gradient-link glowing-animation"
+            href="/about">@vinitshahdeo</a
+          ></span
+        >
+      </a>
+      <div class="flex items-center gap-4 group w-fit social-bar">
         {
           homePageContent.links.map((link) => (
             <Link
@@ -124,17 +100,17 @@ import { Icon } from "astro-icon/components";
           ))
         }
       </div>
-    </div>
-
-    <!-- CLI Marquee -->
-    <div class="fixed bottom-0 left-0 w-full text-xs font-mono text-[var(--color-terminal-yellow)] bg-black bg-opacity-90 border-t border-[var(--color-terminal-green)] py-2 px-4 z-50 hidden sm:block">
-      <div class="flex items-center gap-2">
-        <span class="text-[var(--color-terminal-green)]">$</span>
-        <span class="animate-pulse">✨ Try my interactive CLI portfolio:</span>
-        <code class="bg-[var(--color-bg-secondary)] px-2 py-1 rounded text-[var(--color-terminal-cyan)]">npx vinitshahdeo</code>
-        <span class="cursor"></span>
-      </div>
-    </div>
+    </p>
+    <marquee
+      behavior="scroll"
+      direction="left"
+      scrollamount="6"
+      class="fixed bottom-0 left-0 w-full text-xs font-mono text-[#ffe895] font-semibold bg-transparent z-50 hidden sm:block"
+      style="background: transparent;"
+    >
+      ✨ Experience my interactive CLI portfolio! Just open your terminal and
+      run <span class="font-bold">npx vinitshahdeo</span>
+    </marquee>
   </section>
 
   <!--
@@ -149,7 +125,7 @@ import { Icon } from "astro-icon/components";
     █████████████████████▒       _.;|░░░╦╠╠╠╠╠╠╠╠╠╠░░░` ║███████████████████████████
     █████████████████████▒  _==░░░|░[░░╠╠╠╠╠╠╠╠╠╠╠╠░░░⌐`[███████████████████████████
     █████████████████████▌- .|░░░░░▒░╠╠╠╠╠╠╠╠╠╠╠R╚╠░░░░ ║███████████████████████████
-    ██████████████████████▒.:[░░╚╙╚╚╚╚╚░░░╚², .,░░░╠░░ ╠███████████████████████████
+    ██████████████████████▒.:[░░╚╙╚╚╚╚╚╚░░░╚², .,░░░╠░░ ╠███████████████████████████
     ██████████████████████▌⌐|[[░░»=-  -![╔▒░: ``^░░░░[░`j╚██████████████████████████
     ██████████████████████▌H:ÜÜ░░░= _=:░╠╠▒▒░=░░|░░╔╠╠░░╩░║█████████████████████████
     ██████████████████████▒|░|▒░░░░░░╔╔░╠╠D╠╠▒░╔╠║╣▒▒╠╠░░╚║█████████████████████████

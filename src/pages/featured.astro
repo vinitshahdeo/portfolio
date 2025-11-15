@@ -17,8 +17,8 @@ function formatDate(dateString: string): string {
 
 <Layout seo={featuredPageContent.seo}>
   <section class="mt-10 max-w-2xl mx-auto px-6">
-    <h1 class="text-2xl mb-1">Featured Articles</h1>
-    <p class="opacity-60 mb-14 subtitle">{featuredPageContent.subtitle}</p>
+    <h2 class="text-xl mb-2">Featured Articles</h2>
+    <p class="opacity-60 mb-14 text-sm">{featuredPageContent.subtitle}</p>
 
     <div class="grid grid-cols-1 gap-10 sm:gap-6 mb-10">
       {
@@ -40,10 +40,10 @@ function formatDate(dateString: string): string {
               class={"rounded-lg w-[100px] h-[100px] object-cover"}
             />
             <div class="mt-4 sm:my-auto">
-              <p class="opacity-60 mb-2">
+              <p class="opacity-60 mb-2 text-xs">
                 {formatDate(post.date)} · {post.publisher}
               </p>
-              <h3 class="font-medium hover-underline">{post.title}</h3>
+              <h3 class="font-medium hover-underline text-base">{post.title}</h3>
             </div>
           </a>
         ))

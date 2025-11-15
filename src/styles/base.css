@@ -1,34 +1,75 @@
+/* ===================================
+   HACKER THEME - CYBERPUNK AESTHETIC
+   =================================== */
+:root {
+  /* Terminal Colors */
+  --color-bg: #0a0e14;
+  --color-bg-secondary: #0d1117;
+  --color-bg-tertiary: #161b22;
+  --color-terminal-green: #00ff41;
+  --color-terminal-cyan: #00ffff;
+  --color-terminal-yellow: #ffff00;
+  --color-terminal-red: #ff0055;
+  --color-text: #c9d1d9;
+  --color-text-muted: #8b949e;
+  --color-border: #30363d;
+  --color-glow: rgba(0, 255, 65, 0.5);
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  
+  /* Transitions */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Typography */
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  --font-sans: 'Space Grotesk', -apple-system, sans-serif;
+  
+  /* Layout */
+  --max-width: 48rem;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
 html {
-  background: #242424;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  background: var(--color-bg);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  scroll-behavior: smooth;
 }
 
-.navbar {
-  font-family: "General Sans", sans-serif !important;
-  font-weight: 500 !important;
-  letter-spacing: -0.01em;
+body {
+  background: linear-gradient(to bottom, var(--color-bg) 0%, var(--color-bg-secondary) 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.kanit {
-  font-family: "Kanit", sans-serif !important;
-  font-weight: 600 !important;
-}
-
-h1 {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-optical-sizing: auto;
-}
-
-.subtitle {
-  color: #ffe895;
-  opacity: 0.8;
-  font-family: "KoHo", sans-serif;
-  font-weight: 600;
-  /* font-style: italic; */
+/* Matrix-style background effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 65, 0.03) 2px,
+      rgba(0, 255, 65, 0.03) 4px
+    );
+  pointer-events: none;
+  z-index: 0;
 }
 
 * {
@@ -36,57 +77,290 @@ h1 {
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  color: #c9c9c9;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* ===================================
+   TYPOGRAPHY
+   =================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-terminal-green);
+  text-shadow: 0 0 10px var(--color-glow);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+h1::before {
+  content: '> ';
+  color: var(--color-terminal-cyan);
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-sm);
+}
+
+h2::before {
+  content: '$ ';
+  color: var(--color-terminal-yellow);
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+strong {
+  color: var(--color-terminal-green);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-terminal-cyan);
+  text-decoration: none;
+  transition: all var(--transition);
+  position: relative;
+}
+
+a:hover {
+  color: var(--color-terminal-green);
+  text-shadow: 0 0 8px var(--color-glow);
+}
+
+/* Special classes */
+.navbar {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.kanit {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-terminal-green);
+}
+
+.subtitle {
+  color: var(--color-terminal-yellow);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(255, 255, 0, 0.3);
+  font-size: 1.1rem;
+}
+
+/* ===================================
+   LAYOUT
+   =================================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  position: relative;
+  z-index: 1;
+}
+
+/* ===================================
+   COMPONENTS
+   =================================== */
+
+/* Terminal-style code blocks */
 code {
-  font-family:
-    Menlo,
-    Monaco,
-    Lucida Console,
-    Liberation Mono,
-    DejaVu Sans Mono,
-    Bitstream Vera Sans Mono,
-    Courier New,
-    monospace;
+  font-family: var(--font-mono);
+  background: var(--color-bg-tertiary);
+  color: var(--color-terminal-green);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.1);
 }
 
-.hover-underline {
-  text-decoration: underline 1px rgba(0, 0, 0, 0);
-  text-underline-offset: 5px;
-  transition: text-decoration-color 300ms;
+/* Hacker-style cards */
+.terminal-card {
+  background: var(--color-bg-secondary);
+  border: 2px solid var(--color-terminal-green);
+  border-radius: 8px;
+  padding: var(--space-md);
+  box-shadow: 
+    0 0 20px rgba(0, 255, 65, 0.2),
+    inset 0 0 20px rgba(0, 255, 65, 0.05);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
 }
 
-.post:hover .hover-underline {
-  text-decoration-color: rgba(255, 255, 255, 1);
+.terminal-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent,
+    var(--color-terminal-green),
+    transparent
+  );
+  animation: scan 3s linear infinite;
 }
 
-@keyframes glowingText {
+@keyframes scan {
   0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(500px);
+  }
+}
+
+.terminal-card:hover {
+  border-color: var(--color-terminal-cyan);
+  box-shadow: 
+    0 0 30px rgba(0, 255, 255, 0.3),
+    inset 0 0 30px rgba(0, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Links */
+.gradient-link {
+  font-weight: 700;
+  color: var(--color-terminal-cyan);
+  text-decoration: none;
+  position: relative;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.gradient-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-terminal-cyan);
+  box-shadow: 0 0 5px var(--color-terminal-cyan);
+  transition: width var(--transition);
+}
+
+.gradient-link:hover::after {
+  width: 100%;
+}
+
+.underline-hover {
+  color: var(--color-text-muted);
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition);
+}
+
+.underline-hover:hover {
+  color: var(--color-terminal-green);
+  border-bottom-color: var(--color-terminal-green);
+  text-shadow: 0 0 5px var(--color-glow);
+}
+
+/* Badge - Hacker style */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  border: 1px solid var(--color-terminal-green);
+  background: rgba(0, 255, 65, 0.1);
+  color: var(--color-terminal-green);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.badge-accent {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
+  }
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+@keyframes glowingText {
+  0%, 100% {
     filter: brightness(100%);
+    text-shadow: 0 0 10px var(--color-glow);
   }
   50% {
     filter: brightness(150%);
-  }
-  100% {
-    filter: brightness(100%);
+    text-shadow: 0 0 20px var(--color-glow);
   }
 }
 
 .glowing-animation {
-  animation: glowingText 2s infinite;
+  animation: glowingText 2s infinite ease-in-out;
 }
 
-.icon-inline {
-  display: inline-block; /* Ensures the icon is inline */
-  vertical-align: middle; /* Centers the icon vertically with adjacent text */
-  margin-right: 4px; /* Optional: adds some space between the icon and the text */
+@keyframes pulseDot {
+  0%, 100% {
+    opacity: 0.8;
+    box-shadow: 0 0 5px var(--color-terminal-green);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px var(--color-terminal-green);
+  }
+}
+
+.pulse-dot {
+  animation: pulseDot 2s ease-in-out infinite;
+  background-color: var(--color-terminal-green);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 10px var(--color-terminal-green);
+}
+
+@keyframes lazyBadgeAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lazy-badge {
+  opacity: 0;
+  animation: lazyBadgeAppear 0.6s ease-out forwards;
+  animation-delay: 1s;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
   to {
     transform: rotate(360deg);
   }
@@ -96,109 +370,186 @@ code {
   animation: spin 2s linear infinite;
 }
 
-#clickSong,
-#refreshSong {
-  cursor: pointer;
-}
-
-.gradient-link {
-  font-weight: bold;
-  background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #00abda, #1476ff);
-}
-
-.gradient-link:hover::after {
-  background-image: linear-gradient(to right, #00abda, #1476ff);
-}
-
-.underline-hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  opacity: 60%;
-  transition: opacity 0.3s;
-}
-
-@keyframes glow {
-  0%,
-  100% {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Invisible shadow */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  50% {
-    box-shadow: 0 0 20px rgba(0, 171, 218, 0.6); /* Glowing effect */
+  to {
+    width: 100%;
   }
 }
 
-.image-music-effect {
-  border-color: #00abda;
-  cursor: pointer;
-  animation: glow 2s infinite ease-in-out;
-}
-
-.image-effect:hover {
-  border-color: #00abda;
-  transform: scale(1.05);
-  cursor: pointer;
-  animation: glow 2s infinite ease-in-out;
-}
-
-.underline-hover:hover {
-  opacity: 100%;
-}
-
-.icon-inline {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-}
-
-@keyframes pulseDot {
-  0%,
-  100% {
-    opacity: 0.8;
-    box-shadow: 0 0 0 rgba(76, 175, 80, 0);
-  }
-  50% {
-    opacity: 1;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
-  }
-}
-
-.pulse-dot {
-  animation: pulseDot 2s ease-in-out infinite;
-  background-color: #4caf50 !important;
-}
-
-@keyframes lazyBadgeAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.lazy-badge {
-  opacity: 0;
-  animation: lazyBadgeAppear 0.8s ease-out forwards;
-  animation-delay: 1.5s;
-}
-
+/* ===================================
+   NAVIGATION
+   =================================== */
 .active-nav-link {
-  position: relative;
-  opacity: 1;
-  color: #ffe895;
+  color: var(--color-terminal-green) !important;
+  text-shadow: 0 0 10px var(--color-glow);
   font-weight: 700;
 }
 
-/* Hide both indicator dots */
+nav a {
+  position: relative;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+nav a:hover {
+  color: var(--color-terminal-green);
+  text-shadow: 0 0 10px var(--color-glow);
+}
+
 .nav-indicator,
 .nav-indicator-mobile {
   display: none;
 }
 
+/* ===================================
+   UTILITIES
+   =================================== */
+.icon-inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  filter: drop-shadow(0 0 5px var(--color-terminal-cyan));
+}
+
 .social-bar {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+#clickSong,
+#refreshSong {
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+#clickSong:hover,
+#refreshSong:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px var(--color-terminal-green));
+}
+
+.image-effect:hover,
+.image-music-effect {
+  border-color: var(--color-terminal-green);
+  box-shadow: 0 0 20px var(--color-glow);
+  cursor: pointer;
+}
+
+.hover-underline {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition);
+}
+
+.post:hover .hover-underline {
+  border-bottom-color: var(--color-terminal-green);
+  text-shadow: 0 0 5px var(--color-glow);
+}
+
+/* ===================================
+   HACKER THEME EFFECTS
+   =================================== */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: var(--color-terminal-green);
+  margin-left: 4px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch-effect:hover {
+  animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+@keyframes codeRain {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.code-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.code-rain span {
+  position: absolute;
+  top: -100px;
+  color: var(--color-terminal-green);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  opacity: 0.3;
+  animation: codeRain linear infinite;
+}
+
+/* ===================================
+   RESPONSIVE STYLES
+   =================================== */
+@media (min-width: 768px) {
+  .nav-indicator {
+    display: block;
+    border-bottom: 2px solid var(--color-terminal-green);
+    box-shadow: 0 0 5px var(--color-glow);
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-indicator-mobile {
+    display: block;
+    border-bottom: 2px solid var(--color-terminal-green);
+    box-shadow: 0 0 5px var(--color-glow);
+  }
+  
+  nav a::before,
+  nav a::after {
+    content: '';
+  }
 }

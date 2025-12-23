@@ -18,13 +18,13 @@ const { text, href, external, noAnchor, icon } = Astro.props;
       target={external ? "_blank" : "_self"}
       class="flex items-center gap-2 opacity-60 group-hover:opacity-30 hover:!opacity-60 transition-opacity"
     >
-      <Icon name={icon} width={24} height={24} />
+      <Icon name={icon} width={20} height={20} />
 
       <span>{text}</span>
     </a>
   ) : (
     <div class="flex items-center gap-2 opacity-60 group-hover:opacity-30 hover:!opacity-60 transition-opacity">
-      <Icon name={icon} width={24} height={24} />
+      <Icon name={icon} width={20} height={20} />
 
       <span>{text}</span>
     </div>

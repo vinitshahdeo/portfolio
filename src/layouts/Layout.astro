@@ -29,16 +29,19 @@ const ogImageUrl = seo.image;
   ) as HTMLSpanElement;
 
   linkMenuButton.addEventListener("click", () => {
-    if (linkMenu.classList.contains("opacity-0")) {
+    const isOpen = linkMenu.classList.contains("opacity-0");
+    if (isOpen) {
       linkMenu.classList.remove("pointer-events-none");
       linkMenu.classList.remove("opacity-0");
       linkMenu.classList.add("pointer-events-auto");
       openIndicator.innerText = "×";
+      linkMenuButton.setAttribute("aria-expanded", "true");
     } else {
       linkMenu.classList.add("pointer-events-none");
       linkMenu.classList.add("opacity-0");
       linkMenu.classList.remove("pointer-events-auto");
       openIndicator.innerText = "+";
+      linkMenuButton.setAttribute("aria-expanded", "false");
     }
   });
 
@@ -54,6 +57,7 @@ const ogImageUrl = seo.image;
       linkMenu.classList.add("opacity-0");
       linkMenu.classList.remove("pointer-events-auto");
       openIndicator.innerText = "+";
+      linkMenuButton.setAttribute("aria-expanded", "false");
     }
   });
 </script>
@@ -70,11 +74,7 @@ const ogImageUrl = seo.image;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kanit&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Kanit:wght@500;600&family=KoHo:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -160,6 +160,8 @@ const ogImageUrl = seo.image;
               id="link-menu-button"
               class="relative font-medium opacity-70 hover:opacity-100 p-3 rounded-lg hover:bg-[#2a2a2a]/50 transition-all duration-200"
               aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="link-menu"
             >
               <span class="text-sm">Menu</span>
               <span id="open-indicator" class="ml-2 text-[#ffe895] font-mono"

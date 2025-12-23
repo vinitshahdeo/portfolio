@@ -125,8 +125,8 @@ const ogImageUrl = seo.image;
             class="w-[50px] h-[50px] object-cover"
           />
         </a>
-        <nav class="ml-auto mr-6 sm:m-0 navbar">
-          <ul class="hidden sm:flex sm:items-center sm:gap-1">
+        <nav class="navbar">
+          <ul class="hidden sm:flex sm:items-center sm:gap-0">
             {
               navBarLinks.map((link) => {
                 const isActive =
@@ -135,19 +135,15 @@ const ogImageUrl = seo.image;
                 return (
                   <li>
                     <a
-                      class={`group relative px-3 py-2 text-sm transition-all duration-200 ${
+                      class={`block px-3 py-2 text-sm rounded transition-colors duration-150 ${
                         isActive
-                          ? "text-[#ffe895] font-medium"
-                          : "opacity-70 hover:opacity-100 hover:text-[#e0e0e0]"
+                          ? "text-[#ffe895]"
+                          : "text-[#c9c9c9]/60 hover:text-[#e0e0e0] hover:bg-white/5"
                       }`}
                       href={link.url}
                       target={link.external ? "_blank" : "_self"}
                     >
-                      <span class="relative z-10">{link.title}</span>
-                      {isActive && (
-                        <div class="absolute inset-0 bg-[#ffe895]/10 rounded-md border border-[#ffe895]/20" />
-                      )}
-                      <div class="absolute inset-0 bg-[#2a2a2a]/0 group-hover:bg-[#2a2a2a]/50 rounded-md transition-all duration-200" />
+                      {link.title}
                     </a>
                   </li>
                 );
@@ -158,15 +154,13 @@ const ogImageUrl = seo.image;
           <div class="relative sm:hidden">
             <button
               id="link-menu-button"
-              class="relative font-medium opacity-70 hover:opacity-100 p-3 rounded-lg hover:bg-[#2a2a2a]/50 transition-all duration-200"
+              class="flex items-center px-3 py-2 text-sm text-[#c9c9c9]/60 hover:text-[#e0e0e0] rounded transition-colors duration-150"
               aria-label="Toggle navigation menu"
               aria-expanded="false"
               aria-controls="link-menu"
             >
-              <span class="text-sm">Menu</span>
-              <span id="open-indicator" class="ml-2 text-[#ffe895] font-mono"
-                >+</span
-              >
+              <span>Menu</span>
+              <span id="open-indicator" class="ml-1.5 text-[#ffe895]">+</span>
             </button>
             <div
               id="link-menu"
@@ -200,15 +194,13 @@ const ogImageUrl = seo.image;
             </div>
           </div>
         </nav>
-        <div>
-          <a
-            href=`mailto:${identity.email}`
-            class="block p-2 opacity-60 hover:opacity-100 transition-opacity"
-            aria-label="Email"
-          >
-            <Icon name="mdi:email" width={20} height={20} />
-          </a>
-        </div>
+        <a
+          href=`mailto:${identity.email}`
+          class="block p-2 text-[#c9c9c9]/50 hover:text-[#e0e0e0] transition-colors duration-150"
+          aria-label="Email"
+        >
+          <Icon name="mdi:email" width={20} height={20} />
+        </a>
       </div>
     </header>
     <main class="mb-32">

@@ -65,29 +65,27 @@ const ogImageUrl = seo.image;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={seo.url} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://buttons.github.io" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Kanit:wght@500;600&family=KoHo:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <meta name="generator" content={Astro.generator} />
     <title>{seo.title}</title>
 
     <!-- HTML Meta Tags -->
     <meta name="description" content={seo.description} />
-    <meta property="og:title" content={seo.title} />
-    <meta property="og:description" content={seo.description} />
-    <meta property="og:image" content={ogImageUrl} />
 
-    <!-- Facebook Meta Tags -->
+    <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:url" content={seo.url} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={seo.title} />
@@ -118,7 +116,7 @@ const ogImageUrl = seo.image;
             alt={"Logo"}
             width={50}
             height={50}
-            loading="lazy"
+            loading="eager"
             decoding="async"
             quality={100}
             densities={[1.5, 2]}
@@ -207,5 +205,7 @@ const ogImageUrl = seo.image;
       <slot />
     </main>
     <footer></footer>
+    <!-- Non-critical third-party scripts loaded at end -->
+    <script async src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

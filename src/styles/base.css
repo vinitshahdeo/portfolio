@@ -182,8 +182,6 @@ code {
   animation: glowingText 2s infinite;
 }
 
-
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -209,7 +207,11 @@ code {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right, var(--color-link-start), var(--color-link-end));
+  background-image: linear-gradient(
+    to right,
+    var(--color-link-start),
+    var(--color-link-end)
+  );
   transition: filter var(--transition-fast);
 }
 
@@ -230,7 +232,6 @@ code {
 }
 
 @keyframes glow {
-
   0%,
   100% {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0);
@@ -256,8 +257,6 @@ code {
   animation: glow 2s infinite ease-in-out;
 }
 
-
-
 /* Icon alignment - single definition */
 .icon-inline {
   display: inline-block;
@@ -268,7 +267,6 @@ code {
 }
 
 @keyframes pulseDot {
-
   0%,
   100% {
     opacity: 0.8;

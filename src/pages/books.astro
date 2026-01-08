@@ -5,11 +5,12 @@ import { Icon } from "astro-icon/components";
 const booksPageContent = {
   seo: {
     title: "Books I Recommend | Vinit Shahdeo",
-    description: "A curated list of technical books I recommend for software engineers, covering core craft, architecture, systems design, reliability, leadership, and open source culture.",
-    image: "https://vinitshahdeo.dev/img/vinitshahdeo-og.jpg",
+    description:
+      "A curated list of technical books I recommend for software engineers, covering core craft, architecture, systems design, reliability, leadership, and open source culture.",
+    image: "https://vinitshahdeo.dev/img/vinitshahdeo-portfolio.jpg",
     url: "https://vinitshahdeo.dev/books",
-    domain: "vinitshahdeo.dev"
-  }
+    domain: "vinitshahdeo.dev",
+  },
 };
 
 const bookCategories = [
@@ -22,43 +23,54 @@ const bookCategories = [
         title: "The Pragmatic Programmer",
         subtitle: "Your Journey to Mastery",
         author: "David Thomas, Andrew Hunt",
-        description: "Timeless habits for thinking & shipping better software. Essential principles that remain relevant decades later.",
-        amazonUrl: "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052",
-        completed: true
+        description:
+          "Timeless habits for thinking & shipping better software. Essential principles that remain relevant decades later.",
+        amazonUrl:
+          "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052",
+        completed: true,
       },
       {
         title: "Clean Code",
         subtitle: "A Handbook of Agile Software Craftsmanship",
         author: "Robert C. Martin",
-        description: "Naming, refactoring, and code hygiene that scales. The gold standard for writing maintainable code.",
-        amazonUrl: "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
-        completed: true
+        description:
+          "Naming, refactoring, and code hygiene that scales. The gold standard for writing maintainable code.",
+        amazonUrl:
+          "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
+        completed: true,
       },
       {
         title: "Clean Architecture",
         subtitle: "A Craftsman's Guide to Software Structure and Design",
         author: "Robert C. Martin",
-        description: "Separation of concerns that survives product pivots. Essential for building systems that last.",
-        amazonUrl: "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164",
-        completed: true
+        description:
+          "Separation of concerns that survives product pivots. Essential for building systems that last.",
+        amazonUrl:
+          "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164",
+        completed: true,
       },
       {
         title: "Designing Data-Intensive Applications",
-        subtitle: "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+        subtitle:
+          "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
         author: "Martin Kleppmann",
-        description: "Data models, streams, and storage trade-offs. The definitive guide to modern data systems.",
-        amazonUrl: "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245",
-        completed: true
+        description:
+          "Data models, streams, and storage trade-offs. The definitive guide to modern data systems.",
+        amazonUrl:
+          "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245",
+        completed: true,
       },
       {
         title: "Building Microservices",
         subtitle: "Designing Fine-Grained Systems (2nd Edition)",
         author: "Sam Newman",
-        description: "Service boundaries, contracts, and operability. Updated with lessons from years of microservices adoption.",
-        amazonUrl: "https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1492034029",
-        completed: true
-      }
-    ]
+        description:
+          "Service boundaries, contracts, and operability. Updated with lessons from years of microservices adoption.",
+        amazonUrl:
+          "https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1492034029",
+        completed: true,
+      },
+    ],
   },
   {
     title: "Architecture & Systems at Scale",
@@ -69,37 +81,46 @@ const bookCategories = [
         title: "Fundamentals of Software Architecture",
         subtitle: "An Engineering Approach",
         author: "Mark Richards, Neal Ford",
-        description: "Patterns, trade-off analysis, and fitness functions. Comprehensive guide to architectural decision-making.",
-        amazonUrl: "https://www.amazon.com/Fundamentals-Software-Architecture-Comprehensive-Characteristics/dp/1492043451",
-        completed: false
+        description:
+          "Patterns, trade-off analysis, and fitness functions. Comprehensive guide to architectural decision-making.",
+        amazonUrl:
+          "https://www.amazon.com/Fundamentals-Software-Architecture-Comprehensive-Characteristics/dp/1492043451",
+        completed: false,
       },
       {
         title: "Software Engineering at Google",
         subtitle: "Lessons Learned from Programming Over Time",
         author: "Titus Winters, Tom Manshreck, Hyrum Wright",
-        description: "Org-level practices for large codebases covering reviews, dependencies, and stability.",
-        amazonUrl: "https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791",
+        description:
+          "Org-level practices for large codebases covering reviews, dependencies, and stability.",
+        amazonUrl:
+          "https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791",
         websiteUrl: "https://abseil.io",
-        completed: false
+        completed: false,
       },
       {
         title: "Designing Event-Driven Systems",
-        subtitle: "Concepts and Patterns for Streaming Services with Apache Kafka",
+        subtitle:
+          "Concepts and Patterns for Streaming Services with Apache Kafka",
         author: "Ben Stopford",
-        description: "Kafka, EDA patterns, and stream-first thinking. Essential for modern distributed systems.",
-        amazonUrl: "https://www.amazon.com/Designing-Event-Driven-Systems-Concepts-Streaming/dp/1492038229",
+        description:
+          "Kafka, EDA patterns, and stream-first thinking. Essential for modern distributed systems.",
+        amazonUrl:
+          "https://www.amazon.com/Designing-Event-Driven-Systems-Concepts-Streaming/dp/1492038229",
         websiteUrl: "https://www.oreilly.com",
-        completed: false
+        completed: false,
       },
       {
         title: "Release It!",
         subtitle: "Design and Deploy Production-Ready Software (2nd Edition)",
         author: "Michael T. Nygard",
-        description: "Real-world failure modes and resilience patterns. Battle-tested stability patterns.",
-        amazonUrl: "https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395",
-        completed: false
-      }
-    ]
+        description:
+          "Real-world failure modes and resilience patterns. Battle-tested stability patterns.",
+        amazonUrl:
+          "https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395",
+        completed: false,
+      },
+    ],
   },
   {
     title: "Reliability, Delivery & Ops",
@@ -110,30 +131,37 @@ const bookCategories = [
         title: "Accelerate",
         subtitle: "The Science of Lean Software and DevOps",
         author: "Nicole Forsgren, Jez Humble, Gene Kim",
-        description: "DORA metrics & the science behind high-performing teams. Data-driven approach to software delivery.",
-        amazonUrl: "https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339",
+        description:
+          "DORA metrics & the science behind high-performing teams. Data-driven approach to software delivery.",
+        amazonUrl:
+          "https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339",
         websiteUrl: "https://itrevolution.com",
-        completed: false
+        completed: false,
       },
       {
         title: "Site Reliability Engineering",
         subtitle: "How Google Runs Production Systems",
-        author: "Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff",
-        description: "Principles from Google's SRE practice. The foundational SRE handbook.",
-        amazonUrl: "https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X",
+        author:
+          "Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff",
+        description:
+          "Principles from Google's SRE practice. The foundational SRE handbook.",
+        amazonUrl:
+          "https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X",
         websiteUrl: "https://sre.google",
-        completed: false
+        completed: false,
       },
       {
         title: "The Site Reliability Workbook",
         subtitle: "Practical Ways to Implement SRE",
         author: "Betsy Beyer, Niall Richard Murphy, David K. Rensin",
-        description: "Hands-on SRE playbooks and case studies. Practical implementation of SRE principles.",
-        amazonUrl: "https://www.amazon.com/Site-Reliability-Workbook-Practical-Implement/dp/1492029505",
+        description:
+          "Hands-on SRE playbooks and case studies. Practical implementation of SRE principles.",
+        amazonUrl:
+          "https://www.amazon.com/Site-Reliability-Workbook-Practical-Implement/dp/1492029505",
         websiteUrl: "https://sre.google",
-        completed: false
-      }
-    ]
+        completed: false,
+      },
+    ],
   },
   {
     title: "Leadership & Staff+ Track",
@@ -144,30 +172,36 @@ const bookCategories = [
         title: "Staff Engineer",
         subtitle: "Leadership beyond the management track",
         author: "Will Larson",
-        description: "Mapping the Staff/Principal path outside management. Essential guide for senior IC growth.",
-        amazonUrl: "https://www.amazon.com/Staff-Engineer-Leadership-beyond-management/dp/1736417916",
+        description:
+          "Mapping the Staff/Principal path outside management. Essential guide for senior IC growth.",
+        amazonUrl:
+          "https://www.amazon.com/Staff-Engineer-Leadership-beyond-management/dp/1736417916",
         websiteUrl: "https://staffeng.com",
-        completed: false
+        completed: false,
       },
       {
         title: "An Elegant Puzzle",
         subtitle: "Systems Thinking for Engineering Management",
         author: "Will Larson",
-        description: "Systems thinking for eng managers/leads. Practical frameworks for engineering leadership.",
-        amazonUrl: "https://www.amazon.com/Elegant-Puzzle-Systems-Engineering-Management/dp/1732265186",
+        description:
+          "Systems thinking for eng managers/leads. Practical frameworks for engineering leadership.",
+        amazonUrl:
+          "https://www.amazon.com/Elegant-Puzzle-Systems-Engineering-Management/dp/1732265186",
         websiteUrl: "https://press.stripe.com",
-        completed: false
+        completed: false,
       },
       {
         title: "Team Topologies",
         subtitle: "Organizing Business and Technology Teams for Fast Flow",
         author: "Matthew Skelton, Manuel Pais",
-        description: "Team types & interaction modes for fast flow. Revolutionary approach to team organization.",
-        amazonUrl: "https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819",
+        description:
+          "Team types & interaction modes for fast flow. Revolutionary approach to team organization.",
+        amazonUrl:
+          "https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819",
         websiteUrl: "https://teamtopologies.com",
-        completed: false
-      }
-    ]
+        completed: false,
+      },
+    ],
   },
   {
     title: "Open Source & Culture",
@@ -178,13 +212,15 @@ const bookCategories = [
         title: "Working in Public",
         subtitle: "The Making and Maintenance of Open Source Software",
         author: "Nadia Eghbal",
-        description: "How modern OSS really works & why it matters. Deep dive into the economics and sociology of open source.",
-        amazonUrl: "https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862",
+        description:
+          "How modern OSS really works & why it matters. Deep dive into the economics and sociology of open source.",
+        amazonUrl:
+          "https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862",
         websiteUrl: "https://press.stripe.com",
-        completed: false
-      }
-    ]
-  }
+        completed: false,
+      },
+    ],
+  },
 ];
 ---
 
@@ -193,119 +229,154 @@ const bookCategories = [
     <div class="mb-12">
       <h1 class="text-2xl mb-1">Books I Recommend</h1>
       <p class="opacity-60 mb-10 subtitle">
-        Click on any book to find it on Amazon</p>
+        Click on any book to find it on Amazon
+      </p>
       <p class="text-large opacity-80 mb-6">
-        A curated collection of technical books that have shaped my engineering philosophy and practices. 
-        From core programming skills to system design and leadership.
+        A curated collection of technical books that have shaped my engineering
+        philosophy and practices. From core programming skills to system design
+        and leadership.
       </p>
     </div>
 
-    {bookCategories.map(category => (
-      <div class="mb-12">
-        <div class="flex items-center gap-3 mb-6">
-          <Icon name={category.icon} width={24} height={24} class="text-[#ffe895]" />
-          <div>
-            <h2 class="text-[#ffe895] opacity-90">{category.title}</h2>
-            <p class="opacity-60 text-small mt-1">{category.description}</p>
+    {
+      bookCategories.map((category) => (
+        <div class="mb-12">
+          <div class="flex items-center gap-3 mb-6">
+            <Icon
+              name={category.icon}
+              width={24}
+              height={24}
+              class="text-[#ffe895]"
+            />
+            <div>
+              <h2 class="text-[#ffe895] opacity-90">{category.title}</h2>
+              <p class="opacity-60 text-small mt-1">{category.description}</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="grid gap-4">
-          {category.books.map(book => (
-            <div class="group p-6 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg hover:border-[#00abda] transition-all duration-300 hover:bg-[#2f2f2f]">
-              <div class="flex items-start gap-4">
-                <div class="flex-shrink-0 mt-1">
-                  <div class="flex items-center gap-2">
-                    {book.completed ? (
-                      <Icon 
-                        name="mdi:check-circle" 
-                        width={20} 
-                        height={20} 
-                        class="text-[#4CAF50]" 
-                        title="Read"
-                      />
-                    ) : (
-                      <Icon 
-                        name="mdi:bookmark-outline" 
-                        width={20} 
-                        height={20} 
-                        class="text-[#ffe895] opacity-60" 
-                        title="To Read"
-                      />
-                    )}
-                  </div>
-                </div>
-                <div class="flex-1">
-                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
-                    <div>
-                      <h3 class="group-hover:text-[#ffe895] transition-colors duration-300 mb-1">
-                        {book.title}
-                      </h3>
-                      {book.subtitle && (
-                        <p class="text-small opacity-70 mb-2">{book.subtitle}</p>
+
+          <div class="grid gap-4">
+            {category.books.map((book) => (
+              <div class="group p-6 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg hover:border-[#00abda] transition-all duration-300 hover:bg-[#2f2f2f]">
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0 mt-1">
+                    <div class="flex items-center gap-2">
+                      {book.completed ? (
+                        <Icon
+                          name="mdi:check-circle"
+                          width={20}
+                          height={20}
+                          class="text-[#4CAF50]"
+                          title="Read"
+                        />
+                      ) : (
+                        <Icon
+                          name="mdi:bookmark-outline"
+                          width={20}
+                          height={20}
+                          class="text-[#ffe895] opacity-60"
+                          title="To Read"
+                        />
                       )}
-                      <p class="text-small opacity-80 font-medium">{book.author}</p>
                     </div>
                   </div>
-                  
-                  <p class="opacity-80 text-small leading-relaxed mb-3">
-                    {book.description}
-                  </p>
-                  
-                  <div class="flex items-center gap-4">
-                    <a
-                      href={book.amazonUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="inline-flex items-center gap-2 text-small gradient-link hover:opacity-80 transition-opacity"
-                    >
-                      <Icon name="mdi:amazon" width={14} height={14} />
-                      <span>View on Amazon</span>
-                    </a>
-                    
-                    {book.websiteUrl && (
+                  <div class="flex-1">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
+                      <div>
+                        <h3 class="group-hover:text-[#ffe895] transition-colors duration-300 mb-1">
+                          {book.title}
+                        </h3>
+                        {book.subtitle && (
+                          <p class="text-small opacity-70 mb-2">
+                            {book.subtitle}
+                          </p>
+                        )}
+                        <p class="text-small opacity-80 font-medium">
+                          {book.author}
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="opacity-80 text-small leading-relaxed mb-3">
+                      {book.description}
+                    </p>
+
+                    <div class="flex items-center gap-4">
                       <a
-                        href={book.websiteUrl}
+                        href={book.amazonUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 text-small opacity-60 hover:opacity-100 transition-opacity"
+                        class="inline-flex items-center gap-2 text-small gradient-link hover:opacity-80 transition-opacity"
                       >
-                        <Icon name="mdi:web" width={14} height={14} />
-                        <span>Website</span>
+                        <Icon name="mdi:amazon" width={14} height={14} />
+                        <span>View on Amazon</span>
                       </a>
-                    )}
+
+                      {book.websiteUrl && (
+                        <a
+                          href={book.websiteUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-flex items-center gap-2 text-small opacity-60 hover:opacity-100 transition-opacity"
+                        >
+                          <Icon name="mdi:web" width={14} height={14} />
+                          <span>Website</span>
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    ))}
+      ))
+    }
 
     <div class="mt-12 p-6 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg">
       <div class="flex items-center gap-3 mb-3">
-        <Icon name="mdi:lightbulb-outline" width={20} height={20} class="text-[#ffe895]" />
+        <Icon
+          name="mdi:lightbulb-outline"
+          width={20}
+          height={20}
+          class="text-[#ffe895]"
+        />
         <h3 class="text-[#ffe895]">Reading Philosophy</h3>
       </div>
       <p class="opacity-80 text-small leading-relaxed mb-3">
-        These books represent different stages of an engineering career—from mastering the craft to leading teams and shaping organizations. 
-        I believe in reading widely across technical domains and returning to foundational texts as you gain experience.
+        These books represent different stages of an engineering career—from
+        mastering the craft to leading teams and shaping organizations. I
+        believe in reading widely across technical domains and returning to
+        foundational texts as you gain experience.
       </p>
       <div class="flex items-center gap-2 mt-4">
-        <Icon name="mdi:check-circle" width={16} height={16} class="text-[#4CAF50]" />
-        <span class="text-small opacity-70">Books I've read and highly recommend</span>
+        <Icon
+          name="mdi:check-circle"
+          width={16}
+          height={16}
+          class="text-[#4CAF50]"
+        />
+        <span class="text-small opacity-70"
+          >Books I've read and highly recommend</span
+        >
       </div>
       <div class="flex items-center gap-2 mt-2">
-        <Icon name="mdi:bookmark-outline" width={16} height={16} class="text-[#ffe895] opacity-60" />
+        <Icon
+          name="mdi:bookmark-outline"
+          width={16}
+          height={16}
+          class="text-[#ffe895] opacity-60"
+        />
         <span class="text-small opacity-70">On my reading list</span>
       </div>
     </div>
 
     <div class="mt-8 text-center">
       <p class="opacity-60 text-small">
-        Have book recommendations for me? 
-        <a href="https://www.linkedin.com/in/vinitshahdeo/" class="gradient-link">I'd love to hear them!</a>
+        Have book recommendations for me?
+        <a
+          href="https://www.linkedin.com/in/vinitshahdeo/"
+          class="gradient-link">I'd love to hear them!</a
+        >
       </p>
     </div>
   </section>

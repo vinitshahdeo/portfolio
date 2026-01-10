@@ -19,6 +19,14 @@ export const musicPlaylist: MusicPlaylist[] = [
     url: "/music/nadaan_parinde_atif.mp3",
   },
   {
+    title: "Likhe Jo Khat Tujhe",
+    url: "/music/khat.mp3",
+  },
+  {
+    title: "Maula Mere Lele Meri Jaan",
+    url: "/music/maula.mp3",
+  },
+  {
     title: "Kehne Ko Jashne Bahara Hai",
     url: "/music/kehne_ko.mp3",
   },
@@ -67,6 +75,10 @@ export const musicPlaylist: MusicPlaylist[] = [
     url: "/music/chand_sifarish.mp3",
   },
   {
+    title: "Ban Than Chali",
+    url: "/music/ban-than.mp3",
+  },
+  {
     title: "Chahun Main Ya Naa",
     url: "/music/chahun_main_ya_naa.mp3",
   },
@@ -85,6 +97,10 @@ export const musicPlaylist: MusicPlaylist[] = [
   {
     title: "Tumse Milke Dil Ka Hai Jo Haal",
     url: "/music/tumse_milke.mp3",
+  },
+  {
+    title: "Kangna Tera Ni",
+    url: "/music/kangna.mp3",
   },
   {
     title: "Teri Deewani",

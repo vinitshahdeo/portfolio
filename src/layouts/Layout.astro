@@ -104,6 +104,96 @@ const ogImageUrl = seo.image;
     <!-- Google Analytics -->
     <GoogleAnalytics measurementId={measurementId} />
     <!-- Google Analytics -->
+
+    <!-- JSON-LD Structured Data -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://vinitshahdeo.com/#person",
+            name: identity.name,
+            url: "https://vinitshahdeo.com",
+            image: {
+              "@type": "ImageObject",
+              url: "https://vinitshahdeo.com/img/vinit-shahdeo-square-1.jpg",
+            },
+            jobTitle: "Technical Lead",
+            worksFor: {
+              "@type": "Organization",
+              name: "ZZAZZ",
+            },
+            alumniOf: [
+              {
+                "@type": "CollegeOrUniversity",
+                name: "Vellore Institute of Technology, Vellore",
+                url: "https://vit.ac.in/",
+              },
+              {
+                "@type": "Organization",
+                name: "Postman",
+                url: "https://www.postman.com/",
+              },
+              {
+                "@type": "Organization",
+                name: "Novo",
+                url: "https://www.novo.co/",
+              },
+            ],
+            knowsAbout: [
+              "Node.js",
+              "Go",
+              "Microservices",
+              "Kafka",
+              "GraphQL",
+              "REST",
+              "AWS",
+            ],
+            sameAs: [
+              "https://github.com/vinitshahdeo",
+              "https://x.com/vinit_shahdeo",
+              "https://www.linkedin.com/in/vinitshahdeo",
+              "https://www.instagram.com/vinitshahdeo",
+              "https://peerlist.io/vinitshahdeo",
+            ],
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://vinitshahdeo.com/#website",
+            url: "https://vinitshahdeo.com",
+            name: "Vinit Shahdeo",
+            description: seo.description,
+            publisher: {
+              "@id": "https://vinitshahdeo.com/#person",
+            },
+            inLanguage: "en",
+          },
+          {
+            "@type": ["WebPage", "ProfilePage"],
+            "@id": seo.url,
+            url: seo.url,
+            name: seo.title,
+            description: seo.description,
+            isPartOf: {
+              "@id": "https://vinitshahdeo.com/#website",
+            },
+            about: {
+              "@id": "https://vinitshahdeo.com/#person",
+            },
+            mainEntity: {
+              "@id": "https://vinitshahdeo.com/#person",
+            },
+            image: {
+              "@type": "ImageObject",
+              url: "https://vinitshahdeo.com/img/vinitshahdeo-portfolio.jpg",
+            },
+            inLanguage: "en",
+          },
+        ],
+      })}
+    />
   </head>
   <body>
     <header>

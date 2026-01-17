@@ -50,7 +50,7 @@ export const homePageContent: HomePageContent = {
   seo: {
     title: "Vinit Shahdeo | Portfolio",
     description:
-      "Explore the portfolio of Vinit Shahdeo, a Lead Software Engineer specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
+      "Explore the portfolio of Vinit Shahdeo, a Lead Software Engineer and 3x GitHub Star from India specializing in building scalable, secure, and performant backend microservices in Node.js and Go.",
     image: openGraphImage,
     domain: "vinitshahdeo.com",
     url: "https://vinitshahdeo.com",

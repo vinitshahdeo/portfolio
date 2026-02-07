@@ -79,11 +79,6 @@ export const homePageContent: HomePageContent = {
       icon: "mdi:share-circle",
     },
     {
-      title: "Book",
-      url: "/book",
-      icon: "mdi:pencil-circle",
-    },
-    {
       title: "Source",
       url: "https://github.com/vinitshahdeo/portfolio",
       icon: "mdi:github",

@@ -75,9 +75,13 @@ export const homePageContent: HomePageContent = {
     },
     {
       title: "Blog",
-      url: "https://vinitshahdeo.dev/",
+      url: "/book",
       icon: "mdi:share-circle",
-      external: true,
+    },
+    {
+      title: "Book",
+      url: "/book",
+      icon: "mdi:pencil-circle",
     },
     {
       title: "Source",

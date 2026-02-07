@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+const bookPageContent = {
+  seo: {
+    title: "Digital Footprint for Software Engineers | Vinit Shahdeo",
+    description:
+      "Discover 'Digital Footprint for Software Engineers' - a book by Vinit Shahdeo that helps developers build their online presence and stand out in the tech industry.",
+    image: "https://digitalfootprintbook.com/images/digital-footprint-og.jpg",
+    url: "https://vinitshahdeo.com/book",
+    domain: "vinitshahdeo.com",
+  },
+};
+
+const bookDetails = {
+  title: "Digital Footprint for Software Engineers",
+  subtitle: "The Art of Building Your Presence Online",
+  tagline: "Your code speaks for itself. But does the world know?",
+  description: `In today's competitive tech landscape, your skills alone aren't enough to stand out. This book is your comprehensive guide to building a powerful digital presence that opens doors to opportunities you never knew existed.`,
+  secondParagraph: `Whether you're a fresh graduate looking to land your first role or a seasoned engineer aiming for leadership positions, this book offers practical strategies to craft and maintain a digital footprint that truly represents your expertise and aspirations.`,
+  highlights: [
+    "Why digital presence matters for software engineers",
+    "Building an authentic personal brand",
+    "Leveraging open source for visibility",
+    "Creating content that resonates with the tech community",
+    "Networking strategies for introverts",
+    "Turning online presence into real opportunities",
+  ],
+  amazonUrl:
+    "https://www.amazon.in/Digital-Footprint-Software-Engineers-building-ebook/dp/B0DQMGZCJV",
+  giveawayUrl:
+    "https://vinitshahdeo.substack.com/p/digital-footprint-for-software-engineers",
+  websiteUrl:
+    "https://www.amazon.in/Digital-Footprint-Software-Engineers-Shahdeo/dp/937197527X",
+};
+---
+
+<Layout seo={bookPageContent.seo}>
+  <section class="mt-10 max-w-2xl mx-auto px-6">
+    <h1 class="text-2xl mb-1">{bookDetails.title}</h1>
+    <p class="opacity-60 mb-10 subtitle">{bookDetails.subtitle}</p>
+
+    <div class="mb-14">
+      <p class="mb-5 sm:text-left">
+        <span class="kanit">{bookDetails.tagline}</span>
+      </p>
+      <p class="mb-5 sm:text-left">
+        {bookDetails.description}
+      </p>
+      <p class="mb-5 sm:text-left">
+        {bookDetails.secondParagraph}
+      </p>
+    </div>
+
+    <!-- What's Inside -->
+    <div
+      class="p-4 mb-14 sm:text-left border border-[#3a3a3a] bg-[#2a2a2a] rounded-lg hover:border-[#00abda] transition-colors"
+    >
+      <div class="flex items-start gap-3 mb-4">
+        <div class="mt-1">
+          <Icon
+            name="mdi:lightbulb-on"
+            width={20}
+            height={20}
+            class="text-[#ffe895]"
+          />
+        </div>
+        <div>
+          <p class="text-sm font-medium text-[#ffe895]">What's Inside</p>
+        </div>
+      </div>
+      <ul class="space-y-3 ml-8">
+        {
+          bookDetails.highlights.map((highlight) => (
+            <li class="flex items-start gap-3">
+              <Icon
+                name="mdi:check-circle"
+                width={16}
+                height={16}
+                class="text-[#4CAF50] flex-shrink-0 mt-0.5"
+              />
+              <span class="text-sm opacity-80">{highlight}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <!-- CTA Links -->
+    <div class="mb-14">
+      <p class="mb-5 sm:text-left">
+        Ready to build your digital presence? Grab your copy now!
+      </p>
+
+      <div class="flex items-center gap-4">
+        <a
+          href={bookDetails.amazonUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-small gradient-link hover:opacity-80 transition-opacity"
+        >
+          <Icon name="mdi:amazon" width={14} height={14} />
+          <span>Buy on Amazon</span>
+        </a>
+
+        <a
+          href={bookDetails.websiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-small opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <Icon name="mdi:web" width={14} height={14} />
+          <span>Learn More</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Author Note -->
+    <div class="mb-14">
+      <p class="mb-5 sm:text-left opacity-60 text-sm">
+        Written by Vinit Shahdeo • <a href="/about" class="underline-hover"
+          >About the Author</a
+        >
+      </p>
+    </div>
+  </section>
+</Layout>

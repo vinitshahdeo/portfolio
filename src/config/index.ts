@@ -69,9 +69,10 @@ export const homePageContent: HomePageContent = {
       external: true,
     },
     {
-      title: "About",
-      url: "/about",
-      icon: "mdi:account-circle",
+      title: "Substack",
+      url: "https://vinitshahdeo.substack.com",
+      icon: "mdi:email-newsletter",
+      external: true,
     },
     {
       title: "Blog",
